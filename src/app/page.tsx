@@ -3,6 +3,7 @@ import Image from "next/image";
 import Bg from "../assets/imgs/home-bg.jpg"
 import ServicesCards from "@/components/servicesCards/servicesCards";
 import StatsCard from "@/components/statsCard/statsCard";
+import Vision from "@/components/vision/vision";
 
 export default function Home() {
   return (
@@ -38,6 +39,9 @@ export default function Home() {
         <div className="container">
           <ServicesCards></ServicesCards>
         </div>
+      </section>
+      <section>
+        <Vision></Vision>
       </section>
     </main>
   );

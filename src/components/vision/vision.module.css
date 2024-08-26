@@ -1,0 +1,92 @@
+.visionSteps{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.visionSteps > div{
+    width: 50%;
+    padding: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.visionSteps > div > *:not(.overlay){
+    position: relative;
+}
+.visionSteps > div .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+.visionSteps > div.vision .overlay{
+    background-color: var(--sec-color);
+}
+.visionSteps > div.steps .overlay{
+    background-color: var(--main-color);
+}
+.visionSteps > div.vision{
+    color: #fff;
+    padding-right: 100px;
+}
+.visionSteps > div.vision span{
+    color: var(--main-color);
+}
+.visionSteps > div.vision h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+.visionSteps > div.vision p{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.visionSteps > div.steps{
+    padding-left: 100px;
+}
+.visionSteps > div.steps h2{
+    margin-bottom: 10px;
+}
+.visionSteps > div.steps p{
+    margin-bottom: 10px;
+}
+.visionSteps > div.steps ul{
+    list-style: disc;
+}
+.visionSteps > div.steps ul li{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (max-width: 1200px) {
+    .visionSteps > div.vision{
+        padding-right: 50px;
+    }
+}
+@media (max-width: 992px) {
+    .visionSteps > div.vision{
+        padding-left: 20px;
+    }
+    .visionSteps > div.steps{
+        padding-left: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .visionSteps{
+        flex-direction: column;
+    }
+    .visionSteps > div{
+        width: 100%;
+        padding-right: 40px !important;
+    }
+    .visionSteps > div.vision h2{
+        width: 100%;
+    }
+    .visionSteps > div.vision p{
+        width: 100%;
+    }
+}
