@@ -4,6 +4,12 @@
     left: 0;
     width: 100%;
     z-index: 3;
+    transition: var(--main-transition);
+}
+.header.scrolled{
+    background-color: var(--sec-color);
+    border-bottom: 1px solid var(--main-color);
+    box-shadow: 0px 0px 10px -2px var(--main-color);
 }
 .header > div{
     display: flex;

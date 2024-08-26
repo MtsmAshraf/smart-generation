@@ -1,0 +1,8 @@
+.mainHeading{
+    color: var(--sec-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mainHeading h1{
+    font-size: 28px;
+}

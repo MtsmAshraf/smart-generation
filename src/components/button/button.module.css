@@ -7,13 +7,19 @@
     border: 1px solid var(--main-color);
     transition: var(--main-transition);
 }
+/* .button:hover{
+    background-color: var(--sec-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+} */
 .button.inverted{
     background-color: var(--sec-color);
     color: var(--main-color);
 }
-.button.inverted:hover{
-    background-color: var(--main-color);
+.button:hover{
+    background-color: #fff;
     color: var(--sec-color);
+    border: 1px solid var(--sec-color);
 }
 
 

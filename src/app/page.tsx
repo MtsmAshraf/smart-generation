@@ -1,6 +1,8 @@
 import Button from "@/components/button/button";
 import Image from "next/image";
 import Bg from "../assets/imgs/home-bg.jpg"
+import ServicesCards from "@/components/servicesCards/servicesCards";
+import StatsCard from "@/components/statsCard/statsCard";
 
 export default function Home() {
   return (
@@ -27,6 +29,14 @@ export default function Home() {
               اتصل بنا 
             </Button>
           </div>
+        </div>
+      </section>
+      <section>
+        <StatsCard></StatsCard>
+      </section>
+      <section>
+        <div className="container">
+          <ServicesCards></ServicesCards>
         </div>
       </section>
     </main>
