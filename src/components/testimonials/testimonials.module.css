@@ -1,0 +1,14 @@
+.testimonials{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.testimonials .cards{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 60px 20px;
+}
+@media (max-width: 600px) {
+    .testimonials .cards{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+}

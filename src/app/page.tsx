@@ -4,6 +4,7 @@ import Bg from "../assets/imgs/home-bg.jpg"
 import ServicesCards from "@/components/servicesCards/servicesCards";
 import StatsCard from "@/components/statsCard/statsCard";
 import Vision from "@/components/vision/vision";
+import Testimonials from "@/components/testimonials/testimonials";
 
 export default function Home() {
   return (
@@ -42,6 +43,9 @@ export default function Home() {
       </section>
       <section>
         <Vision></Vision>
+      </section>
+      <section>
+        <Testimonials></Testimonials>
       </section>
     </main>
   );
