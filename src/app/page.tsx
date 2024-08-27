@@ -5,6 +5,7 @@ import ServicesCards from "@/components/servicesCards/servicesCards";
 import StatsCard from "@/components/statsCard/statsCard";
 import Vision from "@/components/vision/vision";
 import Testimonials from "@/components/testimonials/testimonials";
+import Contact from "@/components/contact/contact";
 
 export default function Home() {
   return (
@@ -46,6 +47,9 @@ export default function Home() {
       </section>
       <section>
         <Testimonials></Testimonials>
+      </section>
+      <section>
+        <Contact></Contact>
       </section>
     </main>
   );
