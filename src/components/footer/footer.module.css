@@ -10,6 +10,7 @@
 }
 .footer > div h4{
     color: var(--main-color);
+    margin-bottom: 10px;
 }
 .footer > div:first-child > div{
     width: calc(100% / 3);
@@ -19,9 +20,9 @@
         text-align: center;
     }
 }
-.footer > div:first-child > div div{
+/* .footer > div:first-child > div div{
     margin-top: 10px;
-}
+} */
 .footer > div:first-child > div:first-child div{
     display: flex;
     flex-direction: column;
@@ -31,6 +32,38 @@
 }
 .footer > div div a:hover{
     color: var(--main-color);
+} 
+
+.footer > div:first-child > div:not(:has(.socials)) > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer > div:first-child > div > div > div{
+    display: flex;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    .footer > div:first-child > div > div > div{
+       flex-direction: column;
+       gap: 10px;
+       margin-bottom: 20px;
+    }
+}
+.footer > div:first-child > div > div > div > span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 20px;
+}
+.footer > div:first-child > div > div > div{
+    padding: 0;
+}
+.footer > div:first-child > div > div > div a{
+    text-decoration: underline;
 }
 .footer .socials{
     display: flex;

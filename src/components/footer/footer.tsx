@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faFacebookF, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
+import { faClock, faLocation, faLocationArrow, faLocationPin, faLocationPinLock, faPhone, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
   return (
@@ -22,22 +23,39 @@ const Footer = () => {
         <div>
           <h4>أماكننا</h4>
           <div>
-            <address>
-              الأردنية, جراند مول
-              <br />
-              العاشر من رمضان
-              <br />
-              مصر
-            </address>
             <div>
-              <a href="tel:00201552778135">01552778135</a>
-              <br />
-              <a href="tel:00201145668638">01145668638</a>
+              <span>
+                <FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon>
+              </span>
+              <address>
+                الأردنية, جراند مول
+                <br />
+                العاشر من رمضان
+                <br />
+                مصر
+              </address>
             </div>
             <div>
-              8:00am - 4:00pm
-              <br />
-              جميع أيام الأسبوع عدا الجمعة
+              <span>
+                <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
+              </span>
+              <div>
+                <div>
+                  <a href="tel:00201552778135">01552778135</a>
+                  <br />
+                  <a href="tel:00201145668638">01145668638</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span>
+                <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
+              </span>
+              <div>
+                8:00am - 4:00pm
+                <br />
+                جميع أيام الأسبوع عدا الجمعة
+              </div>
             </div>
           </div>
         </div>
@@ -62,7 +80,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.copyright}>
-        by &copy; <a href="https://moatasim-ashraf.netlify.app/">Moatasim</a> 2024
+        by &copy; <a href="https://moatasim-ashraf.netlify.app/" target='_blank'>Moatasim</a> 2024
       </div>
     </footer>
   )
