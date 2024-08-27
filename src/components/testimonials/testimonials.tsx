@@ -8,6 +8,9 @@ const Testimonials = () => {
   return (
     <div className={styles.testimonials}>
         <div className="container">
+            <h1>
+                ماذا يقول عملاؤنا
+            </h1>
             <div className={styles.cards}>
                 <TestimonialsCard>
                     <div className={styles.userImg}>
