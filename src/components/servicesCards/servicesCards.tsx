@@ -3,7 +3,7 @@ import MainHeading from '../mainHeading/mainHeading'
 import styles from "./services-cards.module.css"
 import Image from 'next/image'
 import test from "../../assets/imgs/home-bg.jpg"
-import Card from './card/Card'
+import Card from './card/card'
 
 const ServicesCards = () => {
   return (
