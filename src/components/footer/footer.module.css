@@ -32,6 +32,37 @@
 .footer > div div a:hover{
     color: var(--main-color);
 }
+.footer .socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: fit-content;
+    font-size: 20px;
+}
+.footer .socials a{
+    background-color: var(--main-color);
+    color: var(--sec-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    transition: var(--main-transition);
+}
+@media (max-width: 600px) {
+    .footer .socials{
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.footer .socials a:hover{
+    background-color: #fff;
+    color: var(--sec-color);
+}
 .footer .copyright{
     border-top: 1px solid #fff;
     text-align: center;
