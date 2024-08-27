@@ -86,12 +86,23 @@
     padding: 10px;
     height: 100px;
 }
+
+.contact .map{
+    border: 3px solid var(--main-color);
+    overflow: hidden;
+}
+.contact .map iframe{
+    width: 100%;
+}
 @media (max-width: 992px) {
     .contact > div{
         flex-direction: column;
     }
     .contact > div .faq{
         width: 80%;
+    }
+    .contact > div .map{
+        width: 100%;
     }
     .contact > div form{
         width: 100%;

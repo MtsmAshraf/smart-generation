@@ -39,7 +39,7 @@ const Contact = () => {
                     </div>
                 </div>
             </form>
-            <div className={styles.faq}>
+            {/* <div className={styles.faq}>
                 <h2>
                     الأسئلة المتكررة
                 </h2>
@@ -63,6 +63,9 @@ const Contact = () => {
                         </p>
                     </li>
                 </ul>
+            </div> */}
+            <div className={styles.map}>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215.30320692538552!2d31.746006819136237!3d30.298294287672768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457fd428c93721f%3A0x61702c6afbadda59!2zVG9vbHMgTWFsbCwg2YXZiNmEINin2YTYudiv2K8!5e0!3m2!1sen!2seg!4v1724759571811!5m2!1sen!2seg" width="600" height="450" style={{ border: "0" }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
