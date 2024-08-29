@@ -42,7 +42,8 @@
     transition: var(--main-transition);
     text-wrap: nowrap;
 }
-.header nav a:hover{
+.header nav a:hover,
+.header nav a.active{
     color: var(--main-color);
 }
 .header nav a:not(:first-child){

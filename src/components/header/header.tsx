@@ -6,9 +6,11 @@ import logo from "../../assets/imgs/logo.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../button/button'
+import { usePathname } from 'next/navigation'
 
 
 const Header = () => {
+    const pathname = usePathname()
     const [scrolled, setScrolled] = useState(false)
     useEffect(() => {
         window.onscroll = () => {
@@ -31,22 +33,22 @@ const Header = () => {
                 X
             </button>
             <nav>
-                <Link href={"/"}>
+                <Link className={pathname === "/" ? styles.active : ""} href={"/"}>
                     الرئيسية
                 </Link>
-                <Link href={"/services"}>
+                <Link className={pathname === "/services" ? styles.active : ""} href={"/services"}>
                     الخدمات
                 </Link>
-                <Link href={"/projects"}>
+                <Link className={pathname === "/projects" ? styles.active : ""} href={"/projects"}>
                     المشاريع
                 </Link>
-                <Link href={"/supplies"}>
+                <Link className={pathname === "/supplies" ? styles.active : ""} href={"/supplies"}>
                     التوريدات
                 </Link>
-                <Link href={"/about"}>
+                <Link className={pathname === "/about" ? styles.active : ""} href={"/about"}>
                     عن الشركة
                 </Link>
-                <Link href={"/contact"}>
+                <Link className={pathname === "/contact" ? styles.active : ""} href={"/contact"}>
                     اتصل بنا
                 </Link>
             </nav>
