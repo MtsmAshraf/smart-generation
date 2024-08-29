@@ -13,11 +13,11 @@ const Footer = () => {
         <div>
           <h4>الأقسام</h4>
           <div>
-            <Link href="/">الخدمات</Link>
-            <Link href="/">المشاريع</Link>
-            <Link href="/">التوريدات</Link>
-            <Link href="/">عن الشركة</Link>
-            <Link href="/">اتصل بنا</Link>
+            <Link href="/services">الخدمات</Link>
+            <Link href="/projects">المشاريع</Link>
+            <Link href="/supplies">التوريدات</Link>
+            <Link href="/about">عن الشركة</Link>
+            <Link href="/contact">اتصل بنا</Link>
           </div>
         </div>
         <div>
