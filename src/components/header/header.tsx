@@ -34,19 +34,19 @@ const Header = () => {
                 <Link href={"/"}>
                     الرئيسية
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/services"}>
                     الخدمات
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/projects"}>
                     المشاريع
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/supplies"}>
                     التوريدات
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/about"}>
                     عن الشركة
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/contact"}>
                     اتصل بنا
                 </Link>
             </nav>
