@@ -1,0 +1,74 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 1px;
+    padding-top: 60px;
+}
+.cards > div{
+    background-color: var(--sec-color); 
+    color: #fff;
+    text-align: center;
+    padding: 60px 40px 40px;
+    border-bottom: 5px solid var(--main-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 10px -10px var(--sec-color);
+}
+.cards > div > span{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    background-color: var(--sec-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50%;
+    /* border-top: 5px solid var(--main-color); */
+    transform: translate(-50%,-50%);
+    color: var(--main-color);
+    font-size: 80px;
+    /* top: 50%;
+    opacity: 0.4; */
+}
+.cards > div > *:not(span){
+    position: relative;
+}
+.cards > div div:has(a){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media (max-width: 1200px) {
+    .cards > div div:has(a){
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+.cards > div a{
+    color: #fff;
+    text-decoration: underline;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.cards > div a:hover{
+    color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+    .cards{
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+}
+@media (max-width: 600px) {
+    .cards{
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        gap: 0;
+    }
+    .cards > div:not(:last-child){
+        padding: 60px 40px 60px;
+        box-shadow: none;
+    }
+}

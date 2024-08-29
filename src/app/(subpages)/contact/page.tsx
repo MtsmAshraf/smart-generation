@@ -1,9 +1,21 @@
 import React from 'react'
+import Contact from '@/components/contact/contact'
+import ContactsInfo from '@/components/contactsInfo/contactsInfo'
+import SocialLinks from '@/components/socialLinks/socialLinks'
+import styles from "./contact.module.css"
 
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <div>Contact</div>
+    <section>
+        <div className="container">
+            <ContactsInfo></ContactsInfo>
+        </div>
+        <Contact></Contact>
+        <div className={styles.socialLinks}>
+            <SocialLinks></SocialLinks>
+        </div>
+    </section>
   )
 }
 
-export default Contact
+export default ContactUs
