@@ -4,7 +4,7 @@ import MainHeading from '@/components/mainHeading/mainHeading'
 import Image from 'next/image'
 import test from "../../../../assets/imgs/1.jpg"
 import Link from 'next/link'
-const ProjectId = ({ params }) => {
+const ProjectId = ({ params } : any) => {
   return (
     <section className={styles.projectId}>
       <div className="container">
