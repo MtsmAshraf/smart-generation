@@ -1,0 +1,32 @@
+.projectId{
+    text-align: center;
+}
+.projectId .imgs{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+.projectId .goBackLink{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid var(--sec-color);
+    transition: var(--main-transition);
+}  
+.projectId .goBackLink a{
+    color: var(--sec-color);
+    transition: var(--main-transition);
+}
+.projectId .goBackLink:hover,
+.projectId .goBackLink:focus{
+    background-color: var(--sec-color);
+}
+.projectId .goBackLink:hover a,
+.projectId .goBackLink:focus a{
+    color: var(--main-color);
+}
