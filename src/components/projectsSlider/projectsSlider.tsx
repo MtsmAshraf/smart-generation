@@ -24,7 +24,7 @@ const ProjectsSlider = () => {
                 <div>
                     {projectsIds.map((id) => {
                         return(
-                            <Link href={`projects/${id}`}>
+                            <Link key={id} href={`projects/${id}`}>
                                 <ProjectCard>
                                     <div className={styles.cardImg}>
                                         <Image src={test} alt='Project Card'></Image>
