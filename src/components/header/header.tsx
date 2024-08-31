@@ -7,6 +7,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../button/button'
 import { usePathname } from 'next/navigation'
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Header = () => {
@@ -21,18 +23,20 @@ const Header = () => {
             }
         }
     },[scrolled])
+    const [navShown, setNavShown] = useState(false)
   return (
     <header className={scrolled ? styles.header + " " + styles.scrolled : styles.header}>
         <div className= "container">
+            <button onClick={() => {setNavShown(!navShown)}} className={styles.toggleNav}>
+                <FontAwesomeIcon style={{ display: navShown ? "none" : "inline"  }} icon={faBars}></FontAwesomeIcon>
+                <FontAwesomeIcon style={{ display: navShown ? "inline" : "none"  }} icon={faXmark}></FontAwesomeIcon>
+            </button>
             <div>
                 <Link href="/">
                     <Image src={logo} alt='Logo'></Image>
                 </Link>
             </div>
-            <button className={styles.toggleNav}>
-                X
-            </button>
-            <nav>
+            <nav style={{ display: navShown ? "flex" : "none" }}>
                 <Link className={pathname === "/" ? styles.active : ""} href={"/"}>
                     الرئيسية
                 </Link>

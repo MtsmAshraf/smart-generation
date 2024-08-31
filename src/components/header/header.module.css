@@ -17,18 +17,19 @@
     justify-content: space-between;
 }
 .header button.toggleNav{
-    width: 30px;
+    /* width: 30px;
     height: 30px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-    background-color: var(--sec-color);
+    transform: translate(-50%,-50%); */
+    background-color: transparent;
     color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
     display: none;
+    font-size: 20px;
 }
 .header nav{
     display: flex;
@@ -36,6 +37,7 @@
     justify-content: space-between;
     color: var(--main-color);
     gap: 10px;
+    transition: var(--main-transition);
 }
 .header nav a{
     color: #fff;
@@ -75,9 +77,10 @@
         background-color: var(--sec-color);
         padding-top: 10px;
         padding-bottom: 10px;
+        width: 100%;
     }
     .header nav a{
-        width: 100px;
+        width: 100%;
         text-align: center;
     }
     .header nav a:not(:first-child){
