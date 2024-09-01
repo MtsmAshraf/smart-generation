@@ -24,7 +24,7 @@ const Header = () => {
             }
         }
     },[scrolled])
-    const [navShown, setNavShown] = useState(false)
+    const [navShown, setNavShown] = useState(true)
   return (
     <header className={scrolled ? styles.header + " " + styles.scrolled : styles.header}>
         <div className= "container">
