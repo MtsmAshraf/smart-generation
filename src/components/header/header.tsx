@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./header.module.css"
 import logo from "../../assets/imgs/logo.png"
+import smallLogo from "../../assets/imgs/logo-no-text.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../button/button'
@@ -31,9 +32,10 @@ const Header = () => {
                 <FontAwesomeIcon style={{ display: navShown ? "none" : "inline"  }} icon={faBars}></FontAwesomeIcon>
                 <FontAwesomeIcon style={{ display: navShown ? "inline" : "none"  }} icon={faXmark}></FontAwesomeIcon>
             </button>
-            <div>
+            <div className={styles.logo}>
                 <Link href="/">
                     <Image src={logo} alt='Logo'></Image>
+                    <Image src={smallLogo} alt='No Text Logo'></Image>
                 </Link>
             </div>
             <nav style={{ display: navShown ? "flex" : "none" }}>
@@ -57,7 +59,7 @@ const Header = () => {
                 </Link>
             </nav>
             <Button inverted={false}>
-                English
+                En
             </Button>
         </div>
     </header>

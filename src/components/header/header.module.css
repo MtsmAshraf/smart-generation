@@ -5,6 +5,8 @@
     width: 100%;
     z-index: 3;
     transition: var(--main-transition);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .header.scrolled{
     background-color: var(--sec-color);
@@ -15,6 +17,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.header > div > *:last-child{
+    padding: 2px 10px;
+    font-weight: bold;
+}
+.header .logo a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo img:last-child{
+    display: none;
 }
 .header button.toggleNav{
     /* width: 30px;
@@ -72,6 +86,13 @@
     }
 }
 @media (max-width: 767px) {
+    
+    .header .logo img:first-child{
+        display: none;
+    }
+    .header .logo img:last-child{
+        display: block;
+    }
     .header nav{
         flex-direction: column;
         background-color: var(--sec-color);
