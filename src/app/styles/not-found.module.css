@@ -1,0 +1,25 @@
+.NotFound{
+    height: 90vh;
+    background-color: var(--sec-color);
+    border-bottom: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.NotFound .icon{
+    color: var(--main-color);
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NotFound h1{
+    font-size: 36px;
+    color: #fff;
+}
+.NotFound a{
+    text-decoration: underline;
+    color: var(--main-color);
+}
