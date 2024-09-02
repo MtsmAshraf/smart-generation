@@ -24,11 +24,23 @@ const Header = () => {
             }
         }
     },[scrolled])
-    const [navShown, setNavShown] = useState(true)
+    const [navShown, setNavShown] = useState(false)
+    const showNav = () => {
+        let nav = document.querySelector("header nav")
+        if(!navShown){
+            nav.style.cssText=`
+                display: flex
+            `
+        }else{
+            nav.style.cssText=`
+                display: none
+            `
+        }
+    }
   return (
     <header className={scrolled ? styles.header + " " + styles.scrolled : styles.header}>
         <div className= "container">
-            <button onClick={() => {setNavShown(!navShown)}} className={styles.toggleNav}>
+            <button onClick={() => { showNav(); setNavShown(!navShown);}} className={styles.toggleNav}>
                 <FontAwesomeIcon style={{ display: navShown ? "none" : "inline"  }} icon={faBars}></FontAwesomeIcon>
                 <FontAwesomeIcon style={{ display: navShown ? "inline" : "none"  }} icon={faXmark}></FontAwesomeIcon>
             </button>
@@ -38,7 +50,7 @@ const Header = () => {
                     <Image src={smallLogo} alt='No Text Logo'></Image>
                 </Link>
             </div>
-            <nav style={{ display: navShown ? "flex" : "none" }}>
+            <nav>
                 <Link className={pathname === "/" ? styles.active : ""} href={"/"}>
                     الرئيسية
                 </Link>
