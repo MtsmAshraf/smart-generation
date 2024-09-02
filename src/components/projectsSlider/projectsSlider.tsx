@@ -10,21 +10,21 @@ import MainHeading from '../mainHeading/mainHeading'
 import Link from 'next/link'
 const ProjectsSlider = () => {
     const projectsIds = ["1","2","3","4","5","6","7","8","9"]
-    const slideLeft = () => {
+    const slideLeft = (index: number) => {
         const cards: any = document.querySelectorAll("section > div:nth-child(2) > div:last-child > *")
         console.log(cards)
         cards.forEach((card: { style: { cssText: string } }) => {
             card.style.cssText = `
-                transform: translateX(100%)
+                transform: translateX(calc(${index * 100}% + 20px))
             `
             })
     }
-    const slideRight = () => {
+    const slideRight = (index: number) => {
         const cards: any = document.querySelectorAll("section > div:nth-child(2) > div:last-child > *")
         console.log(cards)
         cards.forEach((card: { style: { cssText: string } }) => {
             card.style.cssText = `
-                transform: translateX(-100%)
+                transform: translateX(calc(-${index * 100}% - 20px))
             `
             })
     }
@@ -32,12 +32,20 @@ const ProjectsSlider = () => {
         const toggleBtns: any = document.querySelectorAll("section ul li button")
         toggleBtns[0].setAttribute("active-button","true")
     })
-    const toggleHandler = (e) => {
+    const toggleHandler = (e: any, index: number) => {
         const toggleBtns: any = document.querySelectorAll("section ul li button")
         toggleBtns.forEach((btn: any) => {
             btn.removeAttribute("active-button")
         })
         e.target.setAttribute("active-button","true")
+        const cards: any = document.querySelectorAll("section > div:nth-child(2) > div:last-child > *")
+        console.log(cards)
+        cards.forEach((card: { style: { cssText: string } }) => {
+            card.style.cssText = `
+                transition-duration: ${0.3}s; 
+                transform: translateX(calc(${index * 300}% + ${index * 70}px))
+            `
+        })
     }
     return (
         <section className={styles.section}>
@@ -45,21 +53,21 @@ const ProjectsSlider = () => {
                 <h2>جميع أعمالنا</h2>
             </MainHeading>
             <div className={styles.projectsSlider}>
-                <button onClick={() => {slideRight()}} className={styles.arrow + " " + styles.right}>
+                <button className={styles.arrow + " " + styles.right}>
                     <FontAwesomeIcon icon={faChevronRight} />
                 </button>
-                <button onClick={() => {slideLeft()}} className={styles.arrow + " " + styles.left}>
+                <button className={styles.arrow + " " + styles.left}>
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
                 <ul className={styles.toggleCards}>
                     <li>
-                        <button onClick={(e) => {toggleHandler(e)}}></button>
+                        <button onClick={(e) => {toggleHandler(e, 0)}}></button>
                     </li>
                     <li>
-                        <button onClick={(e) => {toggleHandler(e)}}></button>
+                        <button onClick={(e) => {toggleHandler(e, 1)}}></button>
                     </li>
                     <li>
-                        <button onClick={(e) => {toggleHandler(e)}}></button>
+                        <button onClick={(e) => {toggleHandler(e, 2)}}></button>
                     </li>
                 </ul>
                 <div>
