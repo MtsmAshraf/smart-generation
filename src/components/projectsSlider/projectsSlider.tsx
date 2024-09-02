@@ -43,7 +43,7 @@ const ProjectsSlider = () => {
         cards.forEach((card: { style: { cssText: string } }) => {
             card.style.cssText = `
                 transition-duration: ${0.3}s; 
-                transform: translateX(calc(${index * 300}% + ${index * 70}px))
+                transform: translateX(calc(${index * 300}% + ${index * 60}px))
             `
         })
     }
