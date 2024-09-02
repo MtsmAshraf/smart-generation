@@ -26,7 +26,7 @@ const Header = () => {
     },[scrolled])
     const [navShown, setNavShown] = useState(false)
     const showNav = () => {
-        let nav = document.querySelector("header nav")
+        const nav: any  = document.querySelector("header nav");
         if(!navShown){
             nav.style.cssText=`
                 display: flex
