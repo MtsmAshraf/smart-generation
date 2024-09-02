@@ -24,6 +24,13 @@ const Header = () => {
             }
         }
     },[scrolled])
+    useEffect(() => {
+        if(window.scrollY >= 200){
+            setScrolled(true)
+        }else{
+            setScrolled(false)
+        }
+    },[scrolled])
     const [navShown, setNavShown] = useState(false)
     const showNav = () => {
         const nav: any  = document.querySelector("header nav");
