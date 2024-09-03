@@ -19,7 +19,7 @@ const ServicesCards = () => {
         <div className={styles.cards}>
             <Card>
                 <div className={styles.cardImg}>
-                    <Image src={test} alt='servuce image'></Image>
+                    <Image loading='lazy' src={test} alt='servuce image'></Image>
                 </div>
                 <div className={styles.cardText}>
                     <h2>
@@ -31,7 +31,7 @@ const ServicesCards = () => {
             </Card>
             <Card>
                 <div className={styles.cardImg}>
-                    <Image src={test} alt='servuce image'></Image>
+                    <Image loading='lazy' src={test} alt='servuce image'></Image>
                 </div>
                 <div className={styles.cardText}>
                     <h2>
@@ -44,7 +44,7 @@ const ServicesCards = () => {
             </Card>
             <Card>
                 <div className={styles.cardImg}>
-                    <Image src={test} alt='servuce image'></Image>
+                    <Image loading='lazy' src={test} alt='servuce image'></Image>
                 </div>
                 <div className={styles.cardText}>
                     <h2>
@@ -56,7 +56,7 @@ const ServicesCards = () => {
             </Card>
             <Card>
                 <div className={styles.cardImg}>
-                    <Image src={test} alt='servuce image'></Image>
+                    <Image loading='lazy' src={test} alt='servuce image'></Image>
                 </div>
                 <div className={styles.cardText}>
                     <h2>
@@ -70,7 +70,7 @@ const ServicesCards = () => {
             </Card>
             <Card>
                 <div className={styles.cardImg}>
-                    <Image src={test} alt='servuce image'></Image>
+                    <Image loading='lazy' src={test} alt='servuce image'></Image>
                 </div>
                 <div className={styles.cardText}>
                     <h2>
@@ -84,7 +84,7 @@ const ServicesCards = () => {
             </Card>
             <Card>
                 <div className={styles.cardImg}>
-                    <Image src={test} alt='servuce image'></Image>
+                    <Image loading='lazy' src={test} alt='servuce image'></Image>
                 </div>
                 <div className={styles.cardText}>
                     <h2>

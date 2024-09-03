@@ -14,7 +14,7 @@ const Testimonials = () => {
             <div className={styles.cards}>
                 <TestimonialsCard>
                     <div className={styles.userImg}>
-                        <Image src={userImg} alt='User Image'></Image>
+                        <Image loading='lazy' src={userImg} alt='User Image'></Image>
                     </div>
                     <h4>
                         أحمد محمد
@@ -28,7 +28,7 @@ const Testimonials = () => {
                 </TestimonialsCard>
                 <TestimonialsCard>
                     <div className={styles.userImg}>
-                        <Image src={userImg} alt='User Image'></Image>
+                        <Image loading='lazy' src={userImg} alt='User Image'></Image>
                     </div>
                     <h4>
                         ماهر عبد الله
@@ -42,7 +42,7 @@ const Testimonials = () => {
                 </TestimonialsCard>
                 <TestimonialsCard>
                     <div className={styles.userImg}>
-                        <Image src={userImg} alt='User Image'></Image>
+                        <Image loading='lazy' src={userImg} alt='User Image'></Image>
                     </div>
                     <h4>
                         أحمد محمد
@@ -56,7 +56,7 @@ const Testimonials = () => {
                 </TestimonialsCard>
                 <TestimonialsCard>
                     <div className={styles.userImg}>
-                        <Image src={userImg} alt='User Image'></Image>
+                        <Image loading='lazy' src={userImg} alt='User Image'></Image>
                     </div>
                     <h4>
                         أحمد محمد

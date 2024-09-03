@@ -106,7 +106,7 @@ const ProjectsSlider = () => {
                             <Link key={img.id} href={`projects/${img.id}`}>
                                 <ProjectCard>
                                     <div className={styles.cardImg}>
-                                        <Image src={img.src} alt='Project Card'></Image>
+                                        <Image loading='lazy' src={img.src} alt='Project Card'></Image>
                                     </div>
                                     <div className={styles.cardText}>
                                         <h2>
