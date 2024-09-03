@@ -13,7 +13,7 @@ export type projectsImage = {
     id: string,
     name: string,
     place: string,
-    src: StaticImageData,
+    src: StaticImageData | string,
 }
 
 const projectsImages : projectsImage[] = [

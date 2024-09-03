@@ -21,6 +21,9 @@
         grid-template-columns: repeat(1,minmax(150px, 1fr));
     }
 }
+.projectId p{
+    margin-top: 30px;
+}
 .projectId .goBackLink{
     margin-top: 30px;
     margin-left: auto;
