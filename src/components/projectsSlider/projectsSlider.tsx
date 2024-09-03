@@ -34,16 +34,28 @@ const ProjectsSlider = () => {
     })
     const toggleHandler = (e: any, index: number) => {
         const toggleBtns: any = document.querySelectorAll("section ul li button")
+        const toggleLis: any = document.querySelectorAll("section ul li")
+        let noOfBtns = 0;
+        toggleLis.forEach((li: any) => {
+            const compStyles = window.getComputedStyle(li);
+            compStyles.getPropertyValue("background-color")
+            if(compStyles.getPropertyValue("background-color") === "rgba(0, 0, 0, 0)"){
+                noOfBtns++
+            }
+        })
+        console.log("noOfBtns",noOfBtns)
+        console.log("-25 * noOfBtns + 325", -25 * noOfBtns + 325)
         toggleBtns.forEach((btn: any) => {
             btn.removeAttribute("active-button")
         })
         e.target.setAttribute("active-button","true")
         const cards: any = document.querySelectorAll("section > div:nth-child(2) > div:last-child > *")
-        console.log(cards)
+        let parameter = noOfBtns === 9 ? 100 : noOfBtns === 5 ? 200 : noOfBtns === 3 ? 300 : 1 ;  
+        let secParameter = noOfBtns === 9 ? 20 : noOfBtns === 5 ? 40 : noOfBtns === 3 ? 60 : 1 ;  
         cards.forEach((card: { style: { cssText: string } }) => {
             card.style.cssText = `
                 transition-duration: ${0.3}s; 
-                transform: translateX(calc(${index * 300}% + ${index * 60}px))
+                transform: translateX(calc(${index * (parameter)}% + ${index * secParameter}px))
             `
         })
     }
@@ -61,13 +73,31 @@ const ProjectsSlider = () => {
                 </button>
                 <ul className={styles.toggleCards}>
                     <li>
-                        <button onClick={(e) => {toggleHandler(e, 0)}}></button>
+                        <button onClick={(e) => {toggleHandler(e, 0)}}>1</button>
                     </li>
                     <li>
-                        <button onClick={(e) => {toggleHandler(e, 1)}}></button>
+                        <button onClick={(e) => {toggleHandler(e, 1)}}>2</button>
                     </li>
                     <li>
-                        <button onClick={(e) => {toggleHandler(e, 2)}}></button>
+                        <button onClick={(e) => {toggleHandler(e, 2)}}>3</button>
+                    </li>
+                    <li>
+                        <button onClick={(e) => {toggleHandler(e, 3)}}>4</button>
+                    </li>
+                    <li>
+                        <button onClick={(e) => {toggleHandler(e, 4)}}>5</button>
+                    </li>
+                    <li>
+                        <button onClick={(e) => {toggleHandler(e, 5)}}>6</button>
+                    </li>
+                    <li>
+                        <button onClick={(e) => {toggleHandler(e, 6)}}>7</button>
+                    </li>
+                    <li>
+                        <button onClick={(e) => {toggleHandler(e, 7)}}>8</button>
+                    </li>
+                    <li>
+                        <button onClick={(e) => {toggleHandler(e, 8)}}>9</button>
                     </li>
                 </ul>
                 <div>
