@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./projects-sliders.module.css"
 import ProjectCard from './projectCard/projectCard'
 import test from "../../assets/imgs/1.jpg"
@@ -8,30 +8,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import MainHeading from '../mainHeading/mainHeading'
 import Link from 'next/link'
+import projectsImages from './projectsImages'
 const ProjectsSlider = () => {
-    const projectsIds = ["1","2","3","4","5","6","7","8","9"]
-    const slideLeft = (index: number) => {
-        const cards: any = document.querySelectorAll("section > div:nth-child(2) > div:last-child > *")
-        console.log(cards)
-        cards.forEach((card: { style: { cssText: string } }) => {
-            card.style.cssText = `
-                transform: translateX(calc(${index * 100}% + 20px))
-            `
-            })
+    let [activeIndex, setActiveIndex] = useState(0);
+    let [final, setFinal] = useState(false)
+    const slideLeft = () => {
+        const toggleBtns: any = document.querySelectorAll("section ul li button")
+        toggleBtns.forEach((btn: any) => {
+            btn.removeAttribute("active-button")
+        })
+        toggleBtns[activeIndex + 1].click();
     }
-    const slideRight = (index: number) => {
-        const cards: any = document.querySelectorAll("section > div:nth-child(2) > div:last-child > *")
-        console.log(cards)
-        cards.forEach((card: { style: { cssText: string } }) => {
-            card.style.cssText = `
-                transform: translateX(calc(-${index * 100}% - 20px))
-            `
-            })
+    const slideRight = () => {
+        const toggleBtns: any = document.querySelectorAll("section ul li button")
+        toggleBtns[activeIndex - 1].click();
     }
     useEffect(() => {
         const toggleBtns: any = document.querySelectorAll("section ul li button")
         toggleBtns[0].setAttribute("active-button","true")
-    })
+    },[])
     const toggleHandler = (e: any, index: number) => {
         const toggleBtns: any = document.querySelectorAll("section ul li button")
         const toggleLis: any = document.querySelectorAll("section ul li")
@@ -43,12 +38,17 @@ const ProjectsSlider = () => {
                 noOfBtns++
             }
         })
-        console.log("noOfBtns",noOfBtns)
-        console.log("-25 * noOfBtns + 325", -25 * noOfBtns + 325)
+        console.log("activeIndex",activeIndex)
         toggleBtns.forEach((btn: any) => {
             btn.removeAttribute("active-button")
         })
         e.target.setAttribute("active-button","true")
+        if(parseInt(e.target.innerText) === noOfBtns){
+            setFinal(true)
+        }else{
+            setFinal(false)
+        }
+        setActiveIndex(index);
         const cards: any = document.querySelectorAll("section > div:nth-child(2) > div:last-child > *")
         let parameter = noOfBtns === 9 ? 100 : noOfBtns === 5 ? 200 : noOfBtns === 3 ? 300 : 1 ;  
         let secParameter = noOfBtns === 9 ? 20 : noOfBtns === 5 ? 40 : noOfBtns === 3 ? 60 : 1 ;  
@@ -65,10 +65,10 @@ const ProjectsSlider = () => {
                 <h2>جميع أعمالنا</h2>
             </MainHeading>
             <div className={styles.projectsSlider}>
-                <button className={styles.arrow + " " + styles.right}>
+                <button style={{ display: activeIndex === 0 ? "none" : "flex" }} onClick={() => {slideRight()}} className={styles.arrow + " " + styles.right}>
                     <FontAwesomeIcon icon={faChevronRight} />
                 </button>
-                <button className={styles.arrow + " " + styles.left}>
+                <button style={{ display: final ? "none" : "flex" }} onClick={() => {slideLeft()}} className={styles.arrow + " " + styles.left}>
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
                 <ul className={styles.toggleCards}>
@@ -101,19 +101,19 @@ const ProjectsSlider = () => {
                     </li>
                 </ul>
                 <div>
-                    {projectsIds.map((id) => {
+                    {projectsImages.map((img) => {
                         return(
-                            <Link key={id} href={`projects/${id}`}>
+                            <Link key={img.id} href={`projects/${img.id}`}>
                                 <ProjectCard>
                                     <div className={styles.cardImg}>
-                                        <Image src={test} alt='Project Card'></Image>
+                                        <Image src={img.src} alt='Project Card'></Image>
                                     </div>
                                     <div className={styles.cardText}>
                                         <h2>
-                                            مشروع {id}
+                                            {img.name}
                                         </h2>
                                         <span>
-                                            مصر
+                                            {img.place}
                                         </span>
                                     </div>
                                 </ProjectCard>
