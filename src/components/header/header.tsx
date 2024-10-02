@@ -69,7 +69,7 @@ const Header = () => {
                 <Link className={pathname === "/projects" ? styles.active : ""} href={"/projects"}>
                     المشاريع
                 </Link>
-                <Link className={pathname === "/supplies" ? styles.active : ""} href={"/supplies"}>
+                <Link className={pathname === "/products" ? styles.active : ""} href={"/products"}>
                     <span>
                         المنتجات
                     </span>

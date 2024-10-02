@@ -19,8 +19,8 @@ export default function SubPagesLayout({
         setHeadingText("خدماتنا")
       }else if(pathname === "/projects"){
         setHeadingText("مشاريعنا")
-      }else if(pathname === "/supplies"){
-        setHeadingText("التوريدات")
+      }else if(pathname === "/products"){
+        setHeadingText("المنتجات")
       }else if(pathname === "/about"){
         setHeadingText("من نحن؟")
       }else if(pathname === "/contact"){

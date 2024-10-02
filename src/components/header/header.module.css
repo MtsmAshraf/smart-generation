@@ -73,6 +73,10 @@
     padding-top: 10px;
     display: none;
 }
+.header nav a .moreLinks > ul{
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 2px 2px 0px #ccc;
+}
 .header nav a .moreLinks svg{
     font-size: 14px;
 }
