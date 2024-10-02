@@ -56,24 +56,39 @@
 .header nav a{
     color: #fff;
     transition: var(--main-transition);
-    text-wrap: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+}
+.header nav > a{
+    text-wrap: nowrap;
 }
 .header nav a:has(.moreLinks){
     position: relative;
 }
 .header nav a .moreLinks{
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100%);
+    padding-top: 10px;
+    /* display: none; */
+}
+.header nav a .moreLinks svg{
+    font-size: 14px;
+}
+.header nav a .moreLinks > ul{
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: var(--bg-color);
     transition: var(--main-transition);
-    border-radius: 6px;
+    border-radius: 0px 0px 6px 6px;
     font-family: "Roboto", sans-serif;
+}
+.header nav a .moreLinks > ul li:not(:last-child){
+    border-bottom: 1px solid #ccc;
+}
+.header nav a:has(.moreLinks):hover .moreLinks{
+    display: block;
 }
 .header nav a .moreLinks a{
     color: var(--text-color);
@@ -97,10 +112,63 @@
     top: 0;
     background-color: var(--bg-color);
     border-radius: 0px 6px 6px 0px;
+    overflow: hidden;
+    z-index: 2;
     display: none;
 }
 .header nav a .moreLinks a:hover ul{
     display: block;
+}
+@media (max-width: 992px) {
+    .header nav a .moreLinks li:nth-child(1) ul,
+    .header nav a .moreLinks li:nth-child(2) ul{
+        width: 300px;
+        text-wrap: wrap;
+        text-align: left;
+    }
+}
+@media (max-width: 767px) {
+    .header nav a .moreLinks{
+        width: calc(100vw - 40px);
+    }
+    .header nav a .moreLinks > ul{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        direction: ltr !important;
+    }
+    .header nav a .moreLinks > ul li:not(:last-child){
+        border-bottom: none;
+    }
+    .header nav a .moreLinks > ul a ul li:not(:last-child){
+        border-bottom: 1px solid #ccc;
+    }
+    .header nav a .moreLinks a{
+        gap: 10px;
+    }
+    .header nav a .moreLinks a svg{
+        transform: rotateZ(90deg);
+    }
+    .header nav a .moreLinks a ul{
+        left: 0;
+        top: 100%;
+    }
+    .header nav a .moreLinks li:nth-child(1) ul,
+    .header nav a .moreLinks li:nth-child(2) ul{
+        width: fit-content;
+        text-wrap: nowrap;
+    }
+}
+@media (max-width: 600px) {
+    .header nav a .moreLinks li:nth-child(1) ul,
+    .header nav a .moreLinks li:nth-child(2) ul{
+        width: 300px;
+        text-wrap: wrap;
+        text-align: left;
+    }
 }
 .header nav a svg{
     font-size: 14px;
