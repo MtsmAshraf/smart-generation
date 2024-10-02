@@ -57,6 +57,53 @@
     color: #fff;
     transition: var(--main-transition);
     text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.header nav a:has(.moreLinks){
+    position: relative;
+}
+.header nav a .moreLinks{
+    position: absolute;
+    top: calc(100% + 10px);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--bg-color);
+    transition: var(--main-transition);
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+}
+.header nav a .moreLinks a{
+    color: var(--text-color);
+    transition: var(--main-transition);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    direction: ltr !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header nav a .moreLinks a:hover{
+    background-color: var(--main-color);
+}
+.header nav a .moreLinks a ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: var(--bg-color);
+    border-radius: 0px 6px 6px 0px;
+    display: none;
+}
+.header nav a .moreLinks a:hover ul{
+    display: block;
+}
+.header nav a svg{
+    font-size: 14px;
 }
 .header nav a:hover,
 .header nav a.active{
