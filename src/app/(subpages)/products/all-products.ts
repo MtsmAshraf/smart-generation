@@ -42,7 +42,7 @@ const wonders : WonderImage[] = [
         id: "4",
         name: "Servo Drive",
         description: "Efficiency, stability and intelligence",
-        href: "/servoes",
+        href: "/servoes-drives",
         src: image4,
         alt: "Servoes Image"
     }

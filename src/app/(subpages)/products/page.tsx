@@ -23,7 +23,7 @@ const Products = () => {
                       <p>
                         {product.description}
                       </p>
-                      <Link href={product.href}>More</Link>
+                      <Link href={`/products/${product.href}`}>More</Link>
                     </div>
                   </li>
                 )

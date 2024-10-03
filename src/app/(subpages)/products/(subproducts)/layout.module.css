@@ -1,0 +1,68 @@
+.subProductsLayout *{
+    direction: ltr !important;
+    font-family: "Roboto", sans-serif;
+}
+.subProductsLayout > div > div h3{
+    font-size: 24px;
+}
+.subProductsLayout > div > div > div{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 100px;
+}
+.subProductsLayout > div > div > div > div{
+    background-color: #eee;
+    text-align: center;
+}
+.subProductsLayout > div > div > div > div:hover img{
+    transform: scale(1.03);
+}
+.subProductsLayout > div > div > div > div a:has(img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-bottom: 30px;
+    /* padding: 0px 40px; */
+}
+.subProductsLayout > div > div > div > div a:has(img) img{
+    width: 300px;
+    transition: var(--main-transition);
+    object-fit: contain;
+}
+.subProductsLayout > div > div > div > div > div{
+    padding: 20px 60px;
+}
+.subProductsLayout > div > div > div > div p{
+    margin-bottom: 16px;
+}
+.subProductsLayout > div > div > div > div p a{
+    color: var(--sec-color);
+    font-weight: bold;
+}
+
+.subProductsLayout > div > div > div > div span a{
+    border: 1px solid var(--sec-color);
+    padding: 4px 20px;
+    border-radius: 6px;
+    transition: var(--main-transition);
+    font-size: 14px;
+    color: var(--sec-color);
+}
+.subProductsLayout > div > div > div > div span a:hover{
+    background-color: var(--sec-color);
+    color: #fff;
+}
+@media (max-width: 992px) {
+    .subProductsLayout > div > div > div{
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        row-gap: 80px;
+    }
+}
+@media (max-width: 767px) {
+    .subProductsLayout > div > div > div{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        row-gap: 120px;
+}
+}

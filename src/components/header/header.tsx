@@ -79,7 +79,7 @@ const Header = () => {
                         <div className={styles.moreLinks}>
                         <ul>
                             <li>
-                                <Link href={"/"}>
+                                <Link href={"/products/inverters"}>
                                     <span>
                                         Inverter
                                     </span>
@@ -104,7 +104,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/"}>
+                                <Link href={"/products/plcs"}>
                                     <span>
                                         PLC
                                     </span>
@@ -124,7 +124,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/"}>
+                                <Link href={"/products/hmis"}>
                                     <span>
                                         HMI
                                     </span>
@@ -139,7 +139,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/"}>
+                                <Link href={"/products/servo-drives"}>
                                     <span>
                                         Servo Drive
                                     </span>
@@ -159,7 +159,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/"}>
+                                <Link href={""}>
                                     <span>
                                         Accessories
                                     </span>

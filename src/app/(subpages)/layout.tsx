@@ -13,13 +13,14 @@ export default function SubPagesLayout({
     children: React.ReactNode;
   }>) {
     const pathname = usePathname()
+    console.log(pathname.split("/")[1])
     let [headingText, setHeadingText] = useState("")
     useEffect(() => {
       if(pathname === "/services"){
         setHeadingText("خدماتنا")
       }else if(pathname === "/projects"){
         setHeadingText("مشاريعنا")
-      }else if(pathname === "/products"){
+      }else if(pathname.split("/")[1] === "products"){
         setHeadingText("المنتجات")
       }else if(pathname === "/about"){
         setHeadingText("من نحن؟")
