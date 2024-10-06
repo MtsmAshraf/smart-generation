@@ -44,7 +44,7 @@ export type Plc = {
     src: StaticImageData,
     alt: string,
     desctiptionParagraph: string,
-    desctiptionUl: string[],
+    desctiptionUl: string[] | null,
     features: Feature[],
     catImgs: StaticImageData[],
 }
@@ -58,7 +58,7 @@ const plcs : Plc[] = [
         src: image1,
         alt: "Is a simple sport programmable controller with 4 pulse outputs based on the VC10 series, built-in 2-way l00KHz + 2-way 60KHz high-speed pulse outputs, 2-way 50KHz high-speed counting. It has all the functions of the VC10, and optimizes and improves the performance of the product, making it extremely cost-effective.",
         desctiptionParagraph: "As the VFD manufacturer in china, V&T has rich experience in electric drive fields. Adopting brand-new vector control technology, VTS series inverter can be compatible with the control of synchronous motor, asynchronous motor and reluctance motor, as well as the encoders with multiple specification and abundant communication interface and support English liquid crystal display, five-digit digital pipe display operation panel; and with the protection functions of usability, extendability, small volume, light weight and perfection, VTS series Mini AC drive can meet the medium-high application demands.",
-        desctiptionUl: ["Multifunctional", "High performance", "Small volume", "Easy to use"],
+        desctiptionUl: null,
         features: [
             {
                 heading: null,
@@ -95,7 +95,7 @@ const plcs : Plc[] = [
         src: image2,
         alt: "VC20 Series high-performance general-purpose PLC Image",
         desctiptionParagraph: "VC20 series is a high-performance general-purpose small PLC, with powerful I/O expansion capabilities and communication networking capabilities, can be used for high-speed data processing and analogue processing, with high stability, high reliability, large capacity, high-speed computing capabilities. It has powerful functions and  high cost performance.",
-        desctiptionUl: ["Compact structure", "Multiple operation panels available", "Support multiple control methods", "Customizable"],
+        desctiptionUl: null,
         features: [
             {
                 heading: "Reliable programme security",

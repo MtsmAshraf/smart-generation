@@ -55,7 +55,7 @@ export type Inverter = {
     src: StaticImageData,
     alt: string,
     desctiptionParagraph: string,
-    desctiptionUl: string[],
+    desctiptionUl: string[] | null,
     features: Feature[],
     catImgs: StaticImageData[],
 }

@@ -12,6 +12,7 @@ import { faBars, faChevronDown, faChevronRight, faXmark } from '@fortawesome/fre
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import inverters, { Inverter } from "../../app/(subpages)/products/(subproducts)/inverters/inverters"
 import plcs, { Plc } from "../../app/(subpages)/products/(subproducts)/plcs/plcs"
+import hmis, { Hmi } from "../../app/(subpages)/products/(subproducts)/hmis/hmi"
 const Header = () => {
     const pathname = usePathname()
     const [isClient, setIsClient] = useState(false)
@@ -127,11 +128,17 @@ const Header = () => {
                                     </span>
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
-                                        <li>
-                                            <Link href={"/"}>
-                                                VT DP-2000 series HMI
-                                            </Link>
-                                        </li>
+                                        {
+                                            hmis.map((hmi: Hmi) => {
+                                                return(
+                                                    <li key={hmi.id}>
+                                                        <Link href={`/products/hmis/${hmi.id}`}>
+                                                            {hmi.description}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            })
+                                        }
                                     </ul>
                                 </Link>
                             </li>
