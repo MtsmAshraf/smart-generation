@@ -65,8 +65,8 @@ const page = ({ params }: Props) => {
             {
               inverter.catImgs.map((img: StaticImageData, index: number) => {
                 return(
-                  <div className={styles.specsImg}>
-                    <Image key={index} src={img} alt={`${inverter.description} Specification Parameters Image`}></Image>
+                  <div key={index} className={styles.specsImg}>
+                    <Image src={img} alt={`${inverter.description} Specification Parameters Image`}></Image>
                   </div>
                 )
               })
