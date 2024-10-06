@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import inverters, { Inverter } from "../../app/(subpages)/products/(subproducts)/inverters/inverters"
 import plcs, { Plc } from "../../app/(subpages)/products/(subproducts)/plcs/plcs"
 import hmis, { Hmi } from "../../app/(subpages)/products/(subproducts)/hmis/hmi"
+import servoDrives, { ServoDrive } from '@/app/(subpages)/products/(subproducts)/servo-drives/servo-drives'
 const Header = () => {
     const pathname = usePathname()
     const [isClient, setIsClient] = useState(false)
@@ -149,16 +150,17 @@ const Header = () => {
                                     </span>
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
-                                        <li>
-                                            <Link href={"/"}>
-                                                VS510 Series servo drive
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href={"/"}>
-                                                VS512 series servo driver
-                                            </Link>
-                                        </li>
+                                        {
+                                            servoDrives.map((servoDrive: ServoDrive) => {
+                                                return(
+                                                    <li key={servoDrive.id}>
+                                                        <Link href={`/products/servo-drives/${servoDrive.id}`}>
+                                                            {servoDrive.description}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            })
+                                        }
                                     </ul>
                                 </Link>
                             </li>
