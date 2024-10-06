@@ -8,7 +8,7 @@ export default function subProductsLayout({
   }>) {
   return (
     <div className={styles.subProductsLayout}>
-      <div className='container'>{children}</div>
+      {children}
     </div>
   )
 }

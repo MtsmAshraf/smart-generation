@@ -113,7 +113,7 @@ const inverters : Inverter[] = [
                 paragraph: "355kW~500kW is a cabinet type frequency converter, which can customize the incoming and outgoing methods according to customer and on-site needs."
             }
         ],
-        catImgs: [cat1i2, cat1i2]
+        catImgs: [cat1i2, cat2i2]
     },
     {
         id: "3",

@@ -1,3 +1,103 @@
-.inverterId{
+.inverterId .description > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
     /* background-color: red; */
+}
+.inverterId .description > div > *{
+    flex: 1;
+}
+.inverterId .description .slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inverterId .description .text h2{
+    color: var(--sec-color);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.inverterId .description .text p{
+    color: var(--sec-text-color);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+.inverterId .description .text ul{
+    list-style: disc;
+    padding-left: 18px;
+    color: var(--sec-text-color);
+    line-height: 1.6;
+}
+.inverterId .features{
+    background-color: #eee;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.inverterId .features h2{
+    color: var(--sec-color);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.inverterId .features .featuresDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inverterId .features .featuresDetails > *{
+    flex: 1;
+}
+.inverterId .features .featuresDetails .featuresImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inverterId .features .featuresDetails ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+.inverterId .features .featuresDetails ul li{
+    background-color: var(--bg-color);
+    padding: 12px 30px;
+    border-radius: 0px 20px;
+    font-size: 14px;
+    color: var(--sec-text-color);
+    line-height: 1.4;
+    width: 400px;
+}
+.inverterId .features .featuresDetails ul li h4{
+    margin-bottom: 4px;
+    color: var(--sec-color);
+}
+.inverterId .features .featuresDetails ul li p{
+    color: var(--sec-text-color);
+}
+.inverterId .specs{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.inverterId .specs h2{
+    color: var(--sec-color);
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+.inverterId .specs .specsImg{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.inverterId .specs img{
+    object-fit: contain;
+    height: 100%;
+}
+.inverterId .download{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #eee;
+}
+.inverterId .download h2{
+    color: var(--sec-color);
+    font-weight: normal;
 }
