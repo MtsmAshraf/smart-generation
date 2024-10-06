@@ -4,7 +4,7 @@ import image2 from "../../../assets/imgs/all-products/PLCs.png"
 import image3 from "../../../assets/imgs/all-products/HMIs.png"
 import image4 from "../../../assets/imgs/all-products/Servoes.png"
 
-export type WonderImage = {
+export type Product = {
     id: string,
     name: string,
     description: string,
@@ -13,7 +13,7 @@ export type WonderImage = {
     alt: string
 }
 
-const wonders : WonderImage[] = [
+const products : Product[] = [
     {
         id: "1",
         name: "Inverter",
@@ -48,4 +48,4 @@ const wonders : WonderImage[] = [
     }
 ]
 
-export default wonders;
+export default products;

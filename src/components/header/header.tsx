@@ -10,7 +10,7 @@ import Button from '../button/button'
 import { usePathname } from 'next/navigation'
 import { faBars, faChevronDown, faChevronRight, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import inverters, { Inverter } from "../../app/(subpages)/products/(subproducts)/inverters/inverters"
 
 const Header = () => {
     const pathname = usePathname()
@@ -85,21 +85,17 @@ const Header = () => {
                                     </span>
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
-                                        <li>
-                                            <Link href={"/"}>
-                                                VTS Series Universal Variable Speed AC Drive
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href={"/"}>
-                                                VTS30 Series frequency converter
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href={"/"}>
-                                                V9 Series High Performance Universal Speed AC Drive
-                                            </Link>
-                                        </li>
+                                        {
+                                            inverters.map((inverter: Inverter) => {
+                                                return(
+                                                    <li key={inverter.id}>
+                                                        <Link href={`/products/inverters/${inverter.id}`} replace>
+                                                            {inverter.description}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            })
+                                        }
                                     </ul>
                                 </Link>
                             </li>
