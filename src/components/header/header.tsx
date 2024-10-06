@@ -11,7 +11,7 @@ import { usePathname } from 'next/navigation'
 import { faBars, faChevronDown, faChevronRight, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import inverters, { Inverter } from "../../app/(subpages)/products/(subproducts)/inverters/inverters"
-
+import plcs, { Plc } from "../../app/(subpages)/products/(subproducts)/plcs/plcs"
 const Header = () => {
     const pathname = usePathname()
     const [isClient, setIsClient] = useState(false)
@@ -106,16 +106,17 @@ const Header = () => {
                                     </span>
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
-                                        <li>
-                                            <Link href={"/"}>
-                                                VC10V Simple and sporty small PLC
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href={"/"}>
-                                                VC20 Series high-performance general-purpose PLC
-                                            </Link>
-                                        </li>
+                                        {
+                                            plcs.map((plc: Plc) => {
+                                                return(
+                                                    <li key={plc.id}>
+                                                        <Link href={`/products/plcs/${plc.id}`}>
+                                                            {plc.description}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            })
+                                        }
                                     </ul>
                                 </Link>
                             </li>
