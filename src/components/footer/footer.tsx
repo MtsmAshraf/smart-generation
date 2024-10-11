@@ -6,18 +6,22 @@ import { faFacebook, faFacebookF, faInstagram, faLinkedin, faTwitter } from '@fo
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 import { faClock, faLocation, faLocationArrow, faLocationPin, faLocationPinLock, faPhone, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-const Footer = () => {
+const Footer = ({
+  l
+}: {
+  l: string,
+}) => {
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div>
           <h4>الأقسام</h4>
           <div>
-            <Link href="/services">الخدمات</Link>
-            <Link href="/projects">المشاريع</Link>
-            <Link href="/supplies">التوريدات</Link>
-            <Link href="/about">عن الشركة</Link>
-            <Link href="/contact">اتصل بنا</Link>
+            <Link href={`/${l}/services`}>الخدمات</Link>
+            <Link href={`/${l}/projects`}>المشاريع</Link>
+            <Link href={`/${l}/supplies`}>التوريدات</Link>
+            <Link href={`/${l}/about`}>عن الشركة</Link>
+            <Link href={`/${l}/contact`}>اتصل بنا</Link>
           </div>
         </div>
         <div>

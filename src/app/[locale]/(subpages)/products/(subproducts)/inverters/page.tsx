@@ -2,7 +2,11 @@ import React from 'react'
 import inverters from "./inverters"
 import Link from 'next/link'
 import Image from 'next/image'
-const Inverters = () => {
+const Inverters = ({
+  params: {locale}
+} : {
+  params: {locale: string}
+}) => {
   return (
     <div>
       <div className="container">
@@ -14,17 +18,17 @@ const Inverters = () => {
             inverters.map((inverter) => {
               return(
                 <div key={inverter.id} id='grid-cards'>
-                    <Link href={`/products/inverters/${inverter.id}`}>
+                    <Link href={`/${locale}/products/inverters/${inverter.id}`}>
                       <Image src={inverter.src} alt={inverter.alt} loading='lazy'></Image>
                     </Link>
                     <div>
                       <p>
-                        <Link href={`/products/inverters/${inverter.id}`}>
+                        <Link href={`/${locale}/products/inverters/${inverter.id}`}>
                           {inverter.description}
                         </Link>
                       </p>
                       <span>
-                        <Link href={`/products/inverters/${inverter.id}`}>
+                        <Link href={`/${locale}/products/inverters/${inverter.id}`}>
                           More
                         </Link>
                       </span>

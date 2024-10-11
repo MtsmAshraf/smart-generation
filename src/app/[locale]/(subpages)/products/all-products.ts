@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image"
-import image1 from "../../../assets/imgs/all-products/inverters.png"
-import image2 from "../../../assets/imgs/all-products/PLCs.png"
-import image3 from "../../../assets/imgs/all-products/HMIs.png"
-import image4 from "../../../assets/imgs/all-products/Servoes.png"
+import image1 from "../../../../assets/imgs/all-products/inverters.png"
+import image2 from "../../../../assets/imgs/all-products/PLCs.png"
+import image3 from "../../../../assets/imgs/all-products/HMIs.png"
+import image4 from "../../../../assets/imgs/all-products/Servoes.png"
 
 export type Product = {
     id: string,

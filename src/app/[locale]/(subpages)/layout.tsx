@@ -2,29 +2,31 @@
 
 import React, { useEffect, useState } from 'react'
 import styles from "./sub-pages-layout.module.css"
-import bg from "../../assets/imgs/home-bg.jpg"
+import bg from "../../../assets/imgs/home-bg.jpg"
 import { usePathname } from 'next/navigation';
 
 
 
 export default function SubPagesLayout({
     children,
-  }: Readonly<{
+    params: {locale}
+}: { 
     children: React.ReactNode;
-  }>) {
+    params: {locale: string}
+  }) {
     const pathname = usePathname()
     console.log(pathname.split("/")[1])
     let [headingText, setHeadingText] = useState("")
     useEffect(() => {
-      if(pathname === "/services"){
+      if(pathname === `/${locale}/services`){
         setHeadingText("خدماتنا")
-      }else if(pathname === "/projects"){
+      }else if(pathname === `/${locale}/projects`){
         setHeadingText("مشاريعنا")
-      }else if(pathname.split("/")[1] === "products"){
+      }else if(pathname.split("/")[2] === "products"){
         setHeadingText("المنتجات")
-      }else if(pathname === "/about"){
+      }else if(pathname === `/${locale}/about`){
         setHeadingText("من نحن؟")
-      }else if(pathname === "/contact"){
+      }else if(pathname === `/${locale}/contact`){
         setHeadingText("اتصل بنا")
       }
     })

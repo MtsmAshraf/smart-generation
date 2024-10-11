@@ -1,19 +1,29 @@
+"use client"
 import Button from "@/components/button/button";
 import Image from "next/image";
-import Bg from "../assets/imgs/home-bg.jpg"
+import Bg from "../../assets/imgs/home-bg.jpg"
 import ServicesCards from "@/components/servicesCards/servicesCards";
 import StatsCard from "@/components/statsCard/statsCard";
 import Vision from "@/components/vision/vision";
 import Testimonials from "@/components/testimonials/testimonials";
 import Contact from "@/components/contact/contact";
+import "./globals.css"
 
-export default function Home() {
+import {useTranslations} from 'next-intl';
+
+export default function Home({
+  params: {locale}
+}: {
+  params: {locale: string}
+}) {
+  const t = useTranslations('HomePage');
   return (
     <main>
       <section className="home" style={{backgroundImage: `url(${Bg.src})`}}>
         <div className="overlay"></div>
         <div className="container">
           <div>
+          <h1>{t('title')}</h1>
             <h1>
               سمارت جينيريشن,
             </h1>

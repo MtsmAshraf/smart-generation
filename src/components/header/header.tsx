@@ -10,11 +10,18 @@ import Button from '../button/button'
 import { usePathname } from 'next/navigation'
 import { faBars, faChevronDown, faChevronRight, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import inverters, { Inverter } from "../../app/(subpages)/products/(subproducts)/inverters/inverters"
-import plcs, { Plc } from "../../app/(subpages)/products/(subproducts)/plcs/plcs"
-import hmis, { Hmi } from "../../app/(subpages)/products/(subproducts)/hmis/hmi"
-import servoDrives, { ServoDrive } from '@/app/(subpages)/products/(subproducts)/servo-drives/servo-drives'
-const Header = () => {
+import inverters, { Inverter } from "../../app/[locale]/(subpages)/products/(subproducts)/inverters/inverters"
+import plcs, { Plc } from "../../app/[locale]/(subpages)/products/(subproducts)/plcs/plcs"
+import hmis, { Hmi } from "../../app/[locale]/(subpages)/products/(subproducts)/hmis/hmi"
+import servoDrives, { ServoDrive } from '@/app/[locale]/(subpages)/products/(subproducts)/servo-drives/servo-drives'
+const Header = ({
+    children,
+    l
+  }: {
+    children: React.ReactNode;
+    l: string,
+  })  => {
+    
     const pathname = usePathname()
     const [isClient, setIsClient] = useState(false)
     const [scrolled, setScrolled] = useState(false)
@@ -62,16 +69,16 @@ const Header = () => {
                 </Link>
             </div>
             <nav>
-                <Link className={pathname === "/" ? styles.active : ""} href={"/"}>
+                <Link className={pathname === `/${l}/` ? styles.active : ""} href={`/${l}/`}>
                     الرئيسية
                 </Link>
-                <Link className={pathname === "/services" ? styles.active : ""} href={"/services"}>
+                <Link className={pathname === `/${l}/services` ? styles.active : ""} href={`/${l}/services`}>
                     الخدمات
                 </Link>
-                <Link className={pathname === "/projects" ? styles.active : ""} href={"/projects"}>
+                <Link className={pathname === `/${l}/projects` ? styles.active : ""} href={`/${l}/projects`}>
                     المشاريع
                 </Link>
-                <Link className={pathname === "/products" ? styles.active : ""} href={"/products"}>
+                <Link className={pathname === `/${l}/products` ? styles.active : ""} href={`/${l}/products`}>
                     <span>
                         المنتجات
                     </span>
@@ -81,7 +88,7 @@ const Header = () => {
                         <div className={styles.moreLinks}>
                         <ul>
                             <li>
-                                <Link href={"/products/inverters"}>
+                                <Link href={`/${l}/products/inverters`}>
                                     <span>
                                         Inverter
                                     </span>
@@ -91,7 +98,7 @@ const Header = () => {
                                             inverters.map((inverter: Inverter) => {
                                                 return(
                                                     <li key={inverter.id}>
-                                                        <Link href={`/products/inverters/${inverter.id}`} replace>
+                                                        <Link href={`/${l}/products/inverters/${inverter.id}`} replace>
                                                             {inverter.description}
                                                         </Link>
                                                     </li>
@@ -102,7 +109,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/products/plcs"}>
+                                <Link href={`/${l}/products/plcs`}>
                                     <span>
                                         PLC
                                     </span>
@@ -112,7 +119,7 @@ const Header = () => {
                                             plcs.map((plc: Plc) => {
                                                 return(
                                                     <li key={plc.id}>
-                                                        <Link href={`/products/plcs/${plc.id}`}>
+                                                        <Link href={`/${l}/products/plcs/${plc.id}`}>
                                                             {plc.description}
                                                         </Link>
                                                     </li>
@@ -123,7 +130,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/products/hmis"}>
+                                <Link href={`/${l}/products/hmis`}>
                                     <span>
                                         HMI
                                     </span>
@@ -133,7 +140,7 @@ const Header = () => {
                                             hmis.map((hmi: Hmi) => {
                                                 return(
                                                     <li key={hmi.id}>
-                                                        <Link href={`/products/hmis/${hmi.id}`}>
+                                                        <Link href={`/${l}/products/hmis/${hmi.id}`}>
                                                             {hmi.description}
                                                         </Link>
                                                     </li>
@@ -144,7 +151,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/products/servo-drives"}>
+                                <Link href={`/${l}/products/servo-drives`}>
                                     <span>
                                         Servo Drive
                                     </span>
@@ -154,7 +161,7 @@ const Header = () => {
                                             servoDrives.map((servoDrive: ServoDrive) => {
                                                 return(
                                                     <li key={servoDrive.id}>
-                                                        <Link href={`/products/servo-drives/${servoDrive.id}`}>
+                                                        <Link href={`/${l}/products/servo-drives/${servoDrive.id}`}>
                                                             {servoDrive.description}
                                                         </Link>
                                                     </li>
@@ -188,10 +195,10 @@ const Header = () => {
                         : null 
                     }
                 </Link>
-                <Link className={pathname === "/about" ? styles.active : ""} href={"/about"}>
+                <Link className={pathname === `/${l}/about` ? styles.active : ""} href={`/${l}/about`}>
                     عن الشركة
                 </Link>
-                <Link className={pathname === "/contact" ? styles.active : ""} href={"/contact"}>
+                <Link className={pathname === `/${l}/contact` ? styles.active : ""} href={`/${l}/contact`}>
                     اتصل بنا
                 </Link>
             </nav>

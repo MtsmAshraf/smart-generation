@@ -9,7 +9,11 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import MainHeading from '../mainHeading/mainHeading'
 import Link from 'next/link'
 import projectsImages from './projectsImages'
-const ProjectsSlider = () => {
+const ProjectsSlider = ({
+    l
+}: {
+    l: string
+}) => {
     let [activeIndex, setActiveIndex] = useState(0);
     let [final, setFinal] = useState(false)
     const slideLeft = () => {
@@ -38,7 +42,6 @@ const ProjectsSlider = () => {
                 noOfBtns++
             }
         })
-        console.log("activeIndex",activeIndex)
         toggleBtns.forEach((btn: any) => {
             btn.removeAttribute("active-button")
         })
@@ -103,7 +106,7 @@ const ProjectsSlider = () => {
                 <div>
                     {projectsImages.map((img) => {
                         return(
-                            <Link key={img.id} href={`projects/${img.id}`}>
+                            <Link key={img.id} href={`/${l}/projects/${img.id}`}>
                                 <ProjectCard>
                                     <div className={styles.cardImg}>
                                         <Image loading='lazy' src={img.src} alt='Project Card'></Image>

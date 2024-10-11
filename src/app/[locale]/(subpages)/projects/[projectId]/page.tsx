@@ -2,14 +2,17 @@ import React from 'react'
 import styles from "./project-id.module.css"
 import MainHeading from '@/components/mainHeading/mainHeading'
 import Image from 'next/image'
-import test from "../../../../assets/imgs/1.jpg"
+import test from "../../../../../assets/imgs/1.jpg"
 import Link from 'next/link'
 import projectsImages from '@/components/projectsSlider/projectsImages'
 
 
-const ProjectId = ({ params } : any) => {
-  const foundProject = projectsImages.find((project) => project.id === params.projectId) || { id: 113123213, name: "not Found", place: "NOT FOUND", src: test }
-  console.log(foundProject)
+const ProjectId = ({
+    params: {locale, projectId}
+  } : {
+    params: {locale: string, projectId: string}
+  }) => {
+  const foundProject = projectsImages.find((project) => project.id === projectId) || { id: 113123213, name: "not Found", place: "NOT FOUND", src: test }
   return (
     <section className={styles.projectId}>
       <div className="container">
@@ -38,7 +41,7 @@ const ProjectId = ({ params } : any) => {
           </div>
         </div>
         <div className={styles.goBackLink}>
-          <Link href={"/projects"}>باقي المشاريع</Link>
+          <Link href={`/${locale}/projects`}>باقي المشاريع</Link>
         </div>
       </div>
     </section>

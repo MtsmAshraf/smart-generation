@@ -1,11 +1,15 @@
 import ProjectsSlider from '@/components/projectsSlider/projectsSlider'
 import React from 'react'
 
-const Projects = () => {
+const Projects = ({
+  params: {locale}
+}: {
+  params: {locale: string}
+}) => {
   return (
     <div>
       <div className="container">
-        <ProjectsSlider></ProjectsSlider>
+        <ProjectsSlider l={locale}></ProjectsSlider>
       </div>
     </div>
   )

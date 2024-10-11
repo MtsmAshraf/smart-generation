@@ -3,7 +3,11 @@ import styles from "./products.module.css"
 import allProducts from "./all-products"
 import Link from 'next/link'
 import Image from 'next/image'
-const Products = () => {
+const Products = ({
+  params: {locale}
+} : {
+  params: {locale: string}
+}) => {
   return (
     <div className={styles.products}>
       <div className="container">
@@ -13,7 +17,7 @@ const Products = () => {
               allProducts.map((product) => {
                 return(
                   <li key={product.id}>
-                    <Link href={`/products/${product.href}`}>
+                    <Link href={`/${locale}/products/${product.href}`}>
                       <Image src={product.src} alt={product.alt} loading='lazy'></Image>
                     </Link>
                     <div className={styles.text}>
@@ -23,7 +27,7 @@ const Products = () => {
                       <p>
                         {product.description}
                       </p>
-                      <Link href={`/products/${product.href}`}>More</Link>
+                      <Link href={`/${locale}/products/${product.href}`}>More</Link>
                     </div>
                   </li>
                 )
