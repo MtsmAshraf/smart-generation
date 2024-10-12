@@ -14,6 +14,7 @@ import inverters, { Inverter } from "../../app/[locale]/(subpages)/products/(sub
 import plcs, { Plc } from "../../app/[locale]/(subpages)/products/(subproducts)/plcs/plcs"
 import hmis, { Hmi } from "../../app/[locale]/(subpages)/products/(subproducts)/hmis/hmi"
 import servoDrives, { ServoDrive } from '@/app/[locale]/(subpages)/products/(subproducts)/servo-drives/servo-drives'
+import LanguageSwitch from '../languageSwitch/languageSwitch'
 const Header = ({
     children,
     l
@@ -202,9 +203,10 @@ const Header = ({
                     اتصل بنا
                 </Link>
             </nav>
-            <Button inverted={false}>
+            {/* <Button inverted={false}>
                 En
-            </Button>
+            </Button> */}
+            <LanguageSwitch lo={l} />
         </div>
     </header>
   )
