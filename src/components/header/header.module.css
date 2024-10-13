@@ -5,8 +5,11 @@
     width: 100%;
     z-index: 3;
     transition: var(--main-transition);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header.en{
+    direction: ltr;
 }
 .header.scrolled{
     background-color: var(--sec-color);
@@ -187,6 +190,15 @@
     padding-right: 10px;
     /* background-color: red; */
 }
+body:has(header#en) header {
+    background-color: red;
+}
+.header.en nav a:not(:first-child){
+    border-right: none;
+    border-left: 1px solid var(--main-color);
+    padding-left: 10px;
+    padding-right: 0px;
+}
 @media (max-width: 992px) {
     .header nav{
         position: absolute;
@@ -231,6 +243,10 @@
         padding-right: 0px;
         padding-top: 10px;
         /* background-color: red; */
+    }
+    .header.en nav a:not(:first-child){
+        border-left: none;
+        padding-left: 0px;
     }
     .header button.toggleNav{
         display: flex;

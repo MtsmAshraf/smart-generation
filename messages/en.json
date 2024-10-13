@@ -1,6 +1,33 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
+  "Header": {
+    "Home": "Home",
+    "Services": "Services",
+    "Projects": "Projects",
+    "Products": "Products",
+    "About Us": "About Us",
+    "Contact": "Contact"
+  },
+  "HomePage": {
+      "heroSection": {
+        "coName": "Smart Generation",
+        "greeting": "welcomes you",
+        "heroP": "We welcome you to the official website of the leading company in the field of engineering and construction. With the latest advanced capabilities, we will implement a project for you beyond imagination.",
+        "btnOne": "Our Services",
+        "btnTwo": "Contact Us"
+      },
+      "statsCard": {
+        "text": {
+          "subTitle": "Build your dream project",
+          "title": "10 years of success and achievements",
+          "statsP": "We have achieved many successes and achievements in engineering projects in the shortest period and with the best evaluation.",
+          "statsBtn": "Order Your Project"
+        },
+        "stats": {
+          "one": "Completed Project",
+          "two": "Team experience",
+          "three": "Project implemented in 2021",
+          "four": "Client trusts us"
+        }
+      }
     }
-  }
+}

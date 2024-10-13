@@ -15,6 +15,7 @@ import plcs, { Plc } from "../../app/[locale]/(subpages)/products/(subproducts)/
 import hmis, { Hmi } from "../../app/[locale]/(subpages)/products/(subproducts)/hmis/hmi"
 import servoDrives, { ServoDrive } from '@/app/[locale]/(subpages)/products/(subproducts)/servo-drives/servo-drives'
 import LanguageSwitch from '../languageSwitch/languageSwitch'
+import { useTranslations } from 'next-intl'
 const Header = ({
     children,
     l
@@ -56,8 +57,10 @@ const Header = ({
             `
         }
     }
+  const t = useTranslations('Header');
+    let classNameList = [styles.header, scrolled ? styles.scrolled : "", l === "en" ? styles.en : ""].join(" ")
   return (
-    <header className={scrolled ? styles.header + " " + styles.scrolled : styles.header}>
+    <header className={classNameList}>
         <div className= "container">
             <button onClick={() => { showNav(); setNavShown(!navShown);}} className={styles.toggleNav}>
                 <FontAwesomeIcon style={{ display: navShown ? "none" : "inline"  }} icon={faBars}></FontAwesomeIcon>
@@ -71,17 +74,17 @@ const Header = ({
             </div>
             <nav>
                 <Link className={pathname === `/${l}/` ? styles.active : ""} href={`/${l}/`}>
-                    الرئيسية
+                    {t("Home")}
                 </Link>
                 <Link className={pathname === `/${l}/services` ? styles.active : ""} href={`/${l}/services`}>
-                    الخدمات
+                    {t("Services")}
                 </Link>
                 <Link className={pathname === `/${l}/projects` ? styles.active : ""} href={`/${l}/projects`}>
-                    المشاريع
+                    {t("Projects")}
                 </Link>
                 <Link className={pathname === `/${l}/products` ? styles.active : ""} href={`/${l}/products`}>
                     <span>
-                        المنتجات
+                    {t("Products")}
                     </span>
                     <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
                     {
@@ -197,10 +200,10 @@ const Header = ({
                     }
                 </Link>
                 <Link className={pathname === `/${l}/about` ? styles.active : ""} href={`/${l}/about`}>
-                    عن الشركة
+                    {t("About Us")}
                 </Link>
                 <Link className={pathname === `/${l}/contact` ? styles.active : ""} href={`/${l}/contact`}>
-                    اتصل بنا
+                    {t("Contact")}
                 </Link>
             </nav>
             {/* <Button inverted={false}>

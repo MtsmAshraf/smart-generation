@@ -19,27 +19,36 @@ export default function Home({
   const t = useTranslations('HomePage');
   return (
     <main>
-      <section className="home" style={{backgroundImage: `url(${Bg.src})`}}>
+      <section className={locale === "ar" ? "home" : "en home" } style={{backgroundImage: `url(${Bg.src})`}}>
         <div className="overlay"></div>
         <div className="container">
           <div>
-          <h1>{t('title')}</h1>
             <h1>
-              سمارت جينيريشن,
+              {
+              t('heroSection.coName')
+              }
             </h1>
             <h2>
-              ترحب بكم
+              {
+              t('heroSection.greeting')
+              }
             </h2>
           </div>
           <p>
-            نرحب بكم في الموقع الرسمي للشركة الرائدة في مجال الهندسة والبناء باحدث الامكانيات المتطورة سوف ننفذ لك مشروع يفوق الخيال
+            {
+            t('heroSection.heroP')
+            }
           </p>
           <div className="buttons">
             <Button inverted={false}>
-              جميع خدمتنا
+            {
+            t('heroSection.btnOne')
+            }
             </Button>
             <Button inverted={true}>
-              اتصل بنا 
+            {
+            t('heroSection.btnTwo')
+            }
             </Button>
           </div>
         </div>

@@ -2,24 +2,27 @@ import React from 'react'
 import styles from "./stats-card.module.css"
 import MainHeading from '../mainHeading/mainHeading'
 import Button from '../button/button'
-const StatsCard = () => {
+import { useTranslations } from 'next-intl'
+const   StatsCard = () => {
+  const t = useTranslations('HomePage');
+
   return (
     <div className={styles.statsCard}>
         <div className="container">
             <div className={styles.text}>
                 <MainHeading>
                     <span>
-                        ابن مشروع أحلامك
+                        {t('statsCard.text.subTitle')}
                     </span>
                     <h2>
-                        10 اعوام من النجاح والانجازات
+                        {t('statsCard.text.title')}
                     </h2>
                 </MainHeading>
                 <p>
-                حققنا الكثير من النجاحات والانجازات في المشاريع الهندسية في اقصر مدة و افضل تقييم .
+                        {t('statsCard.text.statsP')}
                 </p>
                 <Button inverted={true}>
-                    اطلب مشروعك
+                        {t('statsCard.text.statsBtn')}
                 </Button>
             </div>
             <div className={styles.stats}>
@@ -28,7 +31,7 @@ const StatsCard = () => {
                         +1000
                     </h2>
                     <span>
-                        مشروع ناجح
+                        {t('statsCard.stats.one')}
                     </span>
                 </div>
                 <div>
@@ -36,7 +39,7 @@ const StatsCard = () => {
                         +10
                     </h2>
                     <span>
-                        خبرة فريق العمل
+                        {t('statsCard.stats.two')}
                     </span>
                 </div>
                 <div>
@@ -44,7 +47,7 @@ const StatsCard = () => {
                         +50
                     </h2>
                     <span>
-                        مشروع نفذ في سنة 2021
+                        {t('statsCard.stats.three')}
                     </span>
                 </div>
                 <div>
@@ -52,7 +55,7 @@ const StatsCard = () => {
                         1520+
                     </h2>
                     <span>
-                        عميل يثق بنا
+                        {t('statsCard.stats.four')}
                     </span>
                 </div>
             </div>
