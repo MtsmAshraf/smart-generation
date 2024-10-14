@@ -6,6 +6,7 @@ import Image from 'next/image'
 import test from "../../assets/imgs/home-bg.jpg"
 import Card from './card/card'
 import { useTranslations } from 'use-intl'
+import services, { Service } from '@/app/[locale]/(subpages)/services/servicesData'
 
 const ServicesCards = ({
     l
@@ -24,84 +25,27 @@ const ServicesCards = ({
                 </h1>
         </MainHeading>
         <div className={styles.cards}>
-            <Card>
-                <div className={styles.cardImg}>
-                    <Image loading='lazy' src={test} alt='servuce image'></Image>
-                </div>
-                <div className={styles.cardText}>
-                    <h2>
-                        {t('CardHeadings.0')}
-                    </h2>
-                    <p>
-                    {t('CardP.0')}
-                    </p>
-                </div>
-            </Card>
-            <Card>
-                <div className={styles.cardImg}>
-                    <Image loading='lazy' src={test} alt='servuce image'></Image>
-                </div>
-                <div className={styles.cardText}>
-                    <h2>
-                        {t('CardHeadings.1')}
-                    </h2>
-                    <p>
-                    {t('CardP.1')}
-                    </p>
-                    </div>
-            </Card>
-            <Card>
-                <div className={styles.cardImg}>
-                    <Image loading='lazy' src={test} alt='servuce image'></Image>
-                </div>
-                <div className={styles.cardText}>
-                    <h2>
-                    {t('CardHeadings.2')}
-                    </h2>
-                    <p>
-                    {t('CardP.2')}
-                    </p>
-                </div>
-            </Card>
-            <Card>
-                <div className={styles.cardImg}>
-                    <Image loading='lazy' src={test} alt='servuce image'></Image>
-                </div>
-                <div className={styles.cardText}>
-                    <h2>
-                    {t('CardHeadings.3')}
-                    </h2>
-                    <p>
-                    {t('CardP.3')}
-                    </p>
-                </div>
-            </Card>
-            <Card>
-                <div className={styles.cardImg}>
-                    <Image loading='lazy' src={test} alt='servuce image'></Image>
-                </div>
-                <div className={styles.cardText}>
-                    <h2>
-                    {t('CardHeadings.4')}
-                    </h2>
-                    <p>
-                    {t('CardP.4')}
-                    </p>
-                </div>
-            </Card>
-            <Card>
-                <div className={styles.cardImg}>
-                    <Image loading='lazy' src={test} alt='servuce image'></Image>
-                </div>
-                <div className={styles.cardText}>
-                    <h2>
-                    {t('CardHeadings.5')}
-                    </h2>
-                    <p>
-                    {t('CardP.5')}
-                    </p>
-                </div>
-            </Card>
+            {
+                services.map((service: Service, index: number) => {
+                    let heading = t(`CardHeadings.${index}`)
+                    let p = t(`CardP.${index}`)
+                    return(
+                        <Card key={service.id}>
+                            <div className={styles.cardImg}>
+                                <Image loading='lazy' src={service.src} alt={heading}></Image>
+                            </div>
+                            <div className={styles.cardText}>
+                                <h2>
+                                    {heading}
+                                </h2>
+                                <p>
+                                    {p}
+                                </p>
+                            </div>
+                        </Card>
+                    )
+                })
+            }
         </div>
     </div>
   )
