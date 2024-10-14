@@ -5,6 +5,10 @@
     position: relative;
     margin-bottom: 100px;
 }
+.statsCard.en{
+  font-family: "Afacad Flux", sans-serif;
+  direction: ltr;
+}
 .statsCard > div{
     display: flex;
     align-items: center;
@@ -29,6 +33,9 @@
     box-shadow: 20px 0px 20px -20px var(--sec-color);
     background-color: var(--bg-color);
 }
+.statsCard.en > div .stats{
+    box-shadow: -20px 0px 20px -20px var(--sec-color);
+}
 @media (max-width: 992px) {
     .statsCard > div .text{
         box-shadow: -20px 0px 10px -20px var(--sec-color);
@@ -36,16 +43,8 @@
     .statsCard > div .stats{
         box-shadow: none;
     }
-}
-@media (max-width: 767px) {
-    .statsCard > div{
-        flex-direction: column;
-    }
-    .statsCard > div > div{
-        width: 100%;
-    }
-    .statsCard > div .text{
-        box-shadow: 0px 20px 20px -20px var(--sec-color);
+    .statsCard.en > div .stats{
+        box-shadow: none;
     }
 }
 .statsCard > div .stats > div{
@@ -68,4 +67,18 @@
 .statsCard > div .stats > div h2{
     font-size: 30px;
     color: var(--sec-color);
+}
+@media (max-width: 767px) {
+    .statsCard > div{
+        flex-direction: column;
+    }
+    .statsCard > div > div{
+        width: 100%;
+    }
+    .statsCard > div .text{
+        box-shadow: 0px 20px 20px -20px var(--sec-color);
+    }
+    .statsCard > div .stats > div{
+        padding: 40px 20px;
+    }
 }

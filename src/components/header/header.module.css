@@ -10,6 +10,7 @@
 }
 .header.en{
     direction: ltr;
+    font-family: "Afacad Flux", sans-serif;
 }
 .header.scrolled{
     background-color: var(--sec-color);
@@ -76,6 +77,10 @@
     padding-top: 10px;
     display: none;
 }
+.header.en nav a .moreLinks{
+    font-family: "Afacad Flux", sans-serif !important;
+}
+
 .header nav a .moreLinks ul{
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
@@ -90,7 +95,6 @@
     background-color: var(--bg-color);
     transition: var(--main-transition);
     border-radius: 0px 0px 6px 6px;
-    font-family: "Roboto", sans-serif;
 }
 .header nav a .moreLinks > ul li:not(:last-child){
     border-bottom: 1px solid #ccc;

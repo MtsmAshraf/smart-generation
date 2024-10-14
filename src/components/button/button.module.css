@@ -6,6 +6,7 @@
     border-radius: 4px;
     border: 1px solid var(--main-color);
     transition: var(--main-transition);
+    font-weight: bold;
 }
 /* .button:hover{
     background-color: var(--sec-color);
@@ -15,17 +16,20 @@
 .button.inverted{
     background-color: var(--sec-color);
     color: var(--main-color);
+    font-weight: normal;
 }
 .button:hover{
     background-color: #fff;
     color: var(--sec-color);
     border: 1px solid var(--sec-color);
 }
-
-
 .button:focus, .button:focus-visible, .button:active{
     border: 1px solid var(--main-color);
     outline: none;
     /* font-family: "El Messiri", sans-serif; */
     cursor: pointer;
+}
+.button.en{
+  font-family: "Afacad Flux", sans-serif !important;
+  direction: ltr;
 }

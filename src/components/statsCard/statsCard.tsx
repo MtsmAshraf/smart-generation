@@ -3,11 +3,15 @@ import styles from "./stats-card.module.css"
 import MainHeading from '../mainHeading/mainHeading'
 import Button from '../button/button'
 import { useTranslations } from 'next-intl'
-const   StatsCard = () => {
+const   StatsCard = ({
+    l
+} : {
+    l: string
+}) => {
   const t = useTranslations('HomePage');
 
   return (
-    <div className={styles.statsCard}>
+    <div className={l === "en" ? styles.statsCard + " " + styles.en : styles.statsCard}>
         <div className="container">
             <div className={styles.text}>
                 <MainHeading>
@@ -21,7 +25,7 @@ const   StatsCard = () => {
                 <p>
                         {t('statsCard.text.statsP')}
                 </p>
-                <Button inverted={true}>
+                <Button l={l} inverted={true}>
                         {t('statsCard.text.statsBtn')}
                 </Button>
             </div>

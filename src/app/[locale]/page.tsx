@@ -40,12 +40,12 @@ export default function Home({
             }
           </p>
           <div className="buttons">
-            <Button inverted={false}>
+            <Button l={locale} inverted={false}>
             {
             t('heroSection.btnOne')
             }
             </Button>
-            <Button inverted={true}>
+            <Button l={locale} inverted={true}>
             {
             t('heroSection.btnTwo')
             }
@@ -54,11 +54,11 @@ export default function Home({
         </div>
       </section>
       <section>
-        <StatsCard></StatsCard>
+        <StatsCard l={locale}></StatsCard>
       </section>
       <section>
         <div className="container">
-          <ServicesCards></ServicesCards>
+          <ServicesCards l={locale}></ServicesCards>
         </div>
       </section>
       <section>

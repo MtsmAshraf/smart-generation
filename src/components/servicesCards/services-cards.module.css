@@ -1,3 +1,7 @@
+.servicesCards.en{
+    direction: ltr;
+    font-family: "Afacad Flux", sans-serif;
+}
 .servicesCards .cards{
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));

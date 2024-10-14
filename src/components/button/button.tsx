@@ -1,14 +1,17 @@
 import React, { MouseEventHandler } from 'react'
-import style from "./button.module.css"
+import styles from "./button.module.css"
 const Button = ({ 
     children,
     inverted,
+    l
 } : {
     children: React.ReactNode,
     inverted: boolean,
+    l: string
 }) => {
+  let classNameList = [styles.button, inverted ? styles.inverted : "", l === "en" ? styles.en : ""].join(" ")
   return (
-    <button className={inverted ? style.button + " " + style.inverted : style.button}>
+    <button className={classNameList}>
         {children}
     </button>
   )
