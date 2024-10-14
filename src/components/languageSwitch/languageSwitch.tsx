@@ -8,7 +8,7 @@ const LanguageSwitch = ({
 }) => {
     const pathname = usePathname()
     const router = useRouter()
-    const changeLanguage = (e) => {
+    const changeLanguage = (e: any) => {
         let nextLocale = lo === "en" ? "ar" : "en";
         const splitPathname = pathname.split("/")
         splitPathname[1] = nextLocale;

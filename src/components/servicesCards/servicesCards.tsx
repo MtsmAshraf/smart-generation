@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import MainHeading from '../mainHeading/mainHeading'
 import styles from "./services-cards.module.css"

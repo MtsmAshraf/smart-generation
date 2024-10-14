@@ -33,21 +33,21 @@
   "Services": {
     "SubHeading": "Build Your Dream",
     "Heading": "Services We Provide",
-    "CardHeadings": [
-      "Central refrigeration and air conditioning",
-      "Control and distribution panels",
-      "Maintenance of production lines",
-      "Supplies",
-      "Engineering consulting",
-      "Design, implementation and supply of all light current systems"
-    ],
-    "CardP": [
-      "From cooling units with ice water, pumps, cooling towers, Freon units for direct cooling, and heating units",
-      "Control panels using (PLC-HMI-SCADA), main and subsidiary low-voltage distribution panels - panels regulating the operation of electric motors - classic control panels of all kinds.",
-      "We work to modernize and maintain machines and production lines for all types of factories using PLC panels and touch screens for all industries.",
-      "Supply of spare parts and various operating supplies. We supply all components of automatic control panels and distribution panels",
-      "Surveillance systems - internal exchanges - fire alarm systems - attendance and departure systems - paging and audio systems",
-      "We work to modernize and maintain machines and production lines for all types of factories using PLC panels and touch screens for all industries."
-    ]
+    "CardHeadings": {
+      "0": "Central refrigeration and air conditioning",
+      "1": "Control and distribution panels",
+      "2": "Maintenance of production lines",
+      "3": "Supplies",
+      "4": "Engineering consulting",
+      "5": "Design, implementation and supply of all light current systems"
+    },
+    "CardP": {
+      "0": "From cooling units with ice water, pumps, cooling towers, Freon units for direct cooling, and heating units",
+      "1": "Control panels using (PLC-HMI-SCADA), main and subsidiary low-voltage distribution panels - panels regulating the operation of electric motors - classic control panels of all kinds.",
+      "2": "We work to modernize and maintain machines and production lines for all types of factories using PLC panels and touch screens for all industries.",
+      "3": "Supply of spare parts and various operating supplies. We supply all components of automatic control panels and distribution panels",
+      "4": "Surveillance systems - internal exchanges - fire alarm systems - attendance and departure systems - paging and audio systems",
+      "5": "We work to modernize and maintain machines and production lines for all types of factories using PLC panels and touch screens for all industries."
+    }
   }
 }

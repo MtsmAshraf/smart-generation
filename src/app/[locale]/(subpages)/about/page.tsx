@@ -4,11 +4,15 @@ import Testimonials from '@/components/testimonials/testimonials'
 import Vision from '@/components/vision/vision'
 import React from 'react'
 
-const About = () => {
+const About = ({
+  params: {locale}
+} : {
+  params: {locale: string}
+}) => {
   return (
     <section>
-        <StatsCard></StatsCard>
-        <Vision></Vision>
+        <StatsCard l={locale}></StatsCard>
+        <Vision l={locale}></Vision>
         <div className="container">
             <Testimonials></Testimonials>
             <Contact></Contact>

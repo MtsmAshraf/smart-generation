@@ -62,7 +62,7 @@ export default function Home({
         </div>
       </section>
       <section>
-        <Vision></Vision>
+        <Vision l={locale}></Vision>
       </section>
       <section>
         <Testimonials></Testimonials>

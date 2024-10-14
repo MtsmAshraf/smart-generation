@@ -29,7 +29,7 @@ export default function SubPagesLayout({
       }else if(pathname === `/${locale}/contact`){
         setHeadingText("اتصل بنا")
       }
-    })
+    },[headingText, pathname, locale])
     return (
      <>
         <div className={styles.hero} style={{ backgroundImage: `url(${bg.src})` }}>

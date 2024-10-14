@@ -17,10 +17,8 @@ import servoDrives, { ServoDrive } from '@/app/[locale]/(subpages)/products/(sub
 import LanguageSwitch from '../languageSwitch/languageSwitch'
 import { useTranslations } from 'next-intl'
 const Header = ({
-    children,
     l
   }: {
-    children: React.ReactNode;
     l: string,
   })  => {
     

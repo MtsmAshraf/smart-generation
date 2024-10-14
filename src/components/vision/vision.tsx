@@ -4,7 +4,11 @@ import Button from '../button/button'
 import visionBg from "../../assets/imgs/vision-bg.jpg"
 import stepsBg from "../../assets/imgs/steps-bg.jpg"
 
-const Vision = () => {
+const Vision = ({
+    l
+}: {
+    l: string
+}) => {
   return (
     <div className={styles.visionSteps}>
         <div className={styles.vision} style={{ backgroundImage: `url(${visionBg.src})` }}>
@@ -18,7 +22,8 @@ const Vision = () => {
             <p>
                 نسعى دائما إلى إرضاء عملائنا بالجمع بين سرعة التنفيذ وتحقيق جودة الأداء وتقديم الخدمات بأسعار تنافسية
             </p>
-            <Button inverted={false}>
+            
+            <Button l={l} inverted={false}>
                 تواصل معنا
             </Button>
         </div>
