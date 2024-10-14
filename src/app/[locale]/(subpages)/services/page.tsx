@@ -11,7 +11,7 @@ const Services = ({
     <section>
         <div className="container">
           <ServicesCards l={locale}></ServicesCards>
-          <Contact></Contact>
+          <Contact l={locale}></Contact>
         </div>
     </section>
   )
