@@ -5,38 +5,40 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faFacebookF, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 import { faClock, faLocation, faLocationArrow, faLocationPin, faLocationPinLock, faPhone, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { useTranslations } from 'next-intl'
 
 const Footer = ({
   l
 }: {
   l: string,
 }) => {
+  const t = useTranslations("Footer")
   return (
-    <footer className={styles.footer}>
+    <footer className={l === "en" ? styles.footer + " " + styles.en : styles.footer}>
       <div className="container">
         <div>
-          <h4>الأقسام</h4>
+          <h4>{t("Sections.Heading")}</h4>
           <div>
-            <Link href={`/${l}/services`}>الخدمات</Link>
-            <Link href={`/${l}/projects`}>المشاريع</Link>
-            <Link href={`/${l}/supplies`}>التوريدات</Link>
-            <Link href={`/${l}/about`}>عن الشركة</Link>
-            <Link href={`/${l}/contact`}>اتصل بنا</Link>
+            <Link href={`/${l}/services`}>{t("Sections.PagesLinks.1")}</Link>
+            <Link href={`/${l}/projects`}>{t("Sections.PagesLinks.2")}</Link>
+            <Link href={`/${l}/products`}>{t("Sections.PagesLinks.3")}</Link>
+            <Link href={`/${l}/about`}>{t("Sections.PagesLinks.4")}</Link>
+            <Link href={`/${l}/contact`}>{t("Sections.PagesLinks.5")}</Link>
           </div>
         </div>
         <div>
-          <h4>أماكننا</h4>
+          <h4>{t("OurPlaces.Heading")}</h4>
           <div>
             <div>
               <span>
                 <FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon>
               </span>
               <address>
-                الأردنية, جراند مول
+                {t("OurPlaces.Address.Place")}
                 <br />
-                العاشر من رمضان
+                {t("OurPlaces.Address.City")}
                 <br />
-                مصر
+                {t("OurPlaces.Address.Country")}
               </address>
             </div>
             <div>
@@ -58,14 +60,14 @@ const Footer = ({
               <div>
                 8:00am - 4:00pm
                 <br />
-                جميع أيام الأسبوع عدا الجمعة
+                {t("WorkHours")}
               </div>
             </div>
           </div>
         </div>
         <div>
           <h4>
-            صفحاتنا
+            {t("SocialMediaHeading")}
           </h4>
           <div className={styles.socials}>
             <a href="/">

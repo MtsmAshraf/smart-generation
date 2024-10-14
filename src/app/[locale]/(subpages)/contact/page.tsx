@@ -4,13 +4,18 @@ import ContactsInfo from '@/components/contactsInfo/contactsInfo'
 import SocialLinks from '@/components/socialLinks/socialLinks'
 import styles from "./contact.module.css"
 
-const ContactUs = () => {
+const ContactUs = ({
+  params: {locale}
+}: {
+  params: {locale: string}
+}) => {
+  
   return (
     <section>
         <div className="container">
             <ContactsInfo></ContactsInfo>
         </div>
-        <Contact></Contact>
+        <Contact l={locale}></Contact>
         <div className={styles.socialLinks}>
             <SocialLinks></SocialLinks>
         </div>

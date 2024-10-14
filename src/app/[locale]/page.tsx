@@ -68,7 +68,7 @@ export default function Home({
         <Testimonials l={locale}></Testimonials>
       </section>
       <section>
-        <Contact></Contact>
+        <Contact l={locale}></Contact>
       </section>
     </main>
   );

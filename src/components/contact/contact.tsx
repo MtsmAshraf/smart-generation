@@ -1,41 +1,52 @@
 import React from 'react'
 import styles from "./contact.module.css"
-const Contact = () => {
+import { useTranslations } from 'next-intl'
+const Contact = ({
+    l
+} : {
+    l: string
+}) => {
+    const t = useTranslations("Contact")
+    const username = t("Form.UserName");
+    const email = t("Form.Email");
+    const userAddress = t("Form.Address");
+    const msg = t("Form.Msg");
+    const send = t("Form.Send");
   return (
-    <div className={styles.contact}>
+    <div className={l === "en" ? styles.contact + " " + styles.en : styles.contact}>
         <h1>
-            تواصل معنا
+            {t("Heading")}
         </h1>
         <div className="container">
             <form>
-                <h2>اطلب الآن</h2>
+                <h2>{t("Form.FormHeading")}</h2>
                 <div>
                     <div>
                         <label htmlFor="name">
-                            الاسم
+                            {t("Form.UserName")}
                         </label>
-                        <input type="text" name="name" id="name" placeholder='الاسم' />
+                        <input type="text" name="name" id="name" placeholder={username}/>
                     </div>
                     <div>
                         <label htmlFor="email">
-                            الإيميل
+                            {t("Form.Email")}
                         </label>
-                        <input type="email" name="email" id="email" placeholder='الإيميل' />
+                        <input type="email" name="email" id="email" placeholder={email} />
                     </div>
                     <div>
-                        <label htmlFor="subject">
-                            العنوان
+                        <label htmlFor="address">
+                            {t("Form.Address")}
                         </label>
-                        <input type="text" name="subject" id="subject" placeholder='العنوان' />
+                        <input type="text" name="address" id="address" placeholder={userAddress} />
                     </div>
                     <div>
                         <label htmlFor="message">
-                            رسالتك
+                            {t("Form.Msg")}
                         </label>
-                        <textarea name="message" id="message" placeholder='رسالتك'></textarea>
+                        <textarea name="message" id="message" placeholder={msg}></textarea>
                     </div>
                     <div>
-                        <input type="submit" value={"إرسال"} />
+                        <input type="submit" value={send} />
                     </div>
                 </div>
             </form>

@@ -39,7 +39,7 @@
       "2": "Maintenance of production lines",
       "3": "Supplies",
       "4": "Engineering consulting",
-      "5": "All light current systems"
+      "5": "Light current systems"
     },
     "CardP": {
       "0": "From cooling units with ice water, pumps, cooling towers, Freon units for direct cooling, and heating units",
@@ -90,5 +90,38 @@
         "4": "I seriously recommend this company. They carried out their work with the utmost precision and in the fastest time. It is truly the best company in the field."
       }
     }
+  },
+  "Contact": {
+    "Heading": "Contact Us",
+    "Form": {
+      "FormHeading": "Order Now",
+      "UserName": "Name",
+      "Email": "Email",
+      "Address": "Address",
+      "Msg": "Your Message",
+      "Send": "Send"
+    }
+  },
+  "Footer": {
+    "Sections": {
+      "Heading": "Pages",
+      "PagesLinks": {
+        "1": "Services",
+        "2": "Projects",
+        "3": "Products",
+        "4": "About Us",
+        "5": "Contact"
+      }
+    },
+    "OurPlaces": {
+      "Heading": "Our Places",
+      "Address": {
+        "Place": "Al-Ordoniya, Grand Mall",
+        "City": "10th of Ramadan City",
+        "Country": "Egypt"
+      }
+    },
+    "WorkHours": "From Saturday to Thursday",
+    "SocialMediaHeading": "Our Social Media"
   }
 }

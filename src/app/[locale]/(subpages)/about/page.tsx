@@ -14,8 +14,8 @@ const About = ({
         <StatsCard l={locale}></StatsCard>
         <Vision l={locale}></Vision>
         <div className="container">
-            <Testimonials></Testimonials>
-            <Contact></Contact>
+            <Testimonials l={locale}></Testimonials>
+            <Contact l={locale}></Contact>
         </div>
     </section>
   )
