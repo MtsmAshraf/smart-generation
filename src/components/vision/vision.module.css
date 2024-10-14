@@ -36,6 +36,10 @@
     color: #fff;
     padding-right: 100px;
 }
+.visionSteps.en > div.vision{
+    padding-right: 0px;
+    padding-left: 100px;
+}
 .visionSteps > div.vision span{
     color: var(--main-color);
 }
@@ -84,6 +88,10 @@
         padding-left: 20px;
     }
     .visionSteps > div.steps{
+        padding-left: 30px;
+    }
+    .visionSteps.en > div.vision{
+        padding-right: 0px;
         padding-left: 30px;
     }
 }
