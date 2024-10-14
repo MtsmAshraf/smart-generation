@@ -42,7 +42,7 @@ const products : Product[] = [
         id: "4",
         name: "Servo Drive",
         description: "Efficiency, stability and intelligence",
-        href: "/servoes-drives",
+        href: "/servo-drives",
         src: image4,
         alt: "Servoes Image"
     }
