@@ -49,5 +49,23 @@
       "4": "Surveillance systems - internal exchanges - fire alarm systems - attendance and departure systems - paging and audio systems",
       "5": "We work to modernize and maintain machines and production lines for all types of factories using PLC panels and touch screens for all industries."
     }
+  },
+  "VisionSteps": {
+    "Vision":{
+      "SubHeading": "Our Vision",
+      "Heading": "Providing high-quality technical services that meet the ambitions of our customers and raise the production process to its maximum levels",
+      "VisionP": "We always strive to satisfy our customers by combining speed of implementation, achieving quality performance, and providing services at competitive prices",
+      "Btn": "Contact Us"
+    },
+    "Steps": {
+      "Heading": "We use the best modern methods",
+      "StepsP": "We aim to continuously develop our technical team to be fully prepared to meet all labor market requirements.",
+      "StepsUl": {
+        "1": "Sustainability",
+        "2": "Project delivery on time",
+        "3": "Modern technology",
+        "4": "Newest designs"
+      }
+    }
   }
 }

@@ -3,6 +3,10 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
+.visionSteps.en{
+    direction: ltr;
+    font-family: "Afacad Flux", sans-serif;
+}
 .visionSteps > div{
     width: 50%;
     padding: 40px;
@@ -47,6 +51,10 @@
 .visionSteps > div.steps{
     padding-left: 100px;
 }
+.visionSteps.en > div.steps{
+    padding-left: 40px;
+    padding-right: 100px;
+}
 .visionSteps > div.steps h2{
     margin-bottom: 10px;
 }
@@ -61,6 +69,10 @@
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
+}
+.visionSteps.en > div.steps ul li{
+    margin-left: 20px;
+    margin-right: 0px;
 }
 @media (max-width: 1200px) {
     .visionSteps > div.vision{

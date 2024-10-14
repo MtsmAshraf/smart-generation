@@ -3,43 +3,53 @@ import styles from "./vision.module.css"
 import Button from '../button/button'
 import visionBg from "../../assets/imgs/vision-bg.jpg"
 import stepsBg from "../../assets/imgs/steps-bg.jpg"
+import { useTranslations } from 'next-intl'
 
 const Vision = ({
     l
 }: {
     l: string
 }) => {
+    const t = useTranslations("VisionSteps")
   return (
-    <div className={styles.visionSteps}>
+    <div className={ l === "en" ? styles.visionSteps + " " + styles.en : styles.visionSteps}>
         <div className={styles.vision} style={{ backgroundImage: `url(${visionBg.src})` }}>
             <div className={styles.overlay}></div>
             <span>
-                رسالتنا
+                {t(`Vision.SubHeading`)}
             </span>
             <h2>
-                توفير خدمات تقنية ذات جودة عالية تلبي طموحات عملائنا وترتقي بالعملية الانتاجية إلى أقصى معدلاتها
+                {t('Vision.Heading')}
             </h2>
             <p>
-                نسعى دائما إلى إرضاء عملائنا بالجمع بين سرعة التنفيذ وتحقيق جودة الأداء وتقديم الخدمات بأسعار تنافسية
+                {t('Vision.VisionP')}
             </p>
             
             <Button l={l} inverted={false}>
-                تواصل معنا
+                {t('Vision.Btn')}
             </Button>
         </div>
         <div className={styles.steps} style={{ backgroundImage: `url(${stepsBg.src})` }}>
             <div className={styles.overlay}></div>
             <h2>
-            نحن نتبع أفضل الطرق الحديثة
+                {t(`Steps.Heading`)}
             </h2>
             <p>
-                نهدف إلى تطوير كوادرنا الفنية بصورة مستمرة لنكون على أتم الاستعداد لمواجهة كافة متطلبات سوق العمل.
+                {t(`Steps.StepsP`)}
             </p>
             <ul>
-                <li>الاستدامة</li>
-                <li>المشروع في الوقت المحدد</li>
-                <li>التقنية الحديثة</li>
-                <li>أحدث التصاميم</li>
+                <li>
+                {t(`Steps.StepsUl.1`)}
+                </li>
+                <li>
+                {t(`Steps.StepsUl.2`)}
+                </li>
+                <li>
+                {t(`Steps.StepsUl.3`)}
+                </li>
+                <li>
+                {t(`Steps.StepsUl.4`)}
+                </li>
             </ul>
         </div>
     </div>
