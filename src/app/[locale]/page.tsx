@@ -65,7 +65,7 @@ export default function Home({
         <Vision l={locale}></Vision>
       </section>
       <section>
-        <Testimonials></Testimonials>
+        <Testimonials l={locale}></Testimonials>
       </section>
       <section>
         <Contact></Contact>

@@ -67,5 +67,28 @@
         "4": "Newest designs"
       }
     }
+  },
+  "Testimonials": {
+    "Heading": "Testimonials",
+    "Clients": {
+      "Names": {
+        "1": "Ahmed Mohamed",
+        "2": "Maher Abdullah",
+        "3": "Ahmed Mohamed",
+        "4": "Ahmed Mohamed"
+      },
+      "JobTitles": {
+        "1": "Client",
+        "2": "Client",
+        "3": "Client",
+        "4": "Client"
+      },
+      "Text": {
+        "1": "I seriously recommend this company. They carried out their work with the utmost precision and in the fastest time. It is truly the best company in the field.",
+        "2": "I did not imagine that I would find a company that uses the latest technologies in this field and completes its work really quickly. I am happy to deal with you.",
+        "3": "I contacted this company and I was worried at first, but I didn't really expect that I would see such excellent results. Thank you very much.",
+        "4": "I seriously recommend this company. They carried out their work with the utmost precision and in the fastest time. It is truly the best company in the field."
+      }
+    }
   }
 }

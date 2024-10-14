@@ -3,12 +3,14 @@ import styles from "./testimonials-card.module.css"
 
 
 const TestimonialsCard = ({
-    children
+    children,
+    l
 } : {
-    children: React.ReactNode
+    children: React.ReactNode,
+    l: string
 }) => {
   return (
-    <div className={styles.testimonialsCard}>
+    <div className={l === "en" ? styles.testimonialsCard + " " + styles.en : styles.testimonialsCard}>
         {children}
     </div>
   )

@@ -6,6 +6,10 @@
     border-bottom: 5px solid var(--main-color);
     box-shadow: 0px 5px 20px -10px #000;
 }
+.testimonialsCard.en{
+    direction: ltr;
+    font-family: "Afacad Flux", sans-serif;
+}
 .testimonialsCard > div{
     position: absolute;
     top: 0;
@@ -20,6 +24,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.testimonialsCard.en > div{
+    right: unset;
+    left: 20px;
 }
 .testimonialsCard > div img{
     width: 100%;
@@ -39,6 +47,10 @@
     .testimonialsCard > div{
         right: 50%;
         transform: translate(50%,-50%);
+    }
+    .testimonialsCard.en > div{
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     .testimonialsCard{
         text-align: center;
