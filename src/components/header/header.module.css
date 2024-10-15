@@ -164,22 +164,51 @@
     .header nav a .moreLinks a svg{
         transform: rotateZ(90deg);
     }
+    .header nav a .moreLinks > ul{
+        /* flex-direction: column; */
+        justify-content: space-around;
+        position: relative;
+    }
+    .header nav a .moreLinks > ul > li{
+        width: calc(90% / 5);
+        font-size: 14px;
+    }
+    .header nav a .moreLinks > ul > li > a{
+        justify-content: center;
+        gap: 6px;
+        position: unset;
+    }
+    .header nav a .moreLinks > ul > li > a > svg{
+        width: 7px;
+    }
+    .header nav a .moreLinks > ul > li > a > ul{
+        width: calc(100vw - 40px) !important;
+    }
     .header nav a .moreLinks a ul{
-        left: 0;
+        left: 0px;
+        width: 100%;
         top: 100%;
+    }
+    .header nav a .moreLinks > ul > li > a > ul li{
+        width: 100%;
+    }
+    .header nav a .moreLinks > ul > li > a > ul a{
+        width: 100%;
+        justify-content: center;
     }
     .header nav a .moreLinks li:nth-child(1) ul,
     .header nav a .moreLinks li:nth-child(2) ul{
-        width: fit-content;
+        /* width: fit-content; */
         text-wrap: nowrap;
     }
 }
 @media (max-width: 600px) {
-    .header nav a .moreLinks li:nth-child(1) ul,
-    .header nav a .moreLinks li:nth-child(2) ul{
-        width: 300px;
-        text-wrap: wrap;
-        text-align: left;
+    .header nav a .moreLinks > ul > li{
+        width: calc(100% / 5);
+        /* font-size: 14px; */
+    }
+    .header nav a .moreLinks > ul > li > a{
+        flex-direction: column;
     }
 }
 .header nav a svg{
