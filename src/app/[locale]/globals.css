@@ -130,6 +130,7 @@ button, button:focus, button:focus-visible, button:active{
   }
   .home .container > div:first-of-type h1{
     margin-bottom: -20px;
+    text-wrap: nowrap;
   }
   .home .container p{
     width: 90%;
