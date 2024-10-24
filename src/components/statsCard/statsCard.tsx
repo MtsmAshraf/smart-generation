@@ -56,7 +56,7 @@ const   StatsCard = ({
                 </div>
                 <div>
                     <h2>
-                        1520+
+                        +1520
                     </h2>
                     <span>
                         {t('statsCard.stats.four')}

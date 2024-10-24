@@ -102,12 +102,14 @@ button, button:focus, button:focus-visible, button:active{
 .home .container > div:first-of-type{
   display: flex;
   gap: 5px;
+  align-items: baseline;
 }
 .home .container > div:first-of-type{
   font-size: 26px;
 }
 .home .container > div:first-of-type h1{
   color: var(--main-color);
+  font-size: 50px;
 }
 .home .container p{
   width: 60%;
@@ -124,6 +126,10 @@ button, button:focus, button:focus-visible, button:active{
   }
   .home .container > div:first-of-type{
     flex-direction: column;
+    align-items: center;
+  }
+  .home .container > div:first-of-type h1{
+    margin-bottom: -20px;
   }
   .home .container p{
     width: 90%;

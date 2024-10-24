@@ -1,6 +1,5 @@
 "use client"
 import Button from "@/components/button/button";
-import Image from "next/image";
 import Bg from "../../assets/imgs/home-bg.jpg"
 import ServicesCards from "@/components/servicesCards/servicesCards";
 import StatsCard from "@/components/statsCard/statsCard";

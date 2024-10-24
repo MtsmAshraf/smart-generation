@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: center;
 }
+.hero.en{
+  font-family: "Afacad Flux", sans-serif;
+  direction: ltr;
+}
 .hero .overlay{
     position: absolute;
     left: 0;

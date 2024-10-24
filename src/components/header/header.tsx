@@ -71,7 +71,7 @@ const Header = ({
                 </Link>
             </div>
             <nav>
-                <Link className={pathname === `/${l}/` ? styles.active : ""} href={`/${l}/`}>
+                <Link className={pathname === `/${l}` ? styles.active : ""} href={`/${l}/`}>
                     {t("Home")}
                 </Link>
                 <Link className={pathname === `/${l}/services` ? styles.active : ""} href={`/${l}/services`}>

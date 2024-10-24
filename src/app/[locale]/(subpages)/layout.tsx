@@ -19,20 +19,25 @@ export default function SubPagesLayout({
     let [headingText, setHeadingText] = useState("")
     useEffect(() => {
       if(pathname === `/${locale}/services`){
-        setHeadingText("خدماتنا")
+        let text = locale !== "en" ? "خدماتنا" : "Services"; 
+        setHeadingText(text)
       }else if(pathname === `/${locale}/projects`){
-        setHeadingText("مشاريعنا")
+        let text = locale !== "en" ? "مشاريعنا" : "Projects"; 
+        setHeadingText(text)
       }else if(pathname.split("/")[2] === "products"){
-        setHeadingText("المنتجات")
+        let text = locale !== "en" ? "المنتجات" : "Products"; 
+        setHeadingText(text)
       }else if(pathname === `/${locale}/about`){
-        setHeadingText("من نحن؟")
+        let text = locale !== "en" ? "عن الشركة" : "About Us"; 
+        setHeadingText(text)
       }else if(pathname === `/${locale}/contact`){
-        setHeadingText("اتصل بنا")
+        let text = locale !== "en" ? "اتصل بنا" : "Contact Us"; 
+        setHeadingText(text)
       }
     },[headingText, pathname, locale])
     return (
      <>
-        <div className={styles.hero} style={{ backgroundImage: `url(${bg.src})` }}>
+        <div className={locale === "en" ? styles.hero + " " + styles.en : styles.hero} style={{ backgroundImage: `url(${bg.src})` }}>
             <div className={styles.overlay}></div>
             <h1>
                 {headingText}

@@ -73,6 +73,12 @@
     border-right: 1px solid var(--main-color);
     padding-right: 10px;
 }
+.header.en nav > div{
+    border-right: none;
+    padding-right: 0px;
+    border-left: 1px solid var(--main-color);
+    padding-left: 10px;
+}
 .header nav .moreLinks{
     position: absolute;
     top: calc(100%);
@@ -294,6 +300,9 @@
         padding: 0px;
         padding-top: 10px;
         width: 100%;
+    }
+    .header.en nav > div{
+        border-left: none;
     }
 }
 @media (max-width: 600px) {

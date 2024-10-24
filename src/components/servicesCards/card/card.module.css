@@ -13,7 +13,6 @@
 }
 .card > div:nth-child(1){
     /* height: 100px; */
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -64,6 +64,20 @@
 .statsCard > div .stats > div:nth-child(4){
     border-right: 1px solid var(--main-color);
 }
+.statsCard.en > div .stats > div:nth-child(1){
+    border-left: none;
+    border-right: 1px solid var(--main-color);
+}
+.statsCard.en > div .stats > div:nth-child(2){
+    border-bottom: 1px solid var(--main-color);
+}
+.statsCard.en > div .stats > div:nth-child(3){
+    border-top: 1px solid var(--main-color);
+}
+.statsCard.en > div .stats > div:nth-child(4){
+    border-right: none;
+    border-left: 1px solid var(--main-color);
+}
 .statsCard > div .stats > div h2{
     font-size: 30px;
     color: var(--sec-color);

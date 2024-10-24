@@ -3,7 +3,6 @@ import React from 'react'
 import MainHeading from '../mainHeading/mainHeading'
 import styles from "./services-cards.module.css"
 import Image from 'next/image'
-import test from "../../assets/imgs/home-bg.jpg"
 import Card from './card/card'
 import { useTranslations } from 'use-intl'
 import services, { Service } from '@/app/[locale]/(subpages)/services/servicesData'
