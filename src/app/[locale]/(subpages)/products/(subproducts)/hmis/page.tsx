@@ -2,6 +2,7 @@ import React from 'react'
 import hmis from "./hmi" 
 import Link from 'next/link'
 import Image from 'next/image'
+import Loader from '@/components/loader/loader'
 const Hmi = ({
     params: {locale}
 } : {
@@ -9,6 +10,7 @@ const Hmi = ({
 }) => {
   return (
     <div>
+        <Loader></Loader>
         <div className="container">
             <h3>
                 HMI

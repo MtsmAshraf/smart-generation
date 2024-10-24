@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import plcs from "./plcs"
+import Loader from '@/components/loader/loader'
 const Plcs = ({
     params: {locale}
 } : {
@@ -9,6 +10,7 @@ const Plcs = ({
 }) => {
   return (
     <div>
+        <Loader></Loader>
         <div className="container">
         <h3>
             Small PLC

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from "./plc-id.module.css"
 import plcs, { Feature, Plc } from "../plcs"
 import Image, { StaticImageData } from 'next/image'
+import Loader from '@/components/loader/loader'
 type Props = {
     params: {
         plcId: string
@@ -14,6 +15,7 @@ const page = ({ params }: Props) => {
   
   return (
     <section className={styles.plcId}>
+      <Loader></Loader>
       <div className={styles.description}>
             <div className="container">
             <div className={styles.slider}>

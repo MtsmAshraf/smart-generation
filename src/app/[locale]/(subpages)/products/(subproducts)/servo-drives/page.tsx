@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import servoDrives from './servo-drives'
+import Loader from '@/components/loader/loader'
 const ServoDrives = ({
     params: {locale}
 } : {
@@ -9,6 +10,7 @@ const ServoDrives = ({
 }) => {
   return (
     <div>
+        <Loader></Loader>
         <div className="container">
             <h3>
                 Servo Drives

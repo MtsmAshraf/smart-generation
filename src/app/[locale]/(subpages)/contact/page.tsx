@@ -3,6 +3,7 @@ import Contact from '@/components/contact/contact'
 import ContactsInfo from '@/components/contactsInfo/contactsInfo'
 import SocialLinks from '@/components/socialLinks/socialLinks'
 import styles from "./contact.module.css"
+import Loader from '@/components/loader/loader'
 
 const ContactUs = ({
   params: {locale}
@@ -12,7 +13,8 @@ const ContactUs = ({
   
   return (
     <section>
-        <div className="container">
+        <Loader></Loader>
+          <div className="container">
             <ContactsInfo></ContactsInfo>
         </div>
         <Contact l={locale}></Contact>

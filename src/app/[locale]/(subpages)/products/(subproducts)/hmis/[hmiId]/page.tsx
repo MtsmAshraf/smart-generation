@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from "./hmi-id.module.css"
 import Image, { StaticImageData } from 'next/image'
 import hmis, { Feature, Hmi } from '../hmi'
+import Loader from '@/components/loader/loader'
 type Props = {
     params: {
         hmiId: string
@@ -14,6 +15,7 @@ const page = ({ params }: Props) => {
   
   return (
     <section className={styles.hmiId}>
+        <Loader></Loader>
         <div className={styles.description}>
             <div className="container">
             <div className={styles.slider}>

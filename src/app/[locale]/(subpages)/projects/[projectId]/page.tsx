@@ -5,6 +5,7 @@ import Image from 'next/image'
 import test from "../../../../../assets/imgs/1.jpg"
 import Link from 'next/link'
 import projectsImages from '@/components/projectsSlider/projectsImages'
+import Loader from '@/components/loader/loader'
 
 
 const ProjectId = ({
@@ -15,6 +16,8 @@ const ProjectId = ({
   const foundProject = projectsImages.find((project) => project.id === projectId) || { id: 113123213, name: "not Found", place: "NOT FOUND", src: test }
   return (
     <section className={styles.projectId}>
+      <Loader></Loader>
+      
       <div className="container">
         <MainHeading>
           <h1>

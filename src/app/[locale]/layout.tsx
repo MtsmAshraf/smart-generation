@@ -7,6 +7,7 @@ import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Loader from "@/components/loader/loader";
 config.autoAddCss = false
 
 export const metadata: Metadata = {

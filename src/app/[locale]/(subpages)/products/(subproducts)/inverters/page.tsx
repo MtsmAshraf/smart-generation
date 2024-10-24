@@ -2,6 +2,7 @@ import React from 'react'
 import inverters from "./inverters"
 import Link from 'next/link'
 import Image from 'next/image'
+import Loader from '@/components/loader/loader'
 const Inverters = ({
   params: {locale}
 } : {
@@ -9,6 +10,7 @@ const Inverters = ({
 }) => {
   return (
     <div>
+      <Loader></Loader>
       <div className="container">
         <h3>
           Single Drive

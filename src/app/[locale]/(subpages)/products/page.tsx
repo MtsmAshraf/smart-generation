@@ -3,6 +3,7 @@ import styles from "./products.module.css"
 import allProducts from "./all-products"
 import Link from 'next/link'
 import Image from 'next/image'
+import Loader from '@/components/loader/loader'
 const Products = ({
   params: {locale}
 } : {
@@ -10,7 +11,8 @@ const Products = ({
 }) => {
   return (
     <div className={styles.products}>
-      <div className="container">
+        <Loader></Loader>
+        <div className="container">
         <section className={styles.productsList}>
           <ul>
             {

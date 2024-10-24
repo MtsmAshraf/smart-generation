@@ -56,6 +56,7 @@
     color: var(--main-color);
     gap: 10px;
     transition: var(--main-transition);
+    position: relative;
 }
 .header nav a{
     color: #fff;
@@ -68,45 +69,82 @@
 .header nav > a{
     text-wrap: nowrap;
 }
-.header nav a:has(.moreLinks){
-    position: relative;
+.header nav > div{
+    border-right: 1px solid var(--main-color);
+    padding-right: 10px;
 }
-.header nav a .moreLinks{
+.header nav .moreLinks{
     position: absolute;
     top: calc(100%);
     padding-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
     font-family: "Afacad Flux", sans-serif !important;
+    /* width: 100%; */
 }
-.header.en nav a .moreLinks{
+.header nav > div:hover .moreLinks{
+    display: block;
+}
+@media (max-width: 650px) {
+    .header nav .moreLinks{
+        /* pos */
+        /* width: 98vw !important; */
+    }
+    .header nav .moreLinks > ul > li:first-child{
+        width: 100%;
+        text-decoration: underline var(--sec-color);
+        font-size: 16px;
+    }
+    .header nav .moreLinks > ul > li div{
+        padding-left: 0 !important; 
+        padding-right: 0 !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 5px !important;
+    }
+    .header nav .moreLinks > ul > li div svg{
+        font-size: 10px !important;
+        transform: rotateZ(90deg);
+    }
+    
+}
+.header.en nav .moreLinks{
     font-family: "Afacad Flux", sans-serif !important;
 }
 
-.header nav a .moreLinks ul{
+.header nav .moreLinks ul{
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     box-shadow: 0px 2px 2px 0px #ccc;
 }
-.header nav a .moreLinks ul li:first-child{
+.header nav .moreLinks ul li:first-child{
     font-weight: bold;
 }
-.header nav a .moreLinks svg{
+.header nav .moreLinks svg{
     font-size: 14px;
 }
-.header nav a .moreLinks > ul{
-    padding-top: 12px;
-    padding-bottom: 12px;
+.header nav .moreLinks > ul{
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: var(--bg-color);
     transition: var(--main-transition);
     border-radius: 0px 0px 6px 6px;
+    text-wrap: nowrap;
 }
-.header nav a .moreLinks > ul li:not(:last-child){
-    border-bottom: 1px solid #ccc;
+.header nav .moreLinks > ul{
+}
+.header nav .moreLinks > ul{
+    display: flex;
+    direction: ltr;
+}
+.header nav .moreLinks > ul li:not(:last-child){
+    border-right: 1px solid #ccc;
 }
 .header nav a:has(.moreLinks):hover .moreLinks{
     display: block;
 }
-.header nav a .moreLinks a{
+.header nav .moreLinks a{
     color: var(--text-color);
     transition: var(--main-transition);
     padding-left: 20px;
@@ -119,10 +157,10 @@
     justify-content: space-between;
     position: relative;
 }
-.header nav a .moreLinks a:hover{
+.header nav .moreLinks a:hover{
     background-color: var(--main-color);
 }
-.header nav a .moreLinks a ul{
+.header nav .moreLinks a ul{
     position: absolute;
     left: 100%;
     top: 0;
@@ -132,10 +170,13 @@
     z-index: 2;
     display: none;
 }
-.header nav a .moreLinks a:hover ul{
+.header nav .moreLinks a:hover ul{
     display: block;
 }
-.header nav a .moreLinks > ul > li > div{
+.header nav .moreLinks div:hover svg{
+    transform: rotateZ(90deg);
+}
+.header nav .moreLinks > ul > li > div{
     color: var(--text-color);
     transition: var(--main-transition);
     padding-left: 20px;
@@ -149,35 +190,44 @@
     position: relative;
     gap: 10px;
 }
-.header nav a .moreLinks > ul > li > div > svg{
+.header nav .moreLinks > ul > li > div > svg{
     font-size: 12px;
 }
-.header nav a .moreLinks > ul > li > div:hover > ul{
+.header nav .moreLinks > ul > li > div:hover > ul{
     display: block;
 }
-.header nav a .moreLinks > ul > li > div > ul{
+.header nav .moreLinks > ul > li > div > ul{
     position: absolute;
-    left: 100%;
-    top: 0;
+    left: 0%;
+    top: 100%;
     background-color: var(--bg-color);
     border-radius: 0px 6px 6px 0px;
     overflow: hidden;
     z-index: 2;
     display: none;
+    text-wrap: nowrap;
+    min-width: 100%;
+}
+.header nav .moreLinks > ul > li > div > ul li:not(:last-child){
+    border-bottom: 1px solid #ccc;
+}
+.header nav .moreLinks > ul > li > div > ul li a{
+        text-align: left;
 }
 @media (max-width: 992px) {
-    .header nav a .moreLinks li:nth-child(1) ul,
-    .header nav a .moreLinks li:nth-child(2) ul{
+    .header nav .moreLinks li:nth-child(1) ul,
+    .header nav .moreLinks li:nth-child(2) ul{
         width: 300px;
         text-wrap: wrap;
         text-align: left;
     }
 }
 @media (max-width: 767px) {
-    .header nav a .moreLinks{
-        width: calc(100vw - 40px);
+    .header nav .moreLinks{
+        position: relative;
+        width: 100%;
     }
-    .header nav a .moreLinks > ul{
+    .header nav .moreLinks > ul{
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -186,62 +236,72 @@
         flex-wrap: wrap;
         direction: ltr !important;
     }
-    .header nav a .moreLinks > ul li:not(:last-child){
+    .header nav .moreLinks > ul li:not(:last-child){
         border-bottom: none;
     }
-    .header nav a .moreLinks > ul a ul li:not(:last-child){
+    .header nav .moreLinks > ul a ul li:not(:last-child){
         border-bottom: 1px solid #ccc;
     }
-    .header nav a .moreLinks a{
+    .header nav .moreLinks a{
         gap: 10px;
     }
-    .header nav a .moreLinks a svg{
+    .header nav .moreLinks a svg{
         transform: rotateZ(90deg);
     }
-    .header nav a .moreLinks > ul{
+    .header nav .moreLinks > ul{
         /* flex-direction: column; */
         justify-content: space-around;
         position: relative;
     }
-    .header nav a .moreLinks > ul > li{
+    .header nav .moreLinks > ul > li{
         width: calc(90% / 5);
         font-size: 14px;
     }
-    .header nav a .moreLinks > ul > li > a{
+    .header nav .moreLinks > ul > li > a{
         justify-content: center;
         gap: 6px;
         position: unset;
     }
-    .header nav a .moreLinks > ul > li > a > svg{
+    .header nav .moreLinks > ul > li > a > svg{
         width: 7px;
     }
-    .header nav a .moreLinks > ul > li > a > ul{
+    .header nav .moreLinks > ul > li > a > ul{
         width: calc(100vw - 40px) !important;
     }
-    .header nav a .moreLinks a ul{
+    .header nav .moreLinks a ul{
         left: 0px;
         width: 100%;
         top: 100%;
     }
-    .header nav a .moreLinks > ul > li > a > ul li{
+    .header nav .moreLinks > ul > li > a > ul li{
         width: 100%;
     }
-    .header nav a .moreLinks > ul > li > a > ul a{
+    .header nav .moreLinks > ul > li > a > ul a{
         width: 100%;
         justify-content: center;
     }
-    .header nav a .moreLinks li:nth-child(1) ul,
-    .header nav a .moreLinks li:nth-child(2) ul{
+    .header nav .moreLinks li:nth-child(1) ul,
+    .header nav .moreLinks li:nth-child(2) ul{
         /* width: fit-content; */
         text-wrap: nowrap;
     }
+    .header nav .moreLinks > ul li ul{
+        position: fixed !important;
+    }
+    .header nav > div{
+        border: none;
+        border-top: 1px solid var(--main-color);
+        padding: 0px;
+        padding-top: 10px;
+        width: 100%;
+    }
 }
 @media (max-width: 600px) {
-    .header nav a .moreLinks > ul > li{
+    .header nav .moreLinks > ul > li{
         width: calc(100% / 5);
         /* font-size: 14px; */
     }
-    .header nav a .moreLinks > ul > li > a{
+    .header nav .moreLinks > ul > li > a{
         flex-direction: column;
     }
 }
@@ -249,8 +309,12 @@
 .header nav a svg{
     font-size: 14px;
 }
-.header nav a:hover,
-.header nav a.active{
+.header nav > a:hover,
+.header nav > a.active{
+    color: var(--main-color);
+}
+.header nav > div:hover > a,
+.header nav > div a.active{
     color: var(--main-color);
 }
 .header nav a:not(:first-child){
@@ -259,7 +323,6 @@
     /* background-color: red; */
 }
 body:has(header#en) header {
-    background-color: red;
 }
 .header.en nav a:not(:first-child){
     border-right: none;

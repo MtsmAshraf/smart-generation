@@ -20,8 +20,8 @@ export default function Home({
   const t = useTranslations('HomePage');
   return (
     <main>
-      <Loader></Loader>
-      <section className={locale === "ar" ? "home" : "en home" } style={{backgroundImage: `url(${Bg.src})`}}>
+        <Loader></Loader>
+        <section className={locale === "ar" ? "home" : "en home" } style={{backgroundImage: `url(${Bg.src})`}}>
         <div className="overlay"></div>
         <div className="container">
           <div>
