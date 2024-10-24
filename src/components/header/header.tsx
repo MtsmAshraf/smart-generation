@@ -88,111 +88,141 @@ const Header = ({
                     {
                         isClient ? 
                         <div className={styles.moreLinks}>
-                        <ul>
-                            <li>
-                                <Link href={`/${l}/products/inverters`}>
-                                    <span>
-                                        Inverter
-                                    </span>
-                                    <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
-                                    <ul>
-                                        {
-                                            inverters.map((inverter: Inverter) => {
-                                                return(
-                                                    <li key={inverter.id}>
-                                                        <Link href={`/${l}/products/inverters/${inverter.id}`} replace>
-                                                            {inverter.description}
-                                                        </Link>
-                                                    </li>
-                                                )
-                                            })
-                                        }
-                                    </ul>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={`/${l}/products/plcs`}>
-                                    <span>
-                                        PLC
-                                    </span>
-                                    <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
-                                    <ul>
-                                        {
-                                            plcs.map((plc: Plc) => {
-                                                return(
-                                                    <li key={plc.id}>
-                                                        <Link href={`/${l}/products/plcs/${plc.id}`}>
-                                                            {plc.description}
-                                                        </Link>
-                                                    </li>
-                                                )
-                                            })
-                                        }
-                                    </ul>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={`/${l}/products/hmis`}>
-                                    <span>
-                                        HMI
-                                    </span>
-                                    <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
-                                    <ul>
-                                        {
-                                            hmis.map((hmi: Hmi) => {
-                                                return(
-                                                    <li key={hmi.id}>
-                                                        <Link href={`/${l}/products/hmis/${hmi.id}`}>
-                                                            {hmi.description}
-                                                        </Link>
-                                                    </li>
-                                                )
-                                            })
-                                        }
-                                    </ul>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={`/${l}/products/servo-drives`}>
-                                    <span>
-                                        Servo Drive
-                                    </span>
-                                    <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
-                                    <ul>
-                                        {
-                                            servoDrives.map((servoDrive: ServoDrive) => {
-                                                return(
-                                                    <li key={servoDrive.id}>
-                                                        <Link href={`/${l}/products/servo-drives/${servoDrive.id}`}>
-                                                            {servoDrive.description}
-                                                        </Link>
-                                                    </li>
-                                                )
-                                            })
-                                        }
-                                    </ul>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={""}>
-                                    <span>
-                                        Accessories
-                                    </span>
-                                    <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
-                                    <ul>
-                                        <li>
-                                            <Link href={"/"}>VTS30</Link>
-                                        </li>
-                                        <li>
-                                            <Link href={"/"}>VTS30</Link>
-                                        </li>
-                                        <li>
-                                            <Link href={"/"}>VTS30</Link>
-                                        </li>
-                                    </ul>
-                                </Link>
-                            </li>
-                        </ul>
+                            <ul>
+                                <li>
+                                    <Link href={`/${l}/products`}>
+                                        All products
+                                    </Link>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>
+                                            Inverter
+                                        </span>
+                                        <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
+                                        <ul>
+                                            <li>
+                                                <Link href={`/${l}/products/inverters`}>
+                                                    All
+                                                </Link>
+                                            </li>
+                                            {
+                                                inverters.map((inverter: Inverter) => {
+                                                    return(
+                                                        <li key={inverter.id}>
+                                                            <Link href={`/${l}/products/inverters/${inverter.id}`} replace>
+                                                                {inverter.description}
+                                                            </Link>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>
+                                            PLC
+                                        </span>
+                                        <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
+                                        <ul>
+                                            <li>
+                                                <Link href={`/${l}/products/plcs`}>
+                                                    All
+                                                </Link>
+                                            </li>
+                                            {
+                                                plcs.map((plc: Plc) => {
+                                                    return(
+                                                        <li key={plc.id}>
+                                                            <Link href={`/${l}/products/plcs/${plc.id}`}>
+                                                                {plc.description}
+                                                            </Link>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>
+                                            HMI
+                                        </span>
+                                        <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
+                                        <ul>
+                                            <li>
+                                                <Link href={`/${l}/products/hmis`}>
+                                                    All
+                                                </Link>
+                                            </li>
+                                            {
+                                                hmis.map((hmi: Hmi) => {
+                                                    return(
+                                                        <li key={hmi.id}>
+                                                            <Link href={`/${l}/products/hmis/${hmi.id}`}>
+                                                                {hmi.description}
+                                                            </Link>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>
+                                            Servo Drive
+                                        </span>
+                                        <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
+                                        <ul>
+                                            <li>
+                                                <Link href={`/${l}/products/servo-drives`}>
+                                                    All
+                                                </Link>
+                                            </li>
+                                            {
+                                                servoDrives.map((servoDrive: ServoDrive) => {
+                                                    return(
+                                                        <li key={servoDrive.id}>
+                                                            <Link href={`/${l}/products/servo-drives/${servoDrive.id}`}>
+                                                                {servoDrive.description}
+                                                            </Link>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>
+                                            Accessories
+                                        </span>
+                                        <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
+                                        <ul>
+                                            <li>
+                                                <Link href={""}>
+                                                    All
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href={"/"}>VTS30</Link>
+                                            </li>
+                                            <li>
+                                                <Link href={"/"}>VTS30</Link>
+                                            </li>
+                                            <li>
+                                                <Link href={"/"}>VTS30</Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                     </div>
                         : null 
                     }

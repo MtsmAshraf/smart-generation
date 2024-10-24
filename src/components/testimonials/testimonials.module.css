@@ -2,6 +2,10 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
+.testimonials.en{
+    direction: ltr;
+    font-family: "Afacad Flux", sans-serif;
+}
 .testimonials h1{
     font-size: 32px;
     color: var(--sec-color);

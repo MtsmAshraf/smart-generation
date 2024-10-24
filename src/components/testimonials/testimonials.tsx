@@ -13,7 +13,7 @@ const Testimonials = ({
 }) => {
     const t = useTranslations("Testimonials")
   return (
-    <div className={styles.testimonials}>
+    <div className={l === "en" ? styles.testimonials + " " + styles.en : styles.testimonials}>
         <div className="container">
             <h1>
                 {t("Heading")}

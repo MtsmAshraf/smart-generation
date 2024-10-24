@@ -10,6 +10,7 @@ import Contact from "@/components/contact/contact";
 import "./globals.css"
 
 import {useTranslations} from 'next-intl';
+import Loader from "@/components/loader/loader";
 
 export default function Home({
   params: {locale}
@@ -19,6 +20,7 @@ export default function Home({
   const t = useTranslations('HomePage');
   return (
     <main>
+      <Loader></Loader>
       <section className={locale === "ar" ? "home" : "en home" } style={{backgroundImage: `url(${Bg.src})`}}>
         <div className="overlay"></div>
         <div className="container">
