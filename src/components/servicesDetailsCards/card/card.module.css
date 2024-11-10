@@ -6,6 +6,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.card:first-child{
+    margin-top: -50px;
+}
 .card.inverted{
     flex-direction: row-reverse;
 }
@@ -16,4 +19,23 @@
     object-fit: contain;
     height: fit-content;
     border-radius: 10px;
+}
+.card h2{
+    color: var(--sec-color);
+    margin-bottom: 10px;
+}
+.card ul{
+    list-style: disc;
+    margin-right: 15px;
+}
+.card ul li{
+    margin-bottom: 6px;
+}
+@media (max-width: 992px) {
+    .card, .card.inverted{
+        flex-direction: column;
+    }
+    .card > div{
+        width: 100%;
+    }
 }

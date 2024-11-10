@@ -25,7 +25,7 @@ const   StatsCard = ({
                 <p>
                         {t('statsCard.text.statsP')}
                 </p>
-                <Button l={l} inverted={true}>
+                <Button href={`/${l}/contact`} l={l} inverted={true}>
                         {t('statsCard.text.statsBtn')}
                 </Button>
             </div>

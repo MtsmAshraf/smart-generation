@@ -22,7 +22,7 @@ const ServicesCards = ({
             </span>
             <h1>
                 {t('Heading')}
-                </h1>
+            </h1>
         </MainHeading>
         <div className={styles.cards}>
             {

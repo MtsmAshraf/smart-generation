@@ -30,6 +30,30 @@ const services : Service[] = [
     {
         id: "6",
         src: image1,
+    },
+    {
+        id: "7",
+        src: image1,
+    },
+    {
+        id: "8",
+        src: image1,
+    },
+    {
+        id: "9",
+        src: image1,
+    },
+    {
+        id: "10",
+        src: image1,
+    },
+    {
+        id: "11",
+        src: image1,
+    },
+    {
+        id: "12",
+        src: image1,
     }
 ]
 
