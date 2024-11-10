@@ -1,19 +1,22 @@
 import React, { MouseEventHandler } from 'react'
 import styles from "./button.module.css"
+import Link from 'next/link'
 const Button = ({ 
     children,
     inverted,
-    l
+    l,
+    href
 } : {
     children: React.ReactNode,
     inverted: boolean,
-    l: string
+    l: string,
+    href: string
 }) => {
   let classNameList = [styles.button, inverted ? styles.inverted : "", l === "en" ? styles.en : ""].join(" ")
   return (
-    <button className={classNameList}>
+    <Link href={href || "/"} className={classNameList}>
         {children}
-    </button>
+    </Link>
   )
 }
 

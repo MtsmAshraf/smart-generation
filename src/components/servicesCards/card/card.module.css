@@ -11,19 +11,22 @@
     background-color: var(--main-color);
     transform: scale(1.05);
 }
-.card > div:nth-child(1){
+.card > * {
+    color: var(--text-color);
+}
+.card > * > div:nth-child(1){
     /* height: 100px; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.card > div:nth-child(1) img{
+.card > * > div:nth-child(1) img{
     height: 100%;
 }
-.card > div:nth-child(2){
+.card > * > div:nth-child(2){
     /* padding: 10px; */
 }
-.card > div:nth-child(2) h2{
+.card > * > div:nth-child(2) h2{
     color: var(--sec-color);
     /* position: absolute; */
     top: 0;
@@ -35,7 +38,7 @@
     font-size: 22px;
     padding: 16px;
 }
-.card > div:nth-child(2) p{
+.card > * > div:nth-child(2) p{
     line-height: 1.6;
     padding: 16px;
     text-align: center;

@@ -4,12 +4,13 @@ import Bg from "../../assets/imgs/home-bg.jpg"
 import ServicesCards from "@/components/servicesCards/servicesCards";
 import StatsCard from "@/components/statsCard/statsCard";
 import Vision from "@/components/vision/vision";
-import Testimonials from "@/components/testimonials/testimonials";
+// import Testimonials from "@/components/testimonials/testimonials";
 import Contact from "@/components/contact/contact";
 import "./globals.css"
 
 import {useTranslations} from 'next-intl';
 import Loader from "@/components/loader/loader";
+import SocialLinks from "@/components/socialLinks/socialLinks";
 
 export default function Home({
   params: {locale}
@@ -41,12 +42,12 @@ export default function Home({
             }
           </p>
           <div className="buttons">
-            <Button l={locale} inverted={false}>
+            <Button href={`/${locale}/services`} l={locale} inverted={false}>
             {
             t('heroSection.btnOne')
             }
             </Button>
-            <Button l={locale} inverted={true}>
+            <Button href={`/${locale}/contact`} l={locale} inverted={true}>
             {
             t('heroSection.btnTwo')
             }
@@ -65,11 +66,14 @@ export default function Home({
       <section>
         <Vision l={locale}></Vision>
       </section>
-      <section>
+      {/* <section>
         <Testimonials l={locale}></Testimonials>
-      </section>
+      </section> */}
       <section>
         <Contact l={locale}></Contact>
+        <div style={{width: "fit-content", marginLeft: "auto", marginRight: "auto", marginBottom: "30px"}}>
+            <SocialLinks></SocialLinks>
+        </div>
       </section>
     </main>
   );

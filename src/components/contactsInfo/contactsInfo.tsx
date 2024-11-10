@@ -32,6 +32,8 @@ const ContactsInfo = () => {
                     <br />
                     العاشر من رمضان
                     <br />
+                    الشرقية
+                    <br />
                     مصر
                 </address>
             </ContactsInfoCard>
@@ -40,7 +42,7 @@ const ContactsInfo = () => {
                     <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
                 </span>
                 <div>
-                    8:00am - 4:00pm
+                    9:00am - 5:00pm
                     <br />
                     جميع أيام الأسبوع عدا الجمعة
                 </div>

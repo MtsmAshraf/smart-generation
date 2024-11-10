@@ -23,9 +23,9 @@
           "statsBtn": "Order Your Project"
         },
         "stats": {
-          "one": "Completed Project",
-          "two": "Team experience",
-          "three": "Project implemented in 2021",
+          "one": "Completed Large Project",
+          "two": "Team experience years",
+          "three": "Project implemented in 2024",
           "four": "Client trusts us"
         }
       }
@@ -118,6 +118,7 @@
       "Address": {
         "Place": "Al-Ordoniya, Grand Mall",
         "City": "10th of Ramadan City",
+        "Gov": "Ash-Sharqiya",
         "Country": "Egypt"
       }
     },

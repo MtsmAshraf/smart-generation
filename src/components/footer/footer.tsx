@@ -2,9 +2,8 @@ import React from 'react'
 import styles from "./footer.module.css"
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faFacebookF, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
-import { faClock, faLocation, faLocationArrow, faLocationPin, faLocationPinLock, faPhone, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faClock, faLocationPin, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
 
 const Footer = ({
@@ -38,6 +37,8 @@ const Footer = ({
                 <br />
                 {t("OurPlaces.Address.City")}
                 <br />
+                {t("OurPlaces.Address.Gov")}
+                <br />
                 {t("OurPlaces.Address.Country")}
               </address>
             </div>
@@ -58,7 +59,7 @@ const Footer = ({
                 <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>
               </span>
               <div>
-                8:00am - 4:00pm
+                9:00am - 5:00pm
                 <br />
                 {t("WorkHours")}
               </div>
@@ -74,13 +75,10 @@ const Footer = ({
               <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
             </a>
             <a href="/">
-              <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-            </a>
-            <a href="/">
               <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
             </a>
             <a href="/">
-              <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
             </a>
           </div>
         </div>

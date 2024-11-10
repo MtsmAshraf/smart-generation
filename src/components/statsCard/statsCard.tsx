@@ -32,7 +32,7 @@ const   StatsCard = ({
             <div className={styles.stats}>
                 <div>
                     <h2>
-                        +1000
+                        +100
                     </h2>
                     <span>
                         {t('statsCard.stats.one')}
@@ -40,7 +40,7 @@ const   StatsCard = ({
                 </div>
                 <div>
                     <h2>
-                        +10
+                        +15
                     </h2>
                     <span>
                         {t('statsCard.stats.two')}
@@ -48,7 +48,7 @@ const   StatsCard = ({
                 </div>
                 <div>
                     <h2>
-                        +50
+                        +30
                     </h2>
                     <span>
                         {t('statsCard.stats.three')}
@@ -56,7 +56,7 @@ const   StatsCard = ({
                 </div>
                 <div>
                     <h2>
-                        +1520
+                        +500
                     </h2>
                     <span>
                         {t('statsCard.stats.four')}
