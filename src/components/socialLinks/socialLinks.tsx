@@ -5,13 +5,13 @@ import { faFacebookF, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-
 const SocialLinks = () => {
   return (
     <div className={styles.socialLinks}>
-        <a href="/">
+        <a href="https://www.facebook.com/smart.generation.eg" title='Facebook' target='_blank'>
             <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
         </a>
-        <a href="/">
+        <a href="https://wa.me/00201552778135" title='Whatsapp' target='_blank'>
             <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
         </a>
-        <a href="/">
+        <a href="https://www.linkedin.com/company/smart-generation-eg/" title='Linlkedin' target='_blank'>
             <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
         </a>
     </div>

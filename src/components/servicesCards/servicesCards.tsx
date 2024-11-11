@@ -5,7 +5,7 @@ import styles from "./services-cards.module.css"
 import Image from 'next/image'
 import Card from './card/card'
 import { useTranslations } from 'use-intl'
-import services, { Service } from '@/app/[locale]/(subpages)/services/servicesData'
+import heroServices ,{ HeroService } from './servicesHeroData'
 import Link from 'next/link'
 
 const ServicesCards = ({
@@ -26,7 +26,7 @@ const ServicesCards = ({
         </MainHeading>
         <div className={styles.cards}>
             {
-                services.map((service: Service, index: number) => {
+                heroServices.map((service: HeroService, index: number) => {
                     let heading = t(`CardHeadings.${index}`)
                     let p = t(`CardP.${index}`)
                     if(index <= 5){

@@ -71,14 +71,14 @@ const Footer = ({
             {t("SocialMediaHeading")}
           </h4>
           <div className={styles.socials}>
-            <a href="/">
-              <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
+            <a href="https://www.facebook.com/smart.generation.eg" title='Facebook' target='_blank'>
+                <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
             </a>
-            <a href="/">
-              <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
+            <a href="https://wa.me/00201552778135" title='Whatsapp' target='_blank'>
+                <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
             </a>
-            <a href="/">
-              <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
+            <a href="https://www.linkedin.com/company/smart-generation-eg/" title='Linlkedin' target='_blank'>
+                <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
             </a>
           </div>
         </div>
