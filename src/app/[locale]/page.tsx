@@ -12,6 +12,7 @@ import {useTranslations} from 'next-intl';
 import Loader from "@/components/loader/loader";
 import SocialLinks from "@/components/socialLinks/socialLinks";
 import Fields from "@/components/fields/fields";
+import Why from "@/components/why/why";
 
 export default function Home({
   params: {locale}
@@ -69,6 +70,9 @@ export default function Home({
       </section>
       <section>
         <Fields lo={locale}></Fields>
+      </section>
+      <section>
+        <Why lo={locale}></Why>
       </section>
       {/* <section>
         <Testimonials l={locale}></Testimonials>

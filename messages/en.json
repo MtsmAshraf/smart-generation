@@ -1,4 +1,5 @@
 {
+  
   "Header": {
     "Home": "Home",
     "Services": "Services",
@@ -45,8 +46,24 @@
           "10": "Hospital",
           "11": "Airport"
         }
-      }
-  },
+      },
+      "why": {
+        "h2":"Why Us?",
+        "cardsHeadings":{
+          "0": "Quality & Costumer satisfaction",
+          "1": "Pricing",
+          "2": "Experience & Professionalism",
+          "3": "Time Frame",
+          "4": "Warranty"
+        },
+        "cardPs": {
+          "0": "We work at a high level of quality to suit the client's requirements.",
+          "1": "We are the best in the market to offer competitive prices by understanding customer budget & their expectations, without compromising the quality standard.",
+          "2": "A Special team of professional engineers and technicians Highly experienced with full support with the latest tools and equipments.",
+          "3": "We ensure that projects are delivered within the specified timeframe for customers. We're ready to work 24/7 even in the narrowest timeframe. We have shown this in our previous projects.",
+          "4": "The company is committed to comprehensively guaranteeing all its services and missions with a quick response to customer requests."
+        }
+  }},
   "Services": {
     "SubHeading": "Build Your Dream",
     "Heading": "Services We Provide",
@@ -325,4 +342,4 @@
     "WorkHours": "From Saturday to Thursday",
     "SocialMediaHeading": "Our Social Media"
   }
-}
+  }
