@@ -1,4 +1,5 @@
 import Contact from '@/components/contact/contact'
+import Fields from '@/components/fields/fields'
 import Loader from '@/components/loader/loader'
 import StatsCard from '@/components/statsCard/statsCard'
 // import Testimonials from '@/components/testimonials/testimonials'
@@ -15,6 +16,7 @@ const About = ({
         <Loader></Loader>
         <StatsCard l={locale}></StatsCard>
         <Vision l={locale}></Vision>
+        <Fields lo={locale}></Fields>
         <div className="container">
             {/* <Testimonials l={locale}></Testimonials> */}
             <Contact l={locale}></Contact>
