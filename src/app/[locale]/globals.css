@@ -9,9 +9,10 @@
   margin: 0;
 }
 :root{
-  --main-color: #dda802;
-  --sec-color: #212d45;
+  --main-color: #e8af06;
+  --sec-color: #004161;
   --bg-color: #ffffff;
+  --test: #ffc03d;
   --text-color: #242424;
   --sec-text-color: #212d45;
   --main-transition: all 0.1s 0s linear;
