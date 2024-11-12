@@ -11,6 +11,7 @@ import "./globals.css"
 import {useTranslations} from 'next-intl';
 import Loader from "@/components/loader/loader";
 import SocialLinks from "@/components/socialLinks/socialLinks";
+import Fields from "@/components/fields/fields";
 
 export default function Home({
   params: {locale}
@@ -65,6 +66,9 @@ export default function Home({
       </section>
       <section>
         <Vision l={locale}></Vision>
+      </section>
+      <section>
+        <Fields lo={locale}></Fields>
       </section>
       {/* <section>
         <Testimonials l={locale}></Testimonials>

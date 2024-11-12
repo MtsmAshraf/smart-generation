@@ -28,6 +28,23 @@
           "three": "Project implemented in 2024",
           "four": "Client trusts us"
         }
+      },
+      "fields":{
+        "H2": "Our Fields",
+        "Spans":{
+          "0": "Constructure",
+          "1": "Government",
+          "2": "Education",
+          "3": "Hotels",
+          "4": "Industry",
+          "5": "Infrastructures",
+          "6": "Oil and Gas",
+          "7": "Local and Global",
+          "8": "Commercial",
+          "9": "Personal",
+          "10": "Hospital",
+          "11": "Airport"
+        }
       }
   },
   "Services": {
