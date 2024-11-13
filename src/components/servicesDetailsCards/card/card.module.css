@@ -42,6 +42,10 @@
         flex-direction: column;
     }
     .card > div{
-        width: 100%;
     }
+    .card > div:nth-child(2){
+        width: 60%;
+    }
+}
+@media (max-width: 600px) {
 }
