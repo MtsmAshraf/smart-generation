@@ -69,11 +69,11 @@
     "Heading": "Services We Provide",
     "CardHeadings": {
       "0": "Central refrigeration and ACs",
-      "1": "Control and distribution panels",
-      "2": "Maintenance of production lines",
-      "3": "Supplies",
-      "4": "Engineering consulting",
-      "5": "Light current systems"
+      "1": "Firefighting and fire protection services",
+      "2": "Supplies and engineering consultancy",
+      "3": "Control and distribution panels",
+      "4": "Light-current systems",
+      "5": "Plumbing works, pumps, and air compressors"
     },
     "CardP": {
       "0": "From cooling units with ice water, pumps, cooling towers, Freon units for direct cooling, and heating units",
@@ -85,186 +85,186 @@
     },
     "Detailed":{
       "Headings": {
-        "0": "التبريد والتكييف المركزي",
-        "1": "أعمال مكافحة الحرائق",
-        "2": "أعمال الإطفاء",
-        "3": "أعمال ضواغط الهواء",
-        "4": "أعمال المضخات",
-        "5": "أعمال الصحي",
-        "6": "الهياكل المعدنية",
-        "7": "لوحات التحكم والتوزيع",
-        "8": "صيانة خطوط الإنتاج",
-        "9": "التوريدات",
-        "10": "الاستشارات الهندسية",
-        "11": "تصميم وتنفيذ وتوريد كافة أنظمة التيار الخفيف"
+        "0": "Central refrigeration and ACs",
+        "1": "Fire protection services",
+        "2": "Firefighting services",
+        "3": "Air compressors services",
+        "4": "Pumps services",
+        "5": "Plumbing services",
+        "6": "Metal structures",
+        "7": "Control and distribution panels",
+        "8": "Production lines maintenance",
+        "9": "Supplies",
+        "10": "Engineering Consultancy",
+        "11": "Design, implementation, and supply of all light-current systems"
       },
       "Ul": {
         "0": [
-          {
-            "0": "من وحدات التبريد بالماء المثلج والمضخات وأبراج التبريد."
-          },
-          {
-            "0": "وحدات الفريون للتبريد المباشر."
-          },
-          {
-            "0": "وحدات التدفئة."
-          },
-          {
-            "0": "وحدات مناولة الهواء وجميع أنواع المراوح وخطوط الصاج والمواسير وما يتطلبه ذلك من أعمال عزل وتغليف ولحامات."
-          }
+            {
+                "0": "Chilled water cooling units, pumps, and cooling towers."
+            },
+            {
+                "0": "Direct expansion refrigeration units."
+            },
+            {
+                "0": "Heating units."
+            },
+            {
+                "0": "Air handling units, all types of fans, ductwork, piping, and associated insulation, cladding, and welding works."
+            }
         ],
         "1": [
-          {
-            "0": "أنظمة الإنذار والإطفاء الآلي"
-          },
-          {
-            "0": "تجهيز غرفة المضخات من خزان مياه"
-          },
-          {
-            "0": "تركيب المضخات (الكهرباء، الديزل، مضخة التعويض 'الجوكي') وشبكة المواسير والمحابس انتهاءً بالرشاشات وحنفيات الحريق"
-          },
-          {
-            "0": "ما يتطلبه ذلك من أعمال ترميل ودهانات ولحامات"
-          }
+            {
+                "0": "Fire alarm and automatic extinguishing systems."
+            },
+            {
+                "0": "Pump room equipment, including water tanks."
+            },
+            {
+                "0": "Installation of pumps (electric, diesel, jockey pumps), piping network, valves, sprinklers, and fire hydrants."
+            },
+            {
+                "0": "Sandblasting, painting, and welding works as required."
+            }
         ],
         "2": [
-          {
-            "0": "أعمال الإطفاء المتكاملة بالغازات CO2، FM200، NOVEC 1230، Aerosol"
-          }
+            {
+                "0": "Comprehensive fire extinguishing systems using CO2, FM200, Novec 1230, and Aerosol."
+            }
         ],
         "3": [
-          {
-            "0": "أعمال ضواغط الهواء وتشمل الكباسات والمجففات والخزانات من توريد وتركيب وصيانة وتوفير قطع الغيار اللازمة."
-          }
+            {
+                "0": "Air compressor systems, including compressors, dryers, tanks, supply, installation, maintenance, and spare parts."
+            }
         ],
         "4": [
-          {
-            "0": "'الطلمبات' وعدادات وتمديدات"
-          },
-          {
-            "0": "تجميع بأعلى جودة لحامات لجميع جداول المواسير"
-          }
+            {
+                "0": "Pumps, meters, and piping."
+            },
+            {
+                "0": "High-quality welding of all pipe joints."
+            }
         ],
         "5": [
-          {
-            "0": "أعمال التغذية بالمياة الباردة والساخنة وعزلها"
-          },
-          {
-            "0": "محطات التنقية وخزانات المياه بجميع المقاسات"
-          },
-          {
-            "0": "شبكات الصرف الصحى من تمديدات مواسير PVC, UPVC, HDPE بجميع المقاسات"
-          },
-          {
-            "0": "غرف التفتيش وغرف الترسيب وغرف التهدئة."
-          }
-        ], 
+            {
+                "0": "Hot and cold water supply systems and insulation."
+            },
+            {
+                "0": "Water treatment plants and water tanks of all sizes."
+            },
+            {
+                "0": "Sanitary sewer networks using PVC, UPVC, and HDPE pipes of all sizes."
+            },
+            {
+                "0": "Inspection chambers, sedimentation tanks, and settling tanks."
+            }
+        ],
         "6": [
-          {
-            "0": "الهياكل المعدنية والأوناش العلوية والخزانات"
-          },
-          {
-            "0": "عمال الحدادة والبرادة واللحامات والترميل والدهانات لجميع القطاعات والأشكال طبقا للتصميمات ومتطلبات العميل."
-          }
-        ], 
+            {
+                "0": "Metal structures, overhead cranes, and tanks."
+            },
+            {
+                "0": "Blacksmithing, machining, welding, sandblasting, and painting services for all sections and shapes according to designs and customer requirements."
+            }
+        ],
         "7": [
-          {
-            "0": "لوحات التحكم باستخدام (PLC-HMI-SCADA)"
-          },
-          {
-            "0": "لوحات الكلاسيك كنترول بأنواعها"
-          },
-          {
-            "0": "لوحات تحسين معامل القدرة (Power Factor) وصيانتها"
-          },
-          {
-            "0": "لوحات ATS"
-          },
-          {
-            "0": "لوحات تنظيم تشغيل المحركات الكهربائية"
-          },
-          {
-            "0": "لوحات تشغيل ماكينات (الخراطة - الفريزة - مخارط CNC) وصيانتها"
-          },
-          {
-            "0": "لوحات توزيع الجهد المنخفض الرئيسية والفرعية"
-          },
-          {
-            "0": "محطات القوى وتمديدات الكابلات"
-          }
-        ], 
+            {
+                "0": "Control panels using PLC-HMI-SCADA."
+            },
+            {
+                "0": "Classic control panels of all types."
+            },
+            {
+                "0": "Power factor correction panels and maintenance."
+            },
+            {
+                "0": "ATS panels."
+            },
+            {
+                "0": "Motor control panels."
+            },
+            {
+                "0": "Control panels for machines (lathes, milling machines, CNC machines) and maintenance."
+            },
+            {
+                "0": "Main and sub-distribution panels."
+            },
+            {
+                "0": "Power plants and cable installations."
+            }
+        ],
         "8": [
-          {
-            "0": "نعمل على صيانة وتحديث الماكينات وخطوط الإنتاج لكافة المصانع بأنواعها وتهيئتها للتشغيل الأوتوماتيكي بأحدث وسائل التكنولوجيا: PLC-HMI-SCADA"
-          },
-          {
-            "0": "عمل عقود صيانة دورية لكافة خطوط الإنتاج في أي مكان في مصر."
-          },
-          {
-            "0": "وضع برامج الصيانة الوقائية ومتابعة تنفيذ برامج الصيانة الشاملة TPM."
-          },
-          {
-            "0": "استجابة فورية للأعطال الطارئة."
-          }
-        ], 
+            {
+                "0": "Maintenance and modernization of machinery and production lines for all types of factories, and preparation for automatic operation using the latest technologies: PLC-HMI-SCADA."
+            },
+            {
+                "0": "Periodic maintenance contracts for all production lines anywhere in Egypt."
+            },
+            {
+                "0": "Development of preventive maintenance programs and monitoring the implementation of comprehensive TPM maintenance programs."
+            },
+            {
+                "0": "Immediate response to emergency breakdowns."
+            }
+        ],
         "9": [
-          {
-            "0": "نعمل على توريد كافة مكونات لوحات التحكم الآلي ولوحات التوزيع."
-          },
-          {
-            "0": "توريد قطع الغيار ومستلزمات التشغيل المختلفة."
-          },
-          {
-            "0": "وضع الحلول والبدائل لضمان استمرار العملية الإنتاجية."
-          },
-          {
-            "0": "تلتزم الشركة بتقديم الدعم الفني الكامل لعملائها."
-          },
-          {
-            "0": "تلتزم الشركة بضمان كافة الخدمات والمهمات التي تقدمها."
-          }
-        ], 
+            {
+                "0": "Supply of all components for control panels and distribution panels."
+            },
+            {
+                "0": "Supply of spare parts and various operating supplies."
+            },
+            {
+                "0": "Providing solutions and alternatives to ensure the continuity of the production process."
+            },
+            {
+                "0": "The company is committed to providing full technical support to its customers."
+            },
+            {
+                "0": "The company is committed to guaranteeing all services and tasks it provides."
+            }
+        ],
         "10": [
-          {
-            "0": "تقديم العروض الفنية والمالية لتأسيس وتطوير الشركات."
-          },
-          {
-            "0": "دراسة الأحمال الكهربائية وتقديم أفضل مخططات التوصيل."
-          }
-        ], 
+            {
+                "0": "Providing technical and financial offers for the establishment and development of companies."
+            },
+            {
+                "0": "Studying electrical loads and providing optimal wiring diagrams."
+            }
+        ],
         "11": [
-          {
-            "0": "أنظمة إنذار الحريق."
-          },
-          {
-            "0": "أنظمة المراقبة."
-          },
-          {
-            "0": "السنترالات الداخلية"
-          },
-          {
-            "0": "أنظمة الحضور والانصراف"
-          },
-          {
-            "0": "الاستدعاء والأنظمة الصوتية"
-          },
-          {
-            "0": "أنظمة الإنذار والتحكم في الدخول."
-          },
-          {
-            "0": "أنظمة البيوت الذكية."
-          },
-          {
-            "0": "الخدمات الحاسوبية والبرمجيات."
-          },
-          {
-            "0": "أنظمة الشبكات المتكاملة."
-          },
-          {
-            "0": "أنظمة التعليمية الحديثة."
-          }
+            {
+                "0": "Fire alarm systems."
+            },
+            {
+                "0": "Surveillance systems."
+            },
+            {
+                "0": "Internal telephone exchanges."
+            },
+            {
+                "0": "Attendance and departure systems."
+            },
+            {
+                "0": "Paging and sound systems."
+            },
+            {
+                "0": "Alarm and access control systems."
+            },
+            {
+                "0": "Smart home systems."
+            },
+            {
+                "0": "Computer services and software."
+            },
+            {
+                "0": "Integrated network systems."
+            },
+            {
+                "0": "Modern educational systems."
+            }
         ]
-      }
+    }
     }
   },
   "VisionSteps": {

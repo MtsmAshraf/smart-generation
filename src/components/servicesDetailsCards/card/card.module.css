@@ -5,6 +5,8 @@
     border-bottom: 1px solid var(--sec-color);
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .card:first-child{
     margin-top: -50px;
@@ -12,6 +14,10 @@
 .card.inverted{
     flex-direction: row-reverse;
 }
+/* .card.en{
+    direction: ltr;
+    font-family: "Afacad Flux", sans-serif;
+} */
 .card > div{
     flex: 1;
 }
@@ -30,12 +36,23 @@
     color: var(--sec-color);
     margin-bottom: 10px;
 }
+.card.en h2{
+    font-size: 30px;
+}
 .card ul{
     list-style: disc;
     margin-right: 15px;
 }
+.card.en ul{
+    list-style: disc;
+    margin-right: 0px;
+    margin-left: 15px;
+}
 .card ul li{
     margin-bottom: 6px;
+}
+.card.en ul li{
+    font-size: 18px;
 }
 @media (max-width: 992px) {
     .card, .card.inverted{
@@ -48,4 +65,13 @@
     }
 }
 @media (max-width: 600px) {
+    .card{
+        padding-left: 0;
+        padding-right: 0;
+        align-items: flex-start;
+    }
+    .card > div:nth-child(2){
+        margin-right: auto;
+        margin-left: auto;
+    }
 }

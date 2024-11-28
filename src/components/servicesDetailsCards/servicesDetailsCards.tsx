@@ -3,7 +3,11 @@ import Card from './card/card'
 import Image from 'next/image'
 import services, { Service } from '@/app/[locale]/(subpages)/services/servicesData'
 import { useTranslations } from 'next-intl'
-const ServicesDetailsCards = () => {
+const ServicesDetailsCards = ({
+    l
+}: {
+    l: string
+}) => {
     const t = useTranslations("Services.Detailed");
   return (
     <section>
@@ -12,7 +16,7 @@ const ServicesDetailsCards = () => {
                 let heading = t(`Headings.${index}`)
                 let p = t(`Ul.${index}.${index}.${index}`)
                 return(
-                    <Card key={service.id} inverted={index % 2 === 0 ? false : true}>
+                    <Card l={l} key={service.id} inverted={index % 2 === 0 ? false : true}>
                         <div>
                             <h2>
                                 {heading}
