@@ -21,8 +21,8 @@ const About = ({
         <Why lo={locale}></Why>
         <div className="container">
             {/* <Testimonials l={locale}></Testimonials> */}
-            <Contact l={locale}></Contact>
         </div>
+        <Contact l={locale}></Contact>
     </section>
   )
 }

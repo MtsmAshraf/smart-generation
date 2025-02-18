@@ -1,3 +1,4 @@
+import Contact from '@/components/contact/contact'
 import Loader from '@/components/loader/loader'
 import ProjectsSlider from '@/components/projectsSlider/projectsSlider'
 import React from 'react'
@@ -14,6 +15,7 @@ const Projects = ({
       <div className="container">
         <ProjectsSlider l={locale}></ProjectsSlider>
       </div>
+        <Contact l={locale}></Contact>
     </div>
   )
 }

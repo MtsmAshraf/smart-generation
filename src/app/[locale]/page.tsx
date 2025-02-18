@@ -10,7 +10,6 @@ import "./globals.css"
 
 import {useTranslations} from 'next-intl';
 import Loader from "@/components/loader/loader";
-import SocialLinks from "@/components/socialLinks/socialLinks";
 import Fields from "@/components/fields/fields";
 import Why from "@/components/why/why";
 
@@ -79,9 +78,6 @@ export default function Home({
       </section> */}
       <section>
         <Contact l={locale}></Contact>
-        <div style={{width: "fit-content", marginLeft: "auto", marginRight: "auto", marginBottom: "30px"}}>
-            <SocialLinks></SocialLinks>
-        </div>
       </section>
     </main>
   );

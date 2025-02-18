@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     gap: 1px;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 .cards > div{
     background-color: var(--sec-color); 

@@ -104,10 +104,11 @@
     border-top: 1px solid #fff;
     text-align: center;
     padding: 20px;
+    font-size: 12px;
 }
 .footer .copyright a{
     color: var(--main-color);
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: underline;
     font-weight: bold;
 }

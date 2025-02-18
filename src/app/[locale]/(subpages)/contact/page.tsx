@@ -18,9 +18,6 @@ const ContactUs = ({
             <ContactsInfo></ContactsInfo>
         </div>
         <Contact l={locale}></Contact>
-        <div className={styles.socialLinks}>
-            <SocialLinks></SocialLinks>
-        </div>
     </section>
   )
 }

@@ -14,8 +14,8 @@ const Services = ({
         <div className="container">
           <ServicesDetailsCards l={locale}></ServicesDetailsCards>
           {/* <ServicesCards l={locale}></ServicesCards> */}
-          <Contact l={locale}></Contact>
         </div>
+          <Contact l={locale}></Contact>
     </section>
   )
 }

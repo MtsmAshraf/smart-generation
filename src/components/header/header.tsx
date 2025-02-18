@@ -5,7 +5,7 @@ import styles from "./header.module.css"
 import logo from "../../assets/imgs/logo.png"
 import smallLogo from "../../assets/imgs/logo-no-text.png"
 import Image from 'next/image'
-import Link from 'next/link'
+// import Link from 'next/link'
 import Button from '../button/button'
 import { usePathname } from 'next/navigation'
 import { faBars, faChevronDown, faChevronRight, faXmark } from '@fortawesome/free-solid-svg-icons'
@@ -16,6 +16,7 @@ import hmis, { Hmi } from "../../app/[locale]/(subpages)/products/(subproducts)/
 import servoDrives, { ServoDrive } from '@/app/[locale]/(subpages)/products/(subproducts)/servo-drives/servo-drives'
 import LanguageSwitch from '../languageSwitch/languageSwitch'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
 const Header = ({
     l
   }: {
@@ -71,17 +72,17 @@ const Header = ({
                 </Link>
             </div>
             <nav>
-                <Link className={pathname === `/${l}` ? styles.active : ""} href={`/${l}/`}>
+                <Link className={pathname === `/${l}` ? styles.active : ""} href={`/`}>
                     {t("Home")}
                 </Link>
-                <Link className={pathname === `/${l}/services` ? styles.active : ""} href={`/${l}/services`}>
+                <Link className={pathname === `/${l}/services` ? styles.active : ""} href={`/services`}>
                     {t("Services")}
                 </Link>
-                <Link className={pathname === `/${l}/projects` ? styles.active : ""} href={`/${l}/projects`}>
+                <Link className={pathname === `/${l}/projects` ? styles.active : ""} href={`/projects`}>
                     {t("Projects")}
                 </Link>
                 <div>
-                <Link className={pathname === `/${l}/products` ? styles.active : ""} href={`/${l}/products`}>
+                <Link className={pathname.split("/")[2] === "products" ? styles.active : ""} href={`/products`}>
                     <span>
                     {t("Products")}
                     </span>
@@ -92,7 +93,7 @@ const Header = ({
                     <div className={showMoreLinks ? styles.moreLinks + " " + styles.shown : styles.moreLinks}>
                         <ul>
                             <li>
-                                <Link href={`/${l}/products`}>
+                                <Link href={`/products`}>
                                     All products
                                 </Link>
                             </li>
@@ -104,7 +105,7 @@ const Header = ({
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
                                         <li>
-                                            <Link href={`/${l}/products/inverters`}>
+                                            <Link href={`/products/inverters`}>
                                                 All Inverters
                                             </Link>
                                         </li>
@@ -112,7 +113,7 @@ const Header = ({
                                             inverters.map((inverter: Inverter) => {
                                                 return(
                                                     <li key={inverter.id}>
-                                                        <Link href={`/${l}/products/inverters/${inverter.id}`} replace>
+                                                        <Link href={`/products/inverters/${inverter.id}`} replace>
                                                             {inverter.description}
                                                         </Link>
                                                     </li>
@@ -130,7 +131,7 @@ const Header = ({
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
                                         <li>
-                                            <Link href={`/${l}/products/plcs`}>
+                                            <Link href={`/products/plcs`}>
                                                 All PLCs
                                             </Link>
                                         </li>
@@ -138,7 +139,7 @@ const Header = ({
                                             plcs.map((plc: Plc) => {
                                                 return(
                                                     <li key={plc.id}>
-                                                        <Link href={`/${l}/products/plcs/${plc.id}`}>
+                                                        <Link href={`/products/plcs/${plc.id}`}>
                                                             {plc.description}
                                                         </Link>
                                                     </li>
@@ -156,7 +157,7 @@ const Header = ({
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
                                         <li>
-                                            <Link href={`/${l}/products/hmis`}>
+                                            <Link href={`/products/hmis`}>
                                                 All HMIs
                                             </Link>
                                         </li>
@@ -164,7 +165,7 @@ const Header = ({
                                             hmis.map((hmi: Hmi) => {
                                                 return(
                                                     <li key={hmi.id}>
-                                                        <Link href={`/${l}/products/hmis/${hmi.id}`}>
+                                                        <Link href={`/products/hmis/${hmi.id}`}>
                                                             {hmi.description}
                                                         </Link>
                                                     </li>
@@ -182,7 +183,7 @@ const Header = ({
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
                                         <li>
-                                            <Link href={`/${l}/products/servo-drives`}>
+                                            <Link href={`/products/servo-drives`}>
                                                 All Servo Drives
                                             </Link>
                                         </li>
@@ -190,7 +191,7 @@ const Header = ({
                                             servoDrives.map((servoDrive: ServoDrive) => {
                                                 return(
                                                     <li key={servoDrive.id}>
-                                                        <Link href={`/${l}/products/servo-drives/${servoDrive.id}`}>
+                                                        <Link href={`/products/servo-drives/${servoDrive.id}`}>
                                                             {servoDrive.description}
                                                         </Link>
                                                     </li>
@@ -229,10 +230,10 @@ const Header = ({
                     : null 
                 }
                 </div>
-                <Link className={pathname === `/${l}/about` ? styles.active : ""} href={`/${l}/about`}>
+                <Link className={pathname === `/${l}/about` ? styles.active : ""} href={`/about`}>
                     {t("About Us")}
                 </Link>
-                <Link className={pathname === `/${l}/contact` ? styles.active : ""} href={`/${l}/contact`}>
+                <Link className={pathname === `/${l}/contact` ? styles.active : ""} href={`/contact`}>
                     {t("Contact")}
                 </Link>
             </nav>

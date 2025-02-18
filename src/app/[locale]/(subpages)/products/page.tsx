@@ -4,6 +4,7 @@ import allProducts from "./all-products"
 import Link from 'next/link'
 import Image from 'next/image'
 import Loader from '@/components/loader/loader'
+import Contact from '@/components/contact/contact'
 const Products = ({
   params: {locale}
 } : {
@@ -38,6 +39,7 @@ const Products = ({
           </ul>
         </section>
       </div>
+      <Contact l={locale}></Contact>
     </div>
   )
 }
