@@ -23,10 +23,10 @@
 }
 ::-webkit-scrollbar{
   width: 10px;
-  background-color: var(--main-color);
+  background-color: var(--sec-color);
 }
 ::-webkit-scrollbar-thumb{
-  background-color: var(--sec-color);
+  background-color: var(--main-color);
 }
 body{
   font-family: "El Messiri", sans-serif;
