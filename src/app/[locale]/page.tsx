@@ -43,12 +43,12 @@ export default function Home({
             }
           </p>
           <div className="buttons">
-            <Button href={`/${locale}/services`} l={locale} inverted={false}>
+            <Button href={`/services`} l={locale} inverted={false}>
             {
             t('heroSection.btnOne')
             }
             </Button>
-            <Button href={`/${locale}/contact`} l={locale} inverted={true}>
+            <Button href={`/contact`} l={locale} inverted={true}>
             {
             t('heroSection.btnTwo')
             }

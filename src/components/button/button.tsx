@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from 'react'
 import styles from "./button.module.css"
-import Link from 'next/link'
+import { Link } from '@/i18n/routing'
 const Button = ({ 
     children,
     inverted,

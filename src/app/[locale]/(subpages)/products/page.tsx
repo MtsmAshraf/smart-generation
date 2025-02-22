@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from "./products.module.css"
 import allProducts from "./all-products"
-import Link from 'next/link'
 import Image from 'next/image'
 import Loader from '@/components/loader/loader'
 import Contact from '@/components/contact/contact'
+import { Link } from '@/i18n/routing'
 const Products = ({
   params: {locale}
 } : {
@@ -20,7 +20,7 @@ const Products = ({
               allProducts.map((product) => {
                 return(
                   <li key={product.id}>
-                    <Link href={`/${locale}/products/${product.href}`}>
+                    <Link href={`/products/${product.href}`}>
                       <Image src={product.src} alt={product.alt} loading='lazy'></Image>
                     </Link>
                     <div className={styles.text}>
@@ -30,7 +30,7 @@ const Products = ({
                       <p>
                         {product.description}
                       </p>
-                      <Link href={`/${locale}/products/${product.href}`}>More</Link>
+                      <Link href={`/products/${product.href}`}>More</Link>
                     </div>
                   </li>
                 )

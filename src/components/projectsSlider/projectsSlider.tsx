@@ -7,8 +7,8 @@ import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import MainHeading from '../mainHeading/mainHeading'
-import Link from 'next/link'
 import projectsImages from './projectsImages'
+import { Link } from '@/i18n/routing'
 const ProjectsSlider = ({
     l
 }: {
@@ -106,7 +106,7 @@ const ProjectsSlider = ({
                 <div>
                     {projectsImages.map((img) => {
                         return(
-                            <Link key={img.id} href={`/${l}/projects/${img.id}`}>
+                            <Link key={img.id} href={`/projects/${img.id}`}>
                                 <ProjectCard>
                                     <div className={styles.cardImg}>
                                         <Image loading='lazy' src={img.src} alt='Project Card'></Image>

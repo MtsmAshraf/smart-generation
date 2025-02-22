@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from "./footer.module.css"
-import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faClock, faLocationPin, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
 
 const Footer = ({
   l
@@ -18,11 +18,11 @@ const Footer = ({
         <div>
           <h4>{t("Sections.Heading")}</h4>
           <div>
-            <Link href={`/${l}/services`}>{t("Sections.PagesLinks.1")}</Link>
-            <Link href={`/${l}/projects`}>{t("Sections.PagesLinks.2")}</Link>
-            <Link href={`/${l}/products`}>{t("Sections.PagesLinks.3")}</Link>
-            <Link href={`/${l}/about`}>{t("Sections.PagesLinks.4")}</Link>
-            <Link href={`/${l}/contact`}>{t("Sections.PagesLinks.5")}</Link>
+            <Link href={`/services`}>{t("Sections.PagesLinks.1")}</Link>
+            <Link href={`/projects`}>{t("Sections.PagesLinks.2")}</Link>
+            <Link href={`/products`}>{t("Sections.PagesLinks.3")}</Link>
+            <Link href={`/about`}>{t("Sections.PagesLinks.4")}</Link>
+            <Link href={`/contact`}>{t("Sections.PagesLinks.5")}</Link>
           </div>
         </div>
         <div>

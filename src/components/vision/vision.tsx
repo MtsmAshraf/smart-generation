@@ -25,7 +25,7 @@ const Vision = ({
                 {t('Vision.VisionP')}
             </p>
             
-            <Button href={`/${l}/contact`} l={l} inverted={false}>
+            <Button href={`/contact`} l={l} inverted={false}>
                 {t('Vision.Btn')}
             </Button>
         </div>

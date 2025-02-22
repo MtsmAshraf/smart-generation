@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Card from './card/card'
 import { useTranslations } from 'use-intl'
 import heroServices ,{ HeroService } from './servicesHeroData'
-import Link from 'next/link'
+import { Link } from '@/i18n/routing'
 
 const ServicesCards = ({
     l
@@ -32,7 +32,7 @@ const ServicesCards = ({
                     if(index <= 5){
                         return(
                             <Card key={service.id}>
-                                <Link href={`/${l}/services`}>
+                                <Link href={`/services`}>
                                     <div className={styles.cardImg}>
                                         <Image loading='lazy' src={service.src} alt={heading}></Image>
                                     </div>

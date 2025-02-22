@@ -1,8 +1,8 @@
 import React from 'react'
 import inverters from "./inverters"
-import Link from 'next/link'
 import Image from 'next/image'
 import Loader from '@/components/loader/loader'
+import { Link } from '@/i18n/routing'
 const Inverters = ({
   params: {locale}
 } : {
@@ -20,17 +20,17 @@ const Inverters = ({
             inverters.map((inverter) => {
               return(
                 <div key={inverter.id} id='grid-cards'>
-                    <Link href={`/${locale}/products/inverters/${inverter.id}`}>
+                    <Link href={`/products/inverters/${inverter.id}`}>
                       <Image src={inverter.src} alt={inverter.alt} loading='lazy'></Image>
                     </Link>
                     <div>
                       <p>
-                        <Link href={`/${locale}/products/inverters/${inverter.id}`}>
+                        <Link href={`/products/inverters/${inverter.id}`}>
                           {inverter.description}
                         </Link>
                       </p>
                       <span>
-                        <Link href={`/${locale}/products/inverters/${inverter.id}`}>
+                        <Link href={`/products/inverters/${inverter.id}`}>
                           More
                         </Link>
                       </span>
