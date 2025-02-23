@@ -362,6 +362,16 @@ body:has(header#en) header {
         border-bottom: 1px solid var(--main-color);
         box-shadow: 0px 2px 5px -2px var(--main-color);
     }
+    .header.scrolled nav a{
+        color: #fff;        
+    }
+    .header.scrolled nav a.active,
+    .header.scrolled nav a:hover{
+        color: var(--main-color);
+    }
+    .header nav .moreLinks a{
+        color: var(--text-color);
+    }
 }
 @media (max-width: 767px) {
     

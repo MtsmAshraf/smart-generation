@@ -44,24 +44,24 @@ const Header = ({
         }
     },[scrolled])
     const [navShown, setNavShown] = useState(false)
-    const showNav = () => {
-        const nav: any  = document.querySelector("header nav");
-        if(!navShown){
-            nav.style.cssText=`
-                display: flex
-            `
-        }else{
-            nav.style.cssText=`
-                display: none
-            `
-        }
-    }
+    // const showNav = () => {
+    //     const nav: any  = document.querySelector("header nav");
+    //     if(!navShown){
+    //         nav.style.cssText=`
+    //             display: flex
+    //         `
+    //     }else{
+    //         nav.style.cssText=`
+    //             display: none
+    //         `
+    //     }
+    // }
   const t = useTranslations('Header');
     let classNameList = [styles.header, scrolled ? styles.scrolled : "", l === "en" ? styles.en : ""].join(" ")
   return (
     <header className={classNameList}>
         <div className= "container">
-            <button onClick={() => { showNav(); setNavShown(!navShown);}} className={styles.toggleNav}>
+            <button onClick={() => {setNavShown(!navShown);}} className={styles.toggleNav}>
                 <FontAwesomeIcon style={{ display: navShown ? "none" : "inline"  }} icon={faBars}></FontAwesomeIcon>
                 <FontAwesomeIcon style={{ display: navShown ? "inline" : "none"  }} icon={faXmark}></FontAwesomeIcon>
             </button>
@@ -71,14 +71,14 @@ const Header = ({
                     <Image src={smallLogo} alt='No Text Logo'></Image>
                 </Link>
             </div>
-            <nav>
-                <Link className={pathname === `/${l}` ? styles.active : ""} href={`/`}>
+            <nav style={{ display: navShown ? "flex" : "none" }}>
+                <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}` ? styles.active : ""} href={`/`}>
                     {t("Home")}
                 </Link>
-                <Link className={pathname === `/${l}/services` ? styles.active : ""} href={`/services`}>
+                <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/services` ? styles.active : ""} href={`/services`}>
                     {t("Services")}
                 </Link>
-                {/* <Link className={pathname === `/${l}/projects` ? styles.active : ""} href={`/projects`}>
+                {/* <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/projects` ? styles.active : ""} href={`/projects`}>
                     {t("Projects")}
                 </Link> */}
                 <div>
@@ -93,7 +93,7 @@ const Header = ({
                     <div className={showMoreLinks ? styles.moreLinks + " " + styles.shown : styles.moreLinks}>
                         <ul>
                             <li>
-                                <Link href={`/products`}>
+                                <Link onClick={() => {setNavShown(false)}} href={`/products`}>
                                     All products
                                 </Link>
                             </li>
@@ -105,7 +105,7 @@ const Header = ({
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
                                         <li>
-                                            <Link href={`/products/inverters`}>
+                                            <Link onClick={() => {setNavShown(false)}} href={`/products/inverters`}>
                                                 All Inverters
                                             </Link>
                                         </li>
@@ -113,7 +113,7 @@ const Header = ({
                                             inverters.map((inverter: Inverter) => {
                                                 return(
                                                     <li key={inverter.id}>
-                                                        <Link href={`/products/inverters/${inverter.id}`} replace>
+                                                        <Link onClick={() => {setNavShown(false)}} href={`/products/inverters/${inverter.id}`} replace>
                                                             {inverter.description}
                                                         </Link>
                                                     </li>
@@ -230,10 +230,10 @@ const Header = ({
                     : null 
                 }
                 </div>
-                <Link className={pathname === `/${l}/about` ? styles.active : ""} href={`/about`}>
+                <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/about` ? styles.active : ""} href={`/about`}>
                     {t("About Us")}
                 </Link>
-                <Link className={pathname === `/${l}/contact` ? styles.active : ""} href={`/contact`}>
+                <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/contact` ? styles.active : ""} href={`/contact`}>
                     {t("Contact")}
                 </Link>
             </nav>
