@@ -58,6 +58,14 @@
     transition: var(--main-transition);
     position: relative;
 }
+@media (max-width: 992px) {
+    .header nav.hiddem{
+        display: none;
+    }
+    .header nav.shown{
+        display: flex;
+    }
+}
 .header nav a{
     color: #fff;
     transition: var(--main-transition);

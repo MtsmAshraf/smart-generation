@@ -71,7 +71,7 @@ const Header = ({
                     <Image src={smallLogo} alt='No Text Logo'></Image>
                 </Link>
             </div>
-            <nav style={{ display: navShown ? "flex" : "none" }}>
+            <nav className={navShown ? styles.shown : styles.hidden}>
                 <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}` ? styles.active : ""} href={`/`}>
                     {t("Home")}
                 </Link>
