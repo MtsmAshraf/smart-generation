@@ -8,49 +8,12 @@ const Contact = ({
     l: string
 }) => {
     const t = useTranslations("Contact")
-    const username = t("Form.UserName");
-    const email = t("Form.Email");
-    const userAddress = t("Form.Address");
-    const msg = t("Form.Msg");
-    const send = t("Form.Send");
   return (
     <div className={l === "en" ? styles.contact + " " + styles.en : styles.contact}>
         <h1>
             {t("Heading")}
         </h1>
         <div className="container">
-            <form>
-                <h2>{t("Form.FormHeading")}</h2>
-                <div>
-                    <div>
-                        <label htmlFor="name">
-                            {t("Form.UserName")}
-                        </label>
-                        <input type="text" name="name" id="name" placeholder={username}/>
-                    </div>
-                    <div>
-                        <label htmlFor="email">
-                            {t("Form.Email")}
-                        </label>
-                        <input type="email" name="email" id="email" placeholder={email} />
-                    </div>
-                    <div>
-                        <label htmlFor="address">
-                            {t("Form.Address")}
-                        </label>
-                        <input type="text" name="address" id="address" placeholder={userAddress} />
-                    </div>
-                    <div>
-                        <label htmlFor="message">
-                            {t("Form.Msg")}
-                        </label>
-                        <textarea name="message" id="message" placeholder={msg}></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value={send} />
-                    </div>
-                </div>
-            </form>
             {/* <div className={styles.faq}>
                 <h2>
                     الأسئلة المتكررة

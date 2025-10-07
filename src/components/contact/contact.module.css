@@ -17,6 +17,7 @@
 .contact > div{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .contact > div:not(:last-child) > *{
     width: 50%;
