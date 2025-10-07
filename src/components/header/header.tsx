@@ -2,8 +2,8 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import styles from "./header.module.css"
-import logo from "../../assets/imgs/logo.png"
-import smallLogo from "../../assets/imgs/logo-no-text.png"
+import logo from "../../../public/assets/imgs/logo.png"
+import smallLogo from "../../../public/assets/imgs/logo-no-text.png"
 import Image from 'next/image'
 // import Link from 'next/link'
 import Button from '../button/button'

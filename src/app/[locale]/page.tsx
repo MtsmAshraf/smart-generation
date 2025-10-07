@@ -1,6 +1,6 @@
 "use client"
 import Button from "@/components/button/button";
-import Bg from "../../assets/imgs/home-bg.jpg"
+import Bg from "../../../public/assets/imgs/home-bg.jpg"
 import ServicesCards from "@/components/servicesCards/servicesCards";
 import StatsCard from "@/components/statsCard/statsCard";
 import Vision from "@/components/vision/vision";

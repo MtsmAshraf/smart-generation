@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import plcs from "./plcs"
 import Loader from '@/components/loader/loader'
-import Link from 'next/link'
+import { Link } from '@/i18n/routing'
 const Plcs = ({
     params: {locale}
 } : {

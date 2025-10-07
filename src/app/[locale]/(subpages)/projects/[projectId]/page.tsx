@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./project-id.module.css"
 import MainHeading from '@/components/mainHeading/mainHeading'
 import Image from 'next/image'
-import test from "../../../../../assets/imgs/1.jpg"
+import test from "../../../../../../public/assets/imgs/1.jpg"
 import Link from 'next/link'
 import projectsImages from '@/components/projectsSlider/projectsImages'
 import Loader from '@/components/loader/loader'

@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image"
-import image1 from "../../assets/imgs/user.png"
+import image1 from "../../../public/assets/imgs/user.png"
 
 export type Testimonial = {
     id: string,

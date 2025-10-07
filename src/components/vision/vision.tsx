@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "./vision.module.css"
 import Button from '../button/button'
-import visionBg from "../../assets/imgs/vision-bg.jpg"
-import stepsBg from "../../assets/imgs/steps-bg.jpg"
+import visionBg from "../../../public/assets/imgs/vision-bg.jpg"
+import stepsBg from "../../../public/assets/imgs/steps-bg.jpg"
 import { useTranslations } from 'next-intl'
 
 const Vision = ({

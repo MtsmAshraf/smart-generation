@@ -1,13 +1,13 @@
 import { StaticImageData } from "next/image"
-import image1 from "../../assets/imgs/1.jpg"
-import image2 from "../../assets/imgs/2.jpg"
-import image3 from "../../assets/imgs/3.jpg"
-import image4 from "../../assets/imgs/4.jpg"
-import image5 from "../../assets/imgs/5.jpg"
-import image6 from "../../assets/imgs/6.jpg"
-import image7 from "../../assets/imgs/7.jpg"
-import image8 from "../../assets/imgs/8.jpg"
-import image9 from "../../assets/imgs/8.jpg"
+import image1 from "../../../public/assets/imgs/1.jpg"
+import image2 from "../../../public/assets/imgs/2.jpg"
+import image3 from "../../../public/assets/imgs/3.jpg"
+import image4 from "../../../public/assets/imgs/4.jpg"
+import image5 from "../../../public/assets/imgs/5.jpg"
+import image6 from "../../../public/assets/imgs/6.jpg"
+import image7 from "../../../public/assets/imgs/7.jpg"
+import image8 from "../../../public/assets/imgs/8.jpg"
+import image9 from "../../../public/assets/imgs/8.jpg"
 
 export type projectsImage = {
     id: string,

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import styles from "./sub-pages-layout.module.css"
-import bg from "../../../assets/imgs/home-bg.jpg"
+import bg from "../../../../public/assets/imgs/home-bg.jpg"
 import { usePathname } from 'next/navigation';
 
 

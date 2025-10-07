@@ -1,13 +1,7 @@
 import { StaticImageData } from "next/image"
-import image1 from "../../../../../../assets/imgs/Products/HMI/CgAGbGWS3BuAGRChAAIrwXYkcas203.png"
-import sliderImage1i1 from "../../../../../../assets/imgs/Products/inverters/VTS/slider/2.png"
-import sliderImage2i1 from "../../../../../../assets/imgs/Products/inverters/VTS/slider/CgAGbGWLpR-AGNuVAAL1OwoQCZM855.png"
-import sliderImage3i1 from "../../../../../../assets/imgs/Products/inverters/VTS/slider/CgAGbGWLpR2AEyz0AAI1eKMa73g854.png"
-import sliderImage4i1 from "../../../../../../assets/imgs/Products/inverters/VTS/slider/CgAGbGWLpR6APdlIAAMJcpTBFLM917.png"
-import sliderImage5i1 from "../../../../../../assets/imgs/Products/inverters/VTS/slider/CgAGbGWLpR6AQRLFAAKtvbnxX_0680.png"
-import sliderImage6i1 from "../../../../../../assets/imgs/Products/inverters/VTS/slider/CgAGbGWvRNaAG2YPAAKEqJ1OmX8381.png"
-import cat1i1 from "../../../../../../assets/imgs/Products/HMI/CgAGbGY7H8aAaZNeAAHpPG-50es182.jpg"
-import cat2i1 from "../../../../../../assets/imgs/Products/HMI/CgAGbGY7H9OADvHhAApyUDu5J4E692.jpg"
+import image1 from "../../../../../../../public/assets/imgs/all-products/HMIs.png"
+import cat1i1 from "../../../../../../../public/assets/imgs/Products/HMI/CgAGbGY7H8aAaZNeAAHpPG-50es182.jpg"
+import cat2i1 from "../../../../../../../public/assets/imgs/Products/HMI/CgAGbGY7H9OADvHhAApyUDu5J4E692.jpg"
 
 
 

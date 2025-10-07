@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./testimonials.module.css"
 import TestimonialsCard from './testimonialsCard/testimonialsCard'
 import Image from 'next/image'
-import userImg from "../../assets/imgs/user.png"
+import userImg from "../../../public/assets/imgs/user.png"
 import testimonialsData, { Testimonial } from "./testimonialsData"
 import { useTranslations } from 'next-intl'
 
