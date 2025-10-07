@@ -87,11 +87,9 @@
     "Detailed":{
       "Headings": {
         "0": "Central refrigeration and ACs",
-        "1": "Fire protection services",
-        "2": "Firefighting services",
+        "1": "Fire protection and Firefighting services",
         "3": "Air compressors services",
-        "4": "Pumps services",
-        "5": "Plumbing services",
+        "4": "Pumps and Plumbing services",
         "6": "Metal structures",
         "7": "Control and distribution panels",
         "8": "Production lines maintenance",
@@ -128,11 +126,6 @@
                 "0": "Sandblasting, painting, and welding works as required."
             }
         ],
-        "2": [
-            {
-                "0": "Comprehensive fire extinguishing systems using CO2, FM200, Novec 1230, and Aerosol."
-            }
-        ],
         "3": [
             {
                 "0": "Air compressor systems, including compressors, dryers, tanks, supply, installation, maintenance, and spare parts."
@@ -144,20 +137,6 @@
             },
             {
                 "0": "High-quality welding of all pipe joints."
-            }
-        ],
-        "5": [
-            {
-                "0": "Hot and cold water supply systems and insulation."
-            },
-            {
-                "0": "Water treatment plants and water tanks of all sizes."
-            },
-            {
-                "0": "Sanitary sewer networks using PVC, UPVC, and HDPE pipes of all sizes."
-            },
-            {
-                "0": "Inspection chambers, sedimentation tanks, and settling tanks."
             }
         ],
         "6": [

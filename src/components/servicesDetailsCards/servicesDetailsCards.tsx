@@ -13,8 +13,8 @@ const ServicesDetailsCards = ({
     <section>
         {
             services.map((service: Service, index: number) => {
-                let heading = t(`Headings.${index}`)
-                let p = t(`Ul.${index}.${index}.${index}`)
+                let heading = t(`Headings.${service.id}`)
+                let p = t(`Ul.${service.id}.${service.id}.${service.id}`)
                 return(
                     <Card l={l} key={service.id} inverted={index % 2 === 0 ? false : true}>
                         <div>
@@ -23,59 +23,54 @@ const ServicesDetailsCards = ({
                             </h2>
                             <ul>
                                 <li>
-                                    {t(`Ul.${index}.${0}.${0}`)}
+                                    {t(`Ul.${service.id}.${0}.${0}`)}
                                 </li>
                                 {
-                                    !(t(`Ul.${index}.${1}.${0}`)).startsWith("S") && 
+                                    !(t(`Ul.${service.id}.${1}.${0}`)).startsWith("S") && 
                                     <li>
-                                        {t(`Ul.${index}.${1}.${0}`)}
+                                        {t(`Ul.${service.id}.${1}.${0}`)}
                                     </li>
-                                } {
-                                    !(t(`Ul.${index}.${2}.${0}`)).startsWith("S") && 
+                                } 
+                                {
+                                    !(t(`Ul.${service.id}.${3}.${0}`)).startsWith("S") && 
                                     <li>
-                                        {t(`Ul.${index}.${2}.${0}`)}
+                                        {t(`Ul.${service.id}.${3}.${0}`)}
                                     </li>
                                 }
                                 {
-                                    !(t(`Ul.${index}.${3}.${0}`)).startsWith("S") && 
+                                    !(t(`Ul.${service.id}.${4}.${0}`)).startsWith("S") && 
                                     <li>
-                                        {t(`Ul.${index}.${3}.${0}`)}
+                                        {t(`Ul.${service.id}.${4}.${0}`)}
                                     </li>
                                 }
                                 {
-                                    !(t(`Ul.${index}.${4}.${0}`)).startsWith("S") && 
+                                    !(t(`Ul.${service.id}.${5}.${0}`)).startsWith("S") && 
                                     <li>
-                                        {t(`Ul.${index}.${4}.${0}`)}
+                                        {t(`Ul.${service.id}.${5}.${0}`)}
                                     </li>
                                 }
                                 {
-                                    !(t(`Ul.${index}.${5}.${0}`)).startsWith("S") && 
+                                    !(t(`Ul.${service.id}.${6}.${0}`)).startsWith("S") && 
                                     <li>
-                                        {t(`Ul.${index}.${5}.${0}`)}
+                                        {t(`Ul.${service.id}.${6}.${0}`)}
                                     </li>
                                 }
                                 {
-                                    !(t(`Ul.${index}.${6}.${0}`)).startsWith("S") && 
+                                    !(t(`Ul.${service.id}.${7}.${0}`)).startsWith("S") && 
                                     <li>
-                                        {t(`Ul.${index}.${6}.${0}`)}
+                                        {t(`Ul.${service.id}.${7}.${0}`)}
                                     </li>
                                 }
                                 {
-                                    !(t(`Ul.${index}.${7}.${0}`)).startsWith("S") && 
+                                    !(t(`Ul.${service.id}.${8}.${0}`)).startsWith("S") && 
                                     <li>
-                                        {t(`Ul.${index}.${7}.${0}`)}
+                                        {t(`Ul.${service.id}.${8}.${0}`)}
                                     </li>
                                 }
                                 {
-                                    !(t(`Ul.${index}.${8}.${0}`)).startsWith("S") && 
+                                    !(t(`Ul.${service.id}.${9}.${0}`)).startsWith("S") && 
                                     <li>
-                                        {t(`Ul.${index}.${8}.${0}`)}
-                                    </li>
-                                }
-                                {
-                                    !(t(`Ul.${index}.${9}.${0}`)).startsWith("S") && 
-                                    <li>
-                                        {t(`Ul.${index}.${9}.${0}`)}
+                                        {t(`Ul.${service.id}.${9}.${0}`)}
                                     </li>
                                 }
                             </ul>
