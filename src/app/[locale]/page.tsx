@@ -13,6 +13,7 @@ import Fields from "@/components/fields/fields";
 import Why from "@/components/why/why";
 import Image from "next/image";
 import vtLogo from "../../../public/assets/imgs/vt-logo.png"
+import VT from "@/components/vt/VT";
 
 
 export default function Home({
@@ -68,6 +69,9 @@ export default function Home({
         <StatsCard l={locale}></StatsCard>
       </section>
       <section>
+        <VT l={locale}></VT>
+      </section>
+      <section>
         <div className="container">
           <ServicesCards l={locale}></ServicesCards>
         </div>
@@ -81,9 +85,6 @@ export default function Home({
       <section>
         <Why lo={locale}></Why>
       </section>
-      {/* <section>
-        <Testimonials l={locale}></Testimonials>
-      </section> */}
       <section>
         <Contact l={locale}></Contact>
       </section>
