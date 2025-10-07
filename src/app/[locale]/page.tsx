@@ -14,7 +14,6 @@ import Why from "@/components/why/why";
 import Image from "next/image";
 import vtLogo from "../../../public/assets/imgs/vt-logo.png"
 import VT from "@/components/vt/VT";
-import Brands from "@/components/Brands/Brands";
 import Partners from "@/components/Partners/Partners";
 
 
