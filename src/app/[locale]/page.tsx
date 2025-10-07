@@ -4,7 +4,6 @@ import Bg from "../../../public/assets/imgs/home-bg.jpg"
 import ServicesCards from "@/components/servicesCards/servicesCards";
 import StatsCard from "@/components/statsCard/statsCard";
 import Vision from "@/components/vision/vision";
-// import Testimonials from "@/components/testimonials/testimonials";
 import Contact from "@/components/contact/contact";
 import "./globals.css"
 
@@ -12,6 +11,9 @@ import {useTranslations} from 'next-intl';
 import Loader from "@/components/loader/loader";
 import Fields from "@/components/fields/fields";
 import Why from "@/components/why/why";
+import Image from "next/image";
+import vtLogo from "../../../public/assets/imgs/vt-logo.png"
+
 
 export default function Home({
   params: {locale}
@@ -42,6 +44,12 @@ export default function Home({
             t('heroSection.heroP')
             }
           </p>
+          <div className={"vtLogo"}>
+              <Image src={vtLogo} alt="V&T company logo"></Image>
+              <span>
+                The exclusive agent of V&T in Egypt
+              </span>
+          </div>
           <div className="buttons">
             <Button href={`/services`} l={locale} inverted={false}>
             {

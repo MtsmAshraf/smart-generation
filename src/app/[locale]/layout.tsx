@@ -30,6 +30,8 @@ export const metadata: Metadata = {
     "Power Distribution Systems",
     "Electrical Panels and Switchgear",
     "Industrial Power Solutions",
+    "The exclusive agent of V&T in Egypt",
+    "V&T in Egypt"
   ],
 };
 export default async function RootLayout({

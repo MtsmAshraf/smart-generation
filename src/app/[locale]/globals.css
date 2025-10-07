@@ -98,6 +98,7 @@ button, button:focus, button:focus-visible, button:active{
   width: 100%;
   height: 100%;
   background-color: var(--sec-color);
+  backdrop-filter: blur(10px);
   opacity: 0.9;
 }
 .home .container{
@@ -121,14 +122,23 @@ button, button:focus, button:focus-visible, button:active{
   color: var(--main-color);
   font-size: 60px;
 }
-.home .container p{
+.home .container > p{
   width: 60%;
   font-size: 20px;
 }
-.home .container > div:last-of-type{
+.home .container > .buttons{
   display: flex;
   align-items: center;
   gap: 20px;  
+}
+.home .container .vtLogo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.home .container .vtLogo span{
+  font-size: 20px;
 }
 @media (max-width: 767px) {
   .home .container{
