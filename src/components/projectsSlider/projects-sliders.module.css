@@ -1,166 +1,112 @@
-.section > div:first-child{
+.projectsSilder{
+    background-color: #fff;
+    padding-top: 30px;
+    font-family: "Afacad Flux", sans-serif;
+}
+.projectsSilder h2{
     text-align: center;
-    font-size: 22px;
+    font-size: 40px;
 }
-.projectsSlider{
+.projectsSilder .swiper{
     position: relative;
+    padding-bottom: 100px;
+    min-height: 70vh;
 }
-.projectsSlider .arrow{
-    position: absolute;
-    top: 50%;
-    font-size: 30px;
-    z-index: 2;
-    color: var(--sec-color);
-    background-color: var(--main-color);
-    border: 2px solid var(--sec-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0px 0px 20px -10px var(--sec-color);
-    cursor: pointer;
-    transition: var(--main-transition);
-}
-.projectsSlider .arrow.left{
-    left: 0;
-    transform: translateX(-0%) translateY(-50%);
-}
-.projectsSlider .arrow.right{
-    right: 0;
-    transform: translateX(0%) translateY(-50%);
-}
-.projectsSlider .arrow:hover,
-.projectsSlider .arrow:focus-visible{
-    color: var(--main-color);
-    background-color: var(--sec-color);
-    border: 2px solid var(--main-color);
-    box-shadow: 0px 3px 20px -10px var(--sec-color);
-}
-
-.projectsSlider .toggleCards{
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-}
-.projectsSlider .toggleCards li{
-    display: none;
-    background-color: red;
-}
-.projectsSlider .toggleCards li:nth-child(1),
-.projectsSlider .toggleCards li:nth-child(2),
-.projectsSlider .toggleCards li:nth-child(3){
-    background-color: transparent;
-    display: inline;
-}
-@media (max-width: 1200px) {
-    .projectsSlider .toggleCards li:nth-child(4),
-    .projectsSlider .toggleCards li:nth-child(5){
-        background-color: transparent;
-        display: inline;
-    }
-}
-@media (max-width: 992px) {
-    .projectsSlider .toggleCards li{
-        display: inline;
-        background-color: transparent;
-    }
-}
-.projectsSlider .toggleCards li button{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid var(--sec-color);
-    color: transparent;
-}
-.projectsSlider .toggleCards li button:hover,
-.projectsSlider .toggleCards li button:focus,
-.projectsSlider .toggleCards li button[active-button="true"]{
-    background-color: var(--sec-color);
-}
-.projectsSlider > div:last-child{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    gap: 20px;
-    overflow-x: hidden;
-    /* padding: 20px; */
-    padding-top: 20px;
+.projectsSilder .swiper .projectsSilderSwiper{
     padding-bottom: 20px;
-    width: 100%;
 }
-.projectsSlider > div:last-child > a{
-    min-width: calc(1100px / 3);
-    max-width: 100%;
+.projectsSilder .slide{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
     height: 500px;
     position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 3px solid var(--main-color);
-    box-shadow: 0px 3px 20px -10px var(--sec-color);
-    transition: var(--main-transition);
-}
-@media (max-width: 1200px) {
-    .projectsSlider > div:last-child > a{
-        min-width: calc(920px / 2);
-    }
-}
-@media (max-width: 992px) {
-    .projectsSlider > div:last-child > a{
-        min-width: calc(710px / 1);
-    }
-}
-@media (max-width: 767px) {
-    .projectsSlider > div:last-child{
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .projectsSlider > div:last-child > a{
-        min-width: unset;
-        min-width: 100%;
-    }
-}
-.projectsSlider > div:last-child > a:hover{
-    box-shadow: 0px 5px 20px -10px var(--sec-color);
-}
-.projectsSlider > div:last-child > a .cardImg{
     display: flex;
     align-items: center;
     justify-content: center;
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    /* position: ; */
-}
-.projectsSlider > div:last-child > a .cardImg img{
-    /* position: absolute; */
+    direction: ltr;
     transition: var(--main-transition);
 }
-.projectsSlider > div:last-child > a:hover img{
-    transform: scale(1.1);
+.projectsSilder .slide:hover{
+    border: 4px solid var(--main-color);
 }
-.projectsSlider > div:last-child > a .cardText{
-    background-color: var(--sec-color);
+.projectsSilder .slide a{
+    width: 100%;
+}
+.projectsSilder .slide img{
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%,-50%);
     width: 100%;
-    text-align: center;
+    height: 100%;
+    z-index: -1;
+}
+.projectsSilder .slide .text{
+    background-color: var(--sec-color);
+    width: 100%;
+    color: #fff;
     padding: 20px;
-    border-top: 1px solid var(--main-color);
-    border-bottom: 1px solid var(--main-color);
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    transform: translateY(100px);
+    transition: var(--main-transition);
+}
+.projectsSilder .slide:hover .text{
+    transform: translateY(0);
+    border-top: 4px solid var(--main-color);
+    border-bottom: 4px solid var(--main-color);
+}
+.projectsSilder .slide .text h3{
+    font-size: 24px;
+}
+.projectsSilder .swiper button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #eee;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: var(--main-transition);
+    transition-duration: 0.1s;
+}
+.projectsSilder .swiper button:first-of-type{
+    left: -40px;
+}
+.projectsSilder .swiper button:last-of-type{
+    right: -40px;
+}
+.projectsSilder .swiper button:hover{
+    background-color: var(--main-color);
     color: #fff;
 }
-.projectsSlider > div:last-child > a .cardText h2{
-    color: var(--main-color);
+.projectsSilder .sliderPagination{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.projectsSilder .sliderPagination span{
+    background-color: var(--main-color);
+    width: 20px;
+    border-radius: 2px;
+}
+@media (max-width: 767px) {
+        
+    .projectsSilder .swiper button:first-of-type{
+        left: 0px;
+        transform: translateY(-100%);
+        z-index: 2;
+    }
+    .projectsSilder .swiper button:last-of-type{
+        right: 0px;
+        transform: translateY(-100%);
+        z-index: 2;
+    }
+    
 }

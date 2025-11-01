@@ -12,9 +12,7 @@ const Projects = ({
   return (
     <div>
       <Loader></Loader>
-      <div className="container">
-        <ProjectsSlider l={locale}></ProjectsSlider>
-      </div>
+        <ProjectsSlider lo={locale}></ProjectsSlider>
         <Contact l={locale}></Contact>
     </div>
   )

@@ -15,6 +15,8 @@ import Image from "next/image";
 import vtLogo from "../../../public/assets/imgs/vt-logo.png"
 import VT from "@/components/vt/VT";
 import Partners from "@/components/Partners/Partners";
+import Projects from "./(subpages)/projects/page";
+import ProjectsSlider from "@/components/projectsSlider/projectsSlider";
 
 
 export default function Home({
@@ -86,7 +88,10 @@ export default function Home({
       <section>
         <Why lo={locale}></Why>
       </section>
-        <Partners lo={locale}></Partners>
+      <section>
+        <ProjectsSlider l={locale}></ProjectsSlider>
+      </section>
+      <Partners lo={locale}></Partners>
       <section>
         <Contact l={locale}></Contact>
       </section>

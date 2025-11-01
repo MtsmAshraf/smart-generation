@@ -9,66 +9,66 @@ import image7 from "../../../public/assets/imgs/7.jpg"
 import image8 from "../../../public/assets/imgs/8.jpg"
 import image9 from "../../../public/assets/imgs/8.jpg"
 
-export type projectsImage = {
+export type ProjectsImage = {
     id: string,
     name: string,
     place: string,
     src: StaticImageData | string,
 }
 
-const projectsImages : projectsImage[] = [
+const projectsImages : ProjectsImage[] = [
     {
         id: "1",
-        name: "مشروع 1",
-        place: "مصر",
+        name: "Project 1 ",
+        place: "Egypt",
         src: image1
     },
     {
         id: "2",
-        name: "مشروع 2",
-        place: "مصر",
+        name: "Project 2",
+        place: "Egypt",
         src: image2
     },
     {
         id: "3",
-        name: "مشروع 3",
-        place: "مصر",
+        name: "Project 3",
+        place: "Egypt",
         src: image3
     },
     {
         id: "4",
-        name: "مشروع 4",
-        place: "مصر",
+        name: "Project 4",
+        place: "Egypt",
         src: image4
     },
     {
         id: "5",
-        name: "مشروع 5",
-        place: "مصر",
+        name: "Project 5",
+        place: "Egypt",
         src: image5
     },
     {
         id: "6",
-        name: "مشروع 6",
-        place: "مصر",
+        name: "Project 6",
+        place: "Egypt",
         src: image6
     },
     {
         id: "7",
-        name: "مشروع 7",
-        place: "مصر",
+        name: "Project 7",
+        place: "Egypt",
         src: image7
     },
     {
         id: "8",
-        name: "مشروع 8",
-        place: "مصر",
+        name: "Project 8",
+        place: "Egypt",
         src: image8
     },
     {
         id: "9",
-        name: "مشروع 9",
-        place: "مصر",
+        name: "Project 9",
+        place: "Egypt",
         src: image9
     },
 ]

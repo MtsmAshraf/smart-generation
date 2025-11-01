@@ -78,9 +78,9 @@ const Header = ({
                 <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/services` ? styles.active : ""} href={`/services`}>
                     {t("Services")}
                 </Link>
-                {/* <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/projects` ? styles.active : ""} href={`/projects`}>
+                <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/projects` ? styles.active : ""} href={`/projects`}>
                     {t("Projects")}
-                </Link> */}
+                </Link>
                 <div>
                 <Link className={pathname.split("/")[2] === "products" ? styles.active : ""} href={`/products`}>
                     <span>
