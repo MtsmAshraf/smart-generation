@@ -51,7 +51,9 @@ export default function Home({
           <div className={"vtLogo"}>
               <Image src={vtLogo} alt="V&T company logo"></Image>
               <span>
-                The exclusive agent of V&T in Egypt
+                {
+                  t("heroSection.VT.h1")
+                }
               </span>
           </div>
           <div className="buttons">

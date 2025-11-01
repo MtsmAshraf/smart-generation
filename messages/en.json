@@ -13,6 +13,10 @@
         "coName": "Smart Generation",
         "greeting": "welcomes you",
         "heroP": "We welcome you to the official website of the leading company in the field of engineering and construction. With the latest advanced capabilities, we will implement a project for you beyond imagination.",
+        "VT": {
+        "span": "We are proud to be",
+        "h1": "The Exclusive Agent of V&T in Egypt"
+        },
         "btnOne": "Our Services",
         "btnTwo": "Contact Us"
       },
