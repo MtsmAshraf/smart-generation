@@ -1,12 +1,11 @@
 "use client"
-
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./header.module.css"
 import logo from "../../../public/assets/imgs/logo.png"
 import smallLogo from "../../../public/assets/imgs/logo-no-text.png"
 import Image from 'next/image'
 // import Link from 'next/link'
-import Button from '../button/button'
+// import Button from '../button/button'
 import { usePathname } from 'next/navigation'
 import { faBars, faChevronDown, faChevronRight, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -22,7 +21,7 @@ const Header = ({
   }: {
     l: string,
   })  => {
-    const [showMoreLinks, setShowMoreLinks] = useState(false)
+    const [showMoreLinks] = useState(false)
     const pathname = usePathname()
     const [isClient, setIsClient] = useState(false)
     const [scrolled, setScrolled] = useState(false)
@@ -78,9 +77,9 @@ const Header = ({
                 <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/services` ? styles.active : ""} href={`/services`}>
                     {t("Services")}
                 </Link>
-                <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/projects` ? styles.active : ""} href={`/projects`}>
+                {/* <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/projects` ? styles.active : ""} href={`/projects`}>
                     {t("Projects")}
-                </Link>
+                </Link> */}
                 <div>
                 <Link className={pathname.split("/")[2] === "products" ? styles.active : ""} href={`/products`}>
                     <span>
