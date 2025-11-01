@@ -15,7 +15,7 @@ import Image from "next/image";
 import vtLogo from "../../../public/assets/imgs/vt-logo.png"
 import VT from "@/components/vt/VT";
 import Partners from "@/components/Partners/Partners";
-import Projects from "./(subpages)/projects/page";
+// import Projects from "./(subpages)/projects/page";
 import ProjectsSlider from "@/components/projectsSlider/projectsSlider";
 
 
