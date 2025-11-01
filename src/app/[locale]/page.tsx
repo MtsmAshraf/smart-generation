@@ -91,7 +91,7 @@ export default function Home({
         <Why lo={locale}></Why>
       </section>
       <section>
-        <ProjectsSlider l={locale}></ProjectsSlider>
+        <ProjectsSlider lo={locale}></ProjectsSlider>
       </section>
       <Partners lo={locale}></Partners>
       <section>
