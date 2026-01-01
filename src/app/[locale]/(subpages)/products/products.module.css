@@ -1,6 +1,6 @@
 
 .productsList *{
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     direction: ltr !important;
 }    
 .productsList ul li{
@@ -74,7 +74,7 @@
 .productsList ul li h3{
     color: var(--sec-color);
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 26px;
 }
 .productsList ul li p{
     margin-bottom: 20px;

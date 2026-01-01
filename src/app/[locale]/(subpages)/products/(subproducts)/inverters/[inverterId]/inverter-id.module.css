@@ -5,6 +5,7 @@
     margin-bottom: 40px;
     gap: 20px;
     /* background-color: red; */
+    /* font-family: "Afacad Flux", sans-serif; */
 }
 .inverterId img{
     object-fit: contain;
@@ -150,8 +151,6 @@
 @media (max-width: 767px) {
     .inverterId .features .featuresDetails ul li{
         width: calc(100%);
-    }
-    .downloadBtns .btns{
     }
     .downloadBtns .btns a{
         padding: 10px 16px;

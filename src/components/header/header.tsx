@@ -99,7 +99,7 @@ const Header = ({
                             <li>
                                 <div>
                                     <span>
-                                        Inverter
+                                        Inverters
                                     </span>
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>
@@ -177,7 +177,7 @@ const Header = ({
                             <li>
                                 <div>
                                     <span>
-                                        Servo Drive
+                                        Servo Drives
                                     </span>
                                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                                     <ul>

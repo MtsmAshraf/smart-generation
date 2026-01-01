@@ -11,6 +11,7 @@
 :root{
   --main-color: #e8af06;
   --sec-color: #004161;
+  --sec-color-trans: #004161c8;
   --bg-color: #ffffff;
   --test: #ffc03d;
   --text-color: #242424;

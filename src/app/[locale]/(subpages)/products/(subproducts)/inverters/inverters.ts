@@ -39,6 +39,8 @@ export type Inverter = {
     desctiptionUl: string[] | null,
     features: Feature[],
     catImgs: StaticImageData[],
+    brochureFile?: string,
+    userManualFile?: string
 }
 
 const inverters : Inverter[] = [
@@ -78,7 +80,8 @@ const inverters : Inverter[] = [
                 paragraph: "TO BE DETERMINED",
             }
         ],
-        catImgs: []
+        catImgs: [],
+        userManualFile: "/files/AE300&AF300 VFD User Manual 20251110.pdf",
     },
     {
         id: "1",
@@ -107,7 +110,8 @@ const inverters : Inverter[] = [
                 paragraph: "Compatible with the control of synchronous motors, asynchronous motors, and reluctance motors.",
             }
         ],
-        catImgs: [cat1i1, cat2i1, cat3i1]
+        catImgs: [cat1i1, cat2i1, cat3i1],
+        brochureFile: "/files/Brochure VTS series book style Inverter Catalog.pdf"
     },
     {
         id: "2",
@@ -132,7 +136,8 @@ const inverters : Inverter[] = [
                 paragraph: "355kW~500kW is a cabinet type frequency converter, which can customize the incoming and outgoing methods according to customer and on-site needs."
             }
         ],
-        catImgs: [cat1i2, cat2i2]
+        catImgs: [cat1i2, cat2i2],
+        brochureFile: "/files/Brochure VTS series book style Inverter Catalog.pdf"
     },
     {
         id: "3",
@@ -165,7 +170,8 @@ const inverters : Inverter[] = [
                 paragraph: "Integrated drive and control, expandable PLC and motion control card；Multiple language keyboard, friendly interface, reliable and easy to use."
             }
         ],
-        catImgs: [cat1i3, cat2i3, cat3i3, cat4i3]
+        catImgs: [cat1i3, cat2i3, cat3i3, cat4i3],
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
     }
 ]
 

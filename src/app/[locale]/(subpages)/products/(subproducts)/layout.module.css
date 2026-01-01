@@ -1,10 +1,10 @@
 .subProductsLayout *{
     direction: ltr !important;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Afacad Flux", sans-serif !important;
 }
 .subProductsLayout > div > div h3{
     font-size: 30px;
-    text-align: center;
 }
 .subProductsLayout > div > div:not(:first-child){  /* excluding the loader compoennt */
     padding-bottom: 40px;

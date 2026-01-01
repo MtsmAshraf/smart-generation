@@ -24,13 +24,22 @@ const page = ({ params }: Props) => {
             <div className={styles.text}>
               <h2>{inverter.description}</h2>
               <p>{inverter.desctiptionParagraph}</p>
-              <div className={styles.downloadBtns}>
-                <h2>Download</h2>
-                <div className={styles.btns}>
-                  <a>Download Brochure</a>
-                  <a href='/files/AE300&AF300 VFD User Manual 20251110.pdf' download>Download User Manual</a>
+              {
+                (inverter.userManualFile  || inverter.brochureFile) &&
+                <div className={styles.downloadBtns}>
+                  <h2>Download</h2>
+                  <div className={styles.btns}>
+                    {
+                      inverter.brochureFile &&
+                      <a href={inverter.brochureFile} download>Download Brochure</a>
+                    }
+                    {
+                      inverter.userManualFile &&
+                      <a href={inverter.userManualFile} download>Download User Manual</a>
+                    }
+                  </div>
                 </div>
-              </div>
+              }
               <ul>
                 {
                   inverter.desctiptionUl.map((ele: string) => {

@@ -42,6 +42,8 @@ export type ServoDrive = {
     desctiptionUl: string[] | null,
     features: Feature[],
     catImgs: StaticImageData[],
+    brochureFile?: string,
+    userManualFile?: string
 }
 
 const servoDrives : ServoDrive[] = [
@@ -88,7 +90,8 @@ const servoDrives : ServoDrive[] = [
                 paragraph: "In response to the positioning vibration phenomenon caused by the elastic link device between the load and the motor in the servo drive system, the notch filter parameters are reasonably allocated based on system information to eliminate vibration in the given position",
             }
         ],
-        catImgs: [cat1i1, cat2i1]
+        catImgs: [cat1i1, cat2i1],
+        brochureFile: "/files/VS510&VS512.pdf"
     },
     {
         id: "2",
@@ -127,7 +130,8 @@ const servoDrives : ServoDrive[] = [
                 paragraph: null
             }
         ],
-        catImgs: [cat1i2, cat2i2]
+        catImgs: [cat1i2, cat2i2],
+        brochureFile: "/files/VS510&VS512.pdf"
     }
 ]
 
