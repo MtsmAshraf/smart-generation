@@ -23,7 +23,14 @@ const page = ({ params }: Props) => {
             </div>
             <div className={styles.text}>
                 <h2>{plc.description}</h2>
-                <p>{plc.desctiptionParagraph}</p>
+                <p>{plc.desctiptionParagraph}</p>    
+                <div className={styles.downloadBtns}>
+                    <h2>Download</h2>
+                    <div className={styles.btns}>
+                    <button>Download Brochure</button>
+                    <button>Download User Manual</button>
+                    </div>
+                </div>
                 {/* <ul>
                 {
                     plc.desctiptionUl.map((ele: string) => {

@@ -3,7 +3,11 @@
     font-family: "Roboto", sans-serif;
 }
 .subProductsLayout > div > div h3{
-    font-size: 24px;
+    font-size: 30px;
+    text-align: center;
+}
+.subProductsLayout > div > div:not(:first-child){  /* excluding the loader compoennt */
+    padding-bottom: 40px;
 }
 .subProductsLayout > div > div > div{
     display: grid;

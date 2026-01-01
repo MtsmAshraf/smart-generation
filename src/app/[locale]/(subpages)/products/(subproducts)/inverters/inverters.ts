@@ -18,6 +18,8 @@ import cat2i3 from "../../../../../../../public/assets/imgs/Products/inverters/V
 import cat3i3 from "../../../../../../../public/assets/imgs/Products/inverters/V9/specs/CgAGbGY7I8-AEjTKAAthA7f7JJ0438.jpg"
 import cat4i3 from "../../../../../../../public/assets/imgs/Products/inverters/V9/specs/CgAGbGY7I9GAG5JqAAeG1oe6tYc740.jpg"
 
+import image4 from "../../../../../../../public/assets/imgs/Products/inverters/AE300/AE300.png"
+
 
 
 
@@ -41,12 +43,50 @@ export type Inverter = {
 
 const inverters : Inverter[] = [
     {
+        id: "4",
+        name: "AE300 Inverters Inverter",
+        description: "AE300 Series Universal Variable Speed AC Drive",
+        href: "/ae300",
+        src: image4,
+        alt: "AE300 Inverters Image",
+        desctiptionParagraph: `The AE300 series Variable Frequency Drive adopts high
+            performance vector control technology, which has excellent control
+            performance such as large torque at low frequency, high stable
+            speed accuracy, and strong overload capacity; and it has the
+            advantages of compact structure, easy installation, high reliability,
+            etc., suitable for driving AC induction and PM motors in different
+            applications, especially suitable for applications with high economic,
+            limited installation space, such as assembly lines, textile printing
+            and dyeing machinery, packaging machinery, woodworking
+            machinery, etc`,
+        desctiptionUl: [],
+        features: [
+            {
+                heading: null,
+                paragraph: "TO BE DETERMINED",
+            },
+            {
+                heading: null,
+                paragraph: "TO BE DETERMINED",
+            },
+            {
+                heading: null,
+                paragraph: "TO BE DETERMINED",
+            },
+            {
+                heading: null,
+                paragraph: "TO BE DETERMINED",
+            }
+        ],
+        catImgs: []
+    },
+    {
         id: "1",
-        name: "VTS Inverters Inverter",
-        description: "VTS Series Universal Variable Speed AC Drive",
+        name: "VTS 400 Inverters Inverter",
+        description: "VTS 400 Series Universal Variable Speed AC Drive",
         href: "/vts",
         src: image1,
-        alt: "VTS Inverters Image",
+        alt: "VTS 400 Inverters Image",
         desctiptionParagraph: "As the VFD manufacturer in china, V&T has rich experience in electric drive fields. Adopting brand-new vector control technology, VTS series inverter can be compatible with the control of synchronous motor, asynchronous motor and reluctance motor, as well as the encoders with multiple specification and abundant communication interface and support English liquid crystal display, five-digit digital pipe display operation panel; and with the protection functions of usability, extendability, small volume, light weight and perfection, VTS series Mini AC drive can meet the medium-high application demands.",
         desctiptionUl: ["Multifunctional", "High performance", "Small volume", "Easy to use"],
         features: [

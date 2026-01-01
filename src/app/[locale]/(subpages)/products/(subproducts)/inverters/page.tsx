@@ -13,7 +13,7 @@ const Inverters = ({
       <Loader></Loader>
       <div className="container">
         <h3>
-          Single Drive
+          Inverters
         </h3>
         <div>
           {

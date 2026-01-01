@@ -24,6 +24,13 @@ const page = ({ params }: Props) => {
                 <div className={styles.text}>
                 <h2>{servoDrive.description}</h2>
                 <p>{servoDrive.desctiptionParagraph}</p>
+                <div className={styles.downloadBtns}>
+                    <h2>Download</h2>
+                    <div className={styles.btns}>
+                        <button>Download Brochure</button>
+                        <button>Download User Manual</button>
+                    </div>
+                </div>
                 <ul>
                     {
                     servoDrive.desctiptionUl.map((ele: string) => {

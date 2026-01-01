@@ -24,6 +24,13 @@ const page = ({ params }: Props) => {
             <div className={styles.text}>
               <h2>{inverter.description}</h2>
               <p>{inverter.desctiptionParagraph}</p>
+              <div className={styles.downloadBtns}>
+                <h2>Download</h2>
+                <div className={styles.btns}>
+                  <a>Download Brochure</a>
+                  <a href='/files/AE300&AF300 VFD User Manual 20251110.pdf' download>Download User Manual</a>
+                </div>
+              </div>
               <ul>
                 {
                   inverter.desctiptionUl.map((ele: string) => {
@@ -58,29 +65,27 @@ const page = ({ params }: Props) => {
             </div>
           </div>
       </div>
-      <div className={styles.specs}>
-        <div className="container">
-          <h2>
-            Specification Parameters
-          </h2>
-          <div className={styles.specsImgs}>
-            {
-              inverter.catImgs.map((img: StaticImageData, index: number) => {
-                return(
-                  <div key={index} className={styles.specsImg}>
-                    <Image src={img} alt={`${inverter.description} Specification Parameters Image`}></Image>
-                  </div>
-                )
-              })
-            }
+      {
+        inverter.catImgs.length > 0 &&
+        <div className={styles.specs}>
+          <div className="container">
+            <h2>
+              Specification Parameters
+            </h2>
+            <div className={styles.specsImgs}>
+              {
+                inverter.catImgs.map((img: StaticImageData, index: number) => {
+                  return(
+                    <div key={index} className={styles.specsImg}>
+                      <Image src={img} alt={`${inverter.description} Specification Parameters Image`}></Image>
+                    </div>
+                  )
+                })
+              }
+            </div>
           </div>
         </div>
-      </div>
-      <div className={styles.download}>
-        <div className="container">
-          <h2>Download</h2>
-        </div>
-      </div>
+      }
     </section>
   )
 }
