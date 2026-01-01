@@ -36,10 +36,14 @@ const Inverters = ({
                       </span>
                     </div>
                 </div>
-
               )
             })
           }      
+        </div>
+        <div>
+          <Link href={"/products/inverters/vfd-accessories"}>
+            VFD Accessories           
+          </Link>
         </div>
       </div>
     </div>

@@ -91,6 +91,7 @@ const servoDrives : ServoDrive[] = [
             }
         ],
         catImgs: [cat1i1, cat2i1],
+        userManualFile: "/files/VS510&VS512 Series AC Servo System User Maunal.pdf",
         brochureFile: "/files/VS510&VS512.pdf"
     },
     {
@@ -131,6 +132,7 @@ const servoDrives : ServoDrive[] = [
             }
         ],
         catImgs: [cat1i2, cat2i2],
+        userManualFile: "/files/VS510&VS512 Series AC Servo System User Maunal.pdf",
         brochureFile: "/files/VS510&VS512.pdf"
     }
 ]

@@ -58,6 +58,7 @@ const hmis : Hmi[] = [
             }
         ],
         catImgs: [cat1i1, cat2i1],
+        userManualFile: "/files/DP STUDIO USER MANUAL V1.0.pdf",
         brochureFile: "/files/Brochure V&T PLC&HMI&Multi-channel Intelligent Thermostat1121.pdf"
     }
 ]

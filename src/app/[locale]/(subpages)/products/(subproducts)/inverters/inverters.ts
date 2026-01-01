@@ -111,6 +111,7 @@ const inverters : Inverter[] = [
             }
         ],
         catImgs: [cat1i1, cat2i1, cat3i1],
+        userManualFile: "/files/User Manual VTS -EN.pdf",
         brochureFile: "/files/Brochure VTS series book style Inverter Catalog.pdf"
     },
     {
@@ -137,6 +138,7 @@ const inverters : Inverter[] = [
             }
         ],
         catImgs: [cat1i2, cat2i2],
+        userManualFile: "/files/User Manual VTS -EN.pdf",
         brochureFile: "/files/Brochure VTS series book style Inverter Catalog.pdf"
     },
     {
@@ -171,6 +173,7 @@ const inverters : Inverter[] = [
             }
         ],
         catImgs: [cat1i3, cat2i3, cat3i3, cat4i3],
+        userManualFile: "/files/V9-user-manual.pdf",
         brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
     }
 ]
