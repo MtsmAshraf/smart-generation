@@ -23,14 +23,23 @@ const page = ({ params }: Props) => {
             </div>
             <div className={styles.text}>
                 <h2>{plc.description}</h2>
-                <p>{plc.desctiptionParagraph}</p>    
-                <div className={styles.downloadBtns}>
+                <p>{plc.desctiptionParagraph}</p>
+                {
+                    (plc.userManualFile  || plc.brochureFile) &&
+                    <div className={styles.downloadBtns}>
                     <h2>Download</h2>
                     <div className={styles.btns}>
-                    <button>Download Brochure</button>
-                    <button>Download User Manual</button>
+                        {
+                        plc.brochureFile &&
+                        <a href={plc.brochureFile} download>Download Brochure</a>
+                        }
+                        {
+                        plc.userManualFile &&
+                        <a href={plc.userManualFile} download>Download User Manual</a>
+                        }
                     </div>
-                </div>
+                    </div>
+                }
                 {/* <ul>
                 {
                     plc.desctiptionUl.map((ele: string) => {
@@ -81,11 +90,6 @@ const page = ({ params }: Props) => {
                 })
             }
             </div>
-        </div>
-        </div>
-        <div className={styles.download}>
-        <div className="container">
-            <h2>Download</h2>
         </div>
         </div>
     </section>

@@ -21,6 +21,8 @@ export type Hmi = {
     desctiptionUl: string[] | null,
     features: Feature[],
     catImgs: StaticImageData[],
+    brochureFile?: string,
+    userManualFile?: string
 }
 
 const hmis : Hmi[] = [
@@ -55,7 +57,8 @@ const hmis : Hmi[] = [
                 paragraph: "LCD life time greater than 40,000 hours",
             }
         ],
-        catImgs: [cat1i1, cat2i1]
+        catImgs: [cat1i1, cat2i1],
+        brochureFile: "/files/Brochure V&T PLC&HMI&Multi-channel Intelligent Thermostat1121.pdf"
     }
 ]
 

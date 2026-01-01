@@ -92,11 +92,6 @@ const page = ({ params }: Props) => {
             </div>
             </div>
         </div>
-        <div className={styles.download}>
-            <div className="container">
-            <h2>Download</h2>
-            </div>
-        </div>
         </section>
   )
 }

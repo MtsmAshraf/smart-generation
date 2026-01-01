@@ -24,13 +24,22 @@ const page = ({ params }: Props) => {
             <div className={styles.text}>
                 <h2>{hmi.description}</h2>
                 <p>{hmi.desctiptionParagraph}</p>
-                <div className={styles.downloadBtns}>
+                {
+                    (hmi.userManualFile  || hmi.brochureFile) &&
+                    <div className={styles.downloadBtns}>
                     <h2>Download</h2>
                     <div className={styles.btns}>
-                    <button>Download Brochure</button>
-                    <button>Download User Manual</button>
+                        {
+                        hmi.brochureFile &&
+                        <a href={hmi.brochureFile} download>Download Brochure</a>
+                        }
+                        {
+                        hmi.userManualFile &&
+                        <a href={hmi.userManualFile} download>Download User Manual</a>
+                        }
                     </div>
-                </div>
+                    </div>
+                }
                 {
                     hmi.desctiptionUl &&
                     <ul>
@@ -88,11 +97,6 @@ const page = ({ params }: Props) => {
                 })
             }
             </div>
-            </div>
-        </div>
-        <div className={styles.download}>
-            <div className="container">
-            <h2>Download</h2>
             </div>
         </div>
     </section>

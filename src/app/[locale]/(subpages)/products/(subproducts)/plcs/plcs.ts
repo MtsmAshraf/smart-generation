@@ -47,6 +47,8 @@ export type Plc = {
     desctiptionUl: string[] | null,
     features: Feature[],
     catImgs: StaticImageData[],
+    brochureFile?: string,
+    userManualFile?: string
 }
 
 const plcs : Plc[] = [
@@ -85,7 +87,8 @@ const plcs : Plc[] = [
                 paragraph: "Built-in 2-way 50KHZ+4-way l0KHz high-speed counting",
             }
         ],
-        catImgs: [cat1i1, cat2i1, cat3i1]
+        catImgs: [cat1i1, cat2i1, cat3i1],
+        brochureFile: "/files/Brochure V&T PLC&HMI&Multi-channel Intelligent Thermostat1121.pdf"
     },
     {
         id: "2",
@@ -122,7 +125,8 @@ const plcs : Plc[] = [
                 paragraph: "/O points can be expanded up to 512 points.Expandable up to 8 special function modules. Abundant programming instructions.Number of instructions.Basic instructions —32pcs.Application instructions — 221pcs"
             }
         ],
-        catImgs: [cat1i2, cat2i2, cat3i2]
+        catImgs: [cat1i2, cat2i2, cat3i2],
+        brochureFile: "/files/Brochure V&T PLC&HMI&Multi-channel Intelligent Thermostat1121.pdf"
     }
 ]
 
