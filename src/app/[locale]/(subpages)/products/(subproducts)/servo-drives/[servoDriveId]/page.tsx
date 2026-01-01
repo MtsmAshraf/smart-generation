@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from "./servo-drive-id.module.css"
 import servoDrives, { Feature, ServoDrive } from "../servo-drives"
 import Image, { StaticImageData } from 'next/image'

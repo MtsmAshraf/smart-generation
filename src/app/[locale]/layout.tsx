@@ -44,6 +44,51 @@ export const metadata: Metadata = {
   icons: icon.src,
   keywords: [
     // English Keywords
+    "Smart Generation",
+    "Smart Generation Egypt",
+    "SmartGeneration EG",
+    "سمارت جينيريشن",
+    "سمارت جينيريشن مصر",
+
+    /* V&T */
+    "V&T Egypt",
+    "V&T in Egypt",
+    "Exclusive agent of V&T in Egypt",
+    "الوكيل الحصري لشركة V&T في مصر",
+
+    /* Engineering & Electrical */
+    "Engineering company Egypt",
+    "Electrical solutions Egypt",
+    "Electrical supplies Egypt",
+    "Electrical equipment supplier Egypt",
+    "Industrial electrical supplies Egypt",
+    "Electrical contracting Egypt",
+    "Electrical components Egypt",
+    "Power distribution systems",
+    "Electrical panels and switchgear",
+    "Automation and control panels",
+    "Industrial power solutions",
+    "Energy efficiency solutions",
+    "Low voltage systems Egypt",
+
+    /* Compressed Air */
+    "Compressed air systems Egypt",
+    "Air compressors Egypt",
+    "Industrial air compressors",
+    "Compressed air solutions",
+    "أنظمة الهواء المضغوط",
+    "ضواغط هواء صناعية",
+
+    /* Arabic SEO */
+    "شركة هندسية في مصر",
+    "شركة حلول كهربائية",
+    "مستلزمات كهرباء صناعية",
+    "مقاولات كهرباء",
+    "لوحات تحكم كهربائية",
+    "أنظمة توزيع الكهرباء",
+    "حلول الطاقة الصناعية",
+    "حلول كفاءة الطاقة",
+
     "Smart Generation Egypt",
     "Smart Generation Electrical",
     "V&T Egypt agent",
@@ -179,6 +224,9 @@ export const metadata: Metadata = {
   publisher: "Smart Generation Co.",
   category: "industrial",
   classification: "Electrical Engineering & Contracting",
+
+  metadataBase: new URL("https://smartgeneration-eg.com"),
+
 };
 
 export default async function RootLayout({
