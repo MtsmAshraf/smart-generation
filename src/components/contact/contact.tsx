@@ -9,7 +9,7 @@ const Contact = ({
 }) => {
     const t = useTranslations("Contact")
   return (
-    <div className={l === "en" ? styles.contact + " " + styles.en : styles.contact}>
+    <div className={l === "ar" ? styles.contact + " " + styles.ar : styles.contact}>
         <h1>
             {t("Heading")}
         </h1>

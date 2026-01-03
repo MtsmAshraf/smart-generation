@@ -3,13 +3,23 @@ import MainHeading from '../mainHeading/mainHeading'
 import ContactsInfoCard from './contactsInfoCard/contactsInfoCard'
 import styles from "./contacts-info.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faLocation, faLocationPin, faPhone } from '@fortawesome/free-solid-svg-icons'
-const ContactsInfo = () => {
+import { faClock, faLocationPin, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { useTranslations } from 'next-intl'
+const ContactsInfo = ({
+    l
+} : {
+    l: string
+}) => {
+
+    const t = useTranslations("Contact.ContactInfo")
+
   return (
-    <section>
+    <section className={l === "ar" ? styles.contactInfo + " " + styles.ar : styles.contactInfo}>
         <MainHeading>
             <h1 style={{ textAlign: "center" }}>
-                معلومات التواصل
+                {
+                    t("Heading")
+                }
             </h1>
         </MainHeading>
         <div className={styles.cards}>
@@ -28,13 +38,21 @@ const ContactsInfo = () => {
                     <FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon>
                 </span>
                 <address>
-                    الأردنية, جراند مول
+                    {
+                        t("Address1")
+                    }
                     <br />
-                    العاشر من رمضان
+                    {
+                        t("Address2")
+                    }
                     <br />
-                    الشرقية
+                    {
+                        t("Address3")
+                    }
                     <br />
-                    مصر
+                    {
+                        t("Address4")
+                    }
                 </address>
             </ContactsInfoCard>
             <ContactsInfoCard>
@@ -44,7 +62,7 @@ const ContactsInfo = () => {
                 <div>
                     9:00am - 5:00pm
                     <br />
-                    جميع أيام الأسبوع عدا الجمعة
+                    {t("WorkingDays")}
                 </div>
             </ContactsInfoCard>
         </div>

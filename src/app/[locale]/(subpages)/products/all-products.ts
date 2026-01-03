@@ -16,7 +16,7 @@ export type Product = {
 const products : Product[] = [
     {
         id: "1",
-        name: "Inverter",
+        name: "Inverters",
         description: "Industrial automation product integrator - comprehensively meeting production needs",
         href: "/inverters",
         src: image1,

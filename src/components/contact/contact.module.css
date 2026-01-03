@@ -4,9 +4,9 @@
     background-color: #eee;
     border-top: 2px solid var(--sec-color);
 }
-.contact.en{
-    direction: ltr;
-    font-family: "Afacad Flux", sans-serif;
+.contact.ar{
+    direction: rtl;
+    font-family: "El Messiri", sans-serif !important;
 }
 .contact h1{
     font-size: 32px;

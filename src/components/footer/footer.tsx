@@ -19,7 +19,7 @@ const Footer = ({
           <h4>{t("Sections.Heading")}</h4>
           <div>
             <Link href={`/services`}>{t("Sections.PagesLinks.1")}</Link>
-            <Link href={`/projects`}>{t("Sections.PagesLinks.2")}</Link>
+            {/* <Link href={`/projects`}>{t("Sections.PagesLinks.2")}</Link> */}
             <Link href={`/products`}>{t("Sections.PagesLinks.3")}</Link>
             <Link href={`/about`}>{t("Sections.PagesLinks.4")}</Link>
             <Link href={`/contact`}>{t("Sections.PagesLinks.5")}</Link>

@@ -305,6 +305,14 @@
       "Address": "Address",
       "Msg": "Your Message",
       "Send": "Send"
+    },
+    "ContactInfo":{
+      "Heading": "Contact Information",
+      "Address1": "Al-Ordoniya, Grand Mall",
+      "Address2": "10th of Ramadan City",
+      "Address3": "Ash-Sharqiya",
+      "Address4": "Egypt",
+      "WorkingDays": "All days except Friday"
     }
   },
   "Footer": {
