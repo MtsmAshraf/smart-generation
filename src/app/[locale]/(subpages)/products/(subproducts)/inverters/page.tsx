@@ -3,6 +3,9 @@ import inverters from "./inverters"
 import Image from 'next/image'
 import Loader from '@/components/loader/loader'
 import { Link } from '@/i18n/routing'
+import vfdAccessoriesImg from "../../../../../../../public/assets/imgs/Products/inverters/vfd-accessories/EX-CA13/imgi_19_bd4149e3f3d7bef2ebf2c0adc70ed944_thumb-removebg-preview.png"
+
+
 const Inverters = ({
   params: {locale}
 } : {
@@ -40,11 +43,19 @@ const Inverters = ({
             })
           }      
         </div>
-        <div>
-          <Link href={"/products/inverters/vfd-accessories"}>
-            VFD Accessories           
-          </Link>
-        </div>
+        <br />
+        <hr />
+        <br />
+        <ul>
+          <li>
+            <Link href={"/products/inverters/vfd-accessories"}>
+              <Image src={vfdAccessoriesImg} alt="VFD Accessories"></Image>
+              <h2>
+                VFD Accessories           
+              </h2>
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   )

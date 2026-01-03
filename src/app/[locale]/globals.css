@@ -13,6 +13,8 @@
   --sec-color: #004161;
   --sec-color-trans: #004161c8;
   --bg-color: #ffffff;
+  --main-box-shadow: 0px 2px 5px 0px #ddd;
+  --main-box-shadow-hover: 0px 5px 5px 0px #ddd;
   --test: #ffc03d;
   --text-color: #242424;
   --sec-text-color: #212d45;
