@@ -4,7 +4,7 @@ import styles from "./layout.module.css"
 import { Link } from '@/i18n/routing';
 import { usePathname } from 'next/navigation';
   
-export default function subProductsLayout({
+export default function SubProductsLayout({
     children,
     params: {locale}
 }: { 
