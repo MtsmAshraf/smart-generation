@@ -24,7 +24,7 @@ const VfdAccessories = () => {
                         <div>
                         <p>
                             <Link href={`/products/inverters/vfd-accessories/${vfdAccessory.id}`}>
-                            {vfdAccessory.description}
+                            {vfdAccessory.name}
                             </Link>
                         </p>
                         <span>

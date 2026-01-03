@@ -35,10 +35,26 @@ const vfdAccessories : VfdAccessoryType[] = [
         name: "EX-CA13 Profinet Communication Adapter Card",
         src: image1,
         alt: "EX-CA13 Profinet Communication Adapter Card",
-        description: "EX-CA13 Profinet Communication Adapter Card",
-        desctiptionParagraph: "The EX-CA13 Profinet Communication Adapter Card is designed to facilitate seamless integration of VFDs into Profinet networks, enabling efficient communication and control for industrial automation applications.",
+        description: "",
+        desctiptionParagraph: "To meet the needs of the development of Industry 4.0, V&T as a global member of the PI Association, Its product meets the industrial Ethernet inverter. EX-CA13 communication expansion card is a PROFINET industrial Ethernet communication product developed by Shenzhen V&T Technologies Co.,Ltd. and It has the PG card function, which fully meets the stability and real-time requirements of modern industrial equipment interconnection. It is the first new version of the inverter certified by the PI Association.",
         desctiptionUl: [],
         features: [
+            {
+                heading: "PROFINET Industrial Ethernet Communication",
+                paragraph: "It is a PROFINET Industrial Ethernet communication adapter card with full duplex and adaptive 10 / 100M baud rate;"
+            },
+            {
+                heading: "Dual Port Ethernet Interface",
+                paragraph: "Integrated dual port and fast Ethernet interface with switch function;"
+            },
+            {
+                heading: "LED Status Indicators",
+                paragraph: "Product status and fault are indicated by LED light, which is convenient for commissioning and maintenance;"
+            },
+            {
+                heading: "5V Incremental Encoder Compatibility",
+                paragraph: "It can be connected with 5V incremental encoder and has feedback output. For the wiring and description of encoder part."
+            }
             ],
         catImgs: [],
         
@@ -49,8 +65,8 @@ const vfdAccessories : VfdAccessoryType[] = [
         name: "EX-CA06 Profibus-DP Communication Adapter Card",
         src: image2,
         alt: "EX-CA06 Profibus-DP Communication Adapter Card",
-        description: "EX-CA13 Profinet Communication Adapter Card",
-        desctiptionParagraph: "The EX-CA13 Profinet Communication Adapter Card is designed to facilitate seamless integration of VFDs into Profinet networks, enabling efficient communication and control for industrial automation applications.",
+        description: "",
+        desctiptionParagraph: "EX-CA06 is a Profibus-DP to Modbus-RTU communication adapter card. This adapter card provides Profibus-DP interface. The interface and protocol fully comply with Siemens Profibus-DP bus standard. It is suitable for the networking of V&T frequency converter and Profibus-DP network.",
         desctiptionUl: [],
         features: [
             ],
@@ -60,13 +76,33 @@ const vfdAccessories : VfdAccessoryType[] = [
     },
     {
         id: "3",
-        name: "EX-CA04 CANopen Communication Adapter Card",
+        name: " NEEDS FEATURES DETAILS EX-CA04 CANopen Communication Adapter Card",
         src: image3,
         alt: "EX-CA04 CANopen Communication Adapter Card",
-        description: "EX-CA13 Profinet Communication Adapter Card",
-        desctiptionParagraph: "The EX-CA13 Profinet Communication Adapter Card is designed to facilitate seamless integration of VFDs into Profinet networks, enabling efficient communication and control for industrial automation applications.",
+        description: "",
+        desctiptionParagraph: "EX−CA04 is defined as the communication module of CANopen slave station, it is used for the connection of CANopen configuration network, programmable controller and human-machine interface; EX−CA04 provides user-define function, which is used to connect CANopen configuration network and custom devices that comply with Modbus-RTU of V&T frequency converter.",
         desctiptionUl: [],
         features: [
+            {
+                heading: "Supported Protocols",
+                paragraph: "Support CAN2.0A protocol, CANopen DS301 V4.02, DS303, DS305"
+            },
+            {
+                heading: "Supported Services:",
+                paragraph: "PDO (Process Data Object),PDO1-PDO12: RxPDO maps writable device parameters; TxPDO maps readable device parameters. PDO information adopts Synchronous mode to transmit real-time data."
+            },
+            {
+                heading: "Supported Services: SDO (Service Data Object)",
+                paragraph: "SDO connection adopts the 'client / server' mode, which is used to configure the slave nodes and access the object dictionary of each node. SDO has two types: request SDO and response SDO."
+            },
+            {
+                heading: "Supported Services: ISOP (Special Object Protocol)",
+                paragraph: "Support the default COB-ID in the pre-defined master / slave connection. Support broadcast service (when the address is 0). Support SYNC. Support EMCY. Network configuration object (LSS slave)"
+            },
+            {
+                heading: "Supported Services: INMT (Network Management Object)",
+                paragraph: "Support NMT module control. Support NMT error control. Support Boot-up. Time Stamp service."
+            }
             ],
         catImgs: [],
         
@@ -74,12 +110,18 @@ const vfdAccessories : VfdAccessoryType[] = [
     },
     {
         id: "4",
-        name: "V9-DP02 LCD Operation Panel",
+        name: "V9-DP01 LED Operation Panel",
         src: image4,
-        alt: "V9-DP02 LCD Operation Panel",
-        description: "EX-CA13 Profinet Communication Adapter Card",
-        desctiptionParagraph: "The EX-CA13 Profinet Communication Adapter Card is designed to facilitate seamless integration of VFDs into Profinet networks, enabling efficient communication and control for industrial automation applications.",
-        desctiptionUl: [],
+        alt: "V9-DP01 LED Operation Panel",
+        description: "",
+        desctiptionParagraph: "",
+        desctiptionUl: [
+            "Chinese/English liquid crystal display keyboard and LED keyboard, abundant information and convenient operation.",
+            "With multi-functional combination key. for example, realize remote/local switching, emergency shutdown and other humanized functions",
+            "nclude parameter storage chip, convenient to storage, upload and download the parameters",
+            "It is suitable for batch supporting customers. the commissioning time is saved well and the installation efficiency is improved",
+            "Support the scheme of extension wire"
+        ],
         features: [
             ],
         catImgs: [],
@@ -88,12 +130,18 @@ const vfdAccessories : VfdAccessoryType[] = [
     },
     {
         id: "5",
-        name: "V9-DP01 LED Operation Panel",
+        name: "V9-DP02 LCD Operation Panel",
         src: image5,
-        alt: "V9-DP01 LED Operation Panel",
-        description: "EX-CA13 Profinet Communication Adapter Card",
-        desctiptionParagraph: "The EX-CA13 Profinet Communication Adapter Card is designed to facilitate seamless integration of VFDs into Profinet networks, enabling efficient communication and control for industrial automation applications.",
-        desctiptionUl: [],
+        alt: "V9-DP02 LCD Operation Panel",
+        description: "",
+        desctiptionParagraph: "",
+        desctiptionUl: [
+            "Chinese/English liquid crystal display keyboard and LED keyboard, abundant information and convenient operation",
+            "With multi-functional combination key. for example, realize remote/local switching, emergency shutdown and other humanized functions.",
+            "Include parameter storage chip, convenient to storage, upload and download the parameters",
+            "It is suitable for batch supporting customers. the commissioning time is saved well and the installation efficiency is improved",
+            "Support the scheme of extension wire"
+        ],
         features: [
             ],
         catImgs: [],
@@ -105,9 +153,13 @@ const vfdAccessories : VfdAccessoryType[] = [
         name: "EX-PG01 Feedback Card",
         src: image6,
         alt: "EX-PG01 Feedback Card",
-        description: "EX-CA13 Profinet Communication Adapter Card",
-        desctiptionParagraph: "The EX-CA13 Profinet Communication Adapter Card is designed to facilitate seamless integration of VFDs into Profinet networks, enabling efficient communication and control for industrial automation applications.",
-        desctiptionUl: [],
+        description: "",
+        desctiptionParagraph: "",
+        desctiptionUl: [
+            "Provide 12V power supply (±5%), maximum 200mA",
+            "Provide PA+ PA-, PB+ PB-, PZ+PZ- encoder input",
+            "80K pulse input"
+        ],
         features: [
             ],
         catImgs: [],
@@ -119,9 +171,12 @@ const vfdAccessories : VfdAccessoryType[] = [
         name: "EX-PG02 Feedback Card",
         src: image7,
         alt: "EX-PG02 Feedback Card",
-        description: "EX-CA13 Profinet Communication Adapter Card",
-        desctiptionParagraph: "The EX-CA13 Profinet Communication Adapter Card is designed to facilitate seamless integration of VFDs into Profinet networks, enabling efficient communication and control for industrial automation applications.",
-        desctiptionUl: [],
+        description: "",
+        desctiptionParagraph: "",
+        desctiptionUl: [
+            "Provide 5V power supply (±5%)",
+            "Provide PA+ PA-, PB+ PB-, PZ+PZ- encoder input"
+        ],
         features: [
             ],
         catImgs: [],
@@ -133,8 +188,8 @@ const vfdAccessories : VfdAccessoryType[] = [
         name: "EX-PG03 Feedback Card",
         src: image8,
         alt: "EX-PG03 Feedback Card",
-        description: "EX-CA13 Profinet Communication Adapter Card",
-        desctiptionParagraph: "The EX-CA13 Profinet Communication Adapter Card is designed to facilitate seamless integration of VFDs into Profinet networks, enabling efficient communication and control for industrial automation applications.",
+        description: "",
+        desctiptionParagraph: "Motor Drive Encoder Feedback Card. If the inverter needs to send the motor speed to other equipment for counting or speed measurement in addition to the encoder speed feedback vector control 2, please use V&T PG feedback frequency division output card EX-PG03",
         desctiptionUl: [],
         features: [
             ],
@@ -147,8 +202,8 @@ const vfdAccessories : VfdAccessoryType[] = [
         name: "EX-PG04 Feedback Card",
         src: image9,
         alt: "EX-PG04 Feedback Card",
-        description: "EX-CA13 Profinet Communication Adapter Card",
-        desctiptionParagraph: "The EX-CA13 Profinet Communication Adapter Card is designed to facilitate seamless integration of VFDs into Profinet networks, enabling efficient communication and control for industrial automation applications.",
+        description: "",
+        desctiptionParagraph: "Speed Control Encoder Feedback Card. If the inverter needs to send the motor speed to other equipment for counting or speed measurement in addition to the encoder speed feedback vector control 2, please use the Lanhai Huateng PG feedback frequency division output card EX-PG04",
         desctiptionUl: [],
         features: [
             ],
