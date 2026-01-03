@@ -2,7 +2,7 @@ import React from 'react'
 import vfdAccessories,{ Feature, VfdAccessoryType }  from '../vfdAccessories'
 import Loader from '@/components/loader/loader'
 import styles from "./vfd-accessories.module.css"
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 
 
