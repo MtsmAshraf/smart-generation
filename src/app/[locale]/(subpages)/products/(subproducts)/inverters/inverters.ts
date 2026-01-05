@@ -45,7 +45,7 @@ export type Inverter = {
 
 const inverters : Inverter[] = [
     {
-        id: "4",
+        id: "ae300-series-universal-variable-speed-ac-drive",
         name: "AE300 Inverters Inverter",
         description: "AE300 Series Universal Variable Speed AC Drive",
         href: "/ae300",
@@ -84,7 +84,7 @@ const inverters : Inverter[] = [
         userManualFile: "/files/AE300&AF300 VFD User Manual 20251110.pdf",
     },
     {
-        id: "1",
+        id: "vts-400-series-universal-variable-speed-ac-drive",
         name: "VTS 400 Inverters Inverter",
         description: "VTS 400 Series Universal Variable Speed AC Drive",
         href: "/vts",
@@ -115,7 +115,7 @@ const inverters : Inverter[] = [
         brochureFile: "/files/Brochure VTS series book style Inverter Catalog.pdf"
     },
     {
-        id: "2",
+        id: "vts30-series-frequency-converter",
         name: "VTS30 Inverters",
         description: "VTS30 Series frequency converter",
         href: "/vts30",
@@ -142,7 +142,7 @@ const inverters : Inverter[] = [
         brochureFile: "/files/Brochure VTS series book style Inverter Catalog.pdf"
     },
     {
-        id: "3",
+        id: "v9-series-high-performance-universal-variable-speed-ac-drive",
         name: "V9 Inverters",
         description: "V9 Series High Performance Universal Speed AC Drive",
         href: "/v9",
