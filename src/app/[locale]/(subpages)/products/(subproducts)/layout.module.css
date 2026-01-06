@@ -22,6 +22,9 @@
     background-color: #eee;
     padding: 20px;
     border-radius: 6px 6px 0px 0px;
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
 }
 .subProductsLayout > div > div:nth-child(2) > ul li a h2{ 
     background-color: var(--sec-color);
@@ -68,6 +71,7 @@
     height: 300px;
     width: 100%;
     padding-top: 20px;
+    padding: 20px 20px 0px;
     /* padding: 0px 40px; */
 }
 .subProductsLayout > div > div > div > div a:has(img) img{
@@ -81,6 +85,7 @@
 }
 .subProductsLayout > div > div > div > div p{
     margin-bottom: 16px;
+    font-size: 20px;
 }
 .subProductsLayout > div > div > div > div p a{
     color: var(--sec-color);
@@ -109,7 +114,12 @@
     .subProductsLayout > div > div > div{
         grid-template-columns: repeat(1, minmax(200px, 1fr));
         row-gap: 120px;
-}
+    }
+    .subProductsLayout > div > div:nth-child(2) > ul{ 
+        align-items: center;
+        justify-content: center;
+     
+    }
 }
 
 .subProductsLayout .subLayoutNav{

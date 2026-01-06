@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Loader from '@/components/loader/loader'
 import { Link } from '@/i18n/routing'
 import vfdAccessoriesImg from "../../../../../../../public/assets/imgs/Products/inverters/vfd-accessories/EX-CA13/imgi_19_bd4149e3f3d7bef2ebf2c0adc70ed944_thumb-removebg-preview.png"
+import specialPurposeImg from "../../../../../../../public/assets/imgs/Products/inverters/V9/V9.png"
 
 
 const Inverters = ({
@@ -48,11 +49,19 @@ const Inverters = ({
         <br />
         <ul>
           <li>
+            <Link href={"/products/inverters/special-purpose"}>
+              <h2>
+                Special Purpose AC Drive          
+              </h2>
+              <Image src={specialPurposeImg} alt="special purpose AC Drive"></Image>
+            </Link>
+          </li>
+          <li>
             <Link href={"/products/inverters/vfd-accessories"}>
-              <Image src={vfdAccessoriesImg} alt="VFD Accessories"></Image>
               <h2>
                 VFD Accessories           
               </h2>
+              <Image src={vfdAccessoriesImg} alt="VFD Accessories"></Image>
             </Link>
           </li>
         </ul>
