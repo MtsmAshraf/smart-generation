@@ -30,9 +30,9 @@ export type SpecialPurposeType = {
     alt: string,
     desctiptionParagraph: string,
     desctiptionUl: string[] | null,
-    innerImgSrc: StaticImageData,
     brochureFile?: string,
-    userManualFile?: string
+    userManualFile?: string,
+    innerImgSrc: StaticImageData,
 }
 
 const specialPurposeDrives : SpecialPurposeType[] = [
@@ -49,6 +49,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "Reliable and stable operation, and corrosion prevention",
         "Trip-less, reliable control and protection for power modules"
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: ceramic
     },
     {
@@ -65,6 +67,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "It is applicable to control synchronous motor and asynchronous motor.",
         "AFE(s) and RBU(s) are available for higher energy saving effect and higher power factor requirements"
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: oil
     },
     {
@@ -80,6 +84,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "With a variety of safety protection functions, it can meet the latest standards",
         "Application of Internet of Things technology to achieve remote monitoring, commissioning and upgrade firmware "
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: elevator
     },
     {
@@ -95,6 +101,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "A variety of protection functions to ensure more secure and reliable system",
         "Intelligent fault diagnosis to reduce the cost of maintenance and workloads"
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: mine
     },
     {
@@ -111,6 +119,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "SPWM and SVPWM modulation mode",
         "Over-modulation function"
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: frequency
     },
     {
@@ -126,6 +136,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "Without high-pressure throttle and loss of overflowed energy, energy-saving rate can reach to 25%~70%.",
         "Design of independent duct makes rear parts and top fan convenient to disassemble and easy to maintain; it also has strong environmental adaptability and high protection level "
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: injection
     },
     {
@@ -142,6 +154,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "With  intelligent sleep and low pressure wakeup function, energy saving rate can reach to 20%~50%;.",
         "Standard Modbus-RTU communication can be compatible with various air compressor controllers."
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: air
     },
     {
@@ -157,6 +171,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "Special function for machine tool spindles: EtherCAT communication, second encoder input, position reference, etc.",
         "Successfully in the 250000 RPM drilling machine"
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: machine
     },
     {
@@ -171,6 +187,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "Applicable for devices of cutting machine, coating machine, paper machine",
         "With torque control without encoder speed feedback, it can replace torque motor widely"
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: printing
     },
     {
@@ -186,6 +204,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "Sewage treatment: Built-in adaptive torque control in the main andauxiliary drive of centrifugal equipment for quick acceleration and deceleration, suitable for harsh environment. ",
         "Various fan drives: Designed for the fan, high efficiency of energy-saving, noise optimization, built-in automatic speed tracking function and maximum power up to 800kW."
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: municipal
     },
     {
@@ -200,6 +220,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "Professional crane control functions: speed monitoring, torque monitoring, torque verification, power optimization, position counting, anti-swing function for gantry, trolley and slew , etc.",
         "Extensively applied to: port, shipping, ocean engineering, mine,architecture, metallurgy, factory and various kinds of industries' lifting machines.",
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: crane
     },
     {
@@ -214,6 +236,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "Smooth running curve to reduce the stone damage rate, and smooth starting to reduce mechanical damage and maintenance costs",
         "Providing the constant tension control with anti-breakage rope, main and auxiliary functions for frequency reference safe stopping function, and alarm prompt function."
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: stone
     },
     {
@@ -229,6 +253,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "Unique voltage control function ensures normal deceleration in case of instantaneous power failure.",
         "With multi-step PLC function, users can set it according to actual application."
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: textile
     },
     {
@@ -244,6 +270,8 @@ const specialPurposeDrives : SpecialPurposeType[] = [
         "High precision and fast rotary cutting to increase the yield under the premise of keeping the uniformity of thickness for the wood veneer.",
         "Stable and reliable work makes customers enjoy high-quality green power."
         ],
+        userManualFile: "/files/V9-user-manual.pdf",
+        brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
         innerImgSrc: wood
     }
 ]

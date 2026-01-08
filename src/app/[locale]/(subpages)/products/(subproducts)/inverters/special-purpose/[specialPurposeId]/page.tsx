@@ -25,6 +25,15 @@ const SpecialPurposeDrive = ({ params }: Props) => {
             <div className={styles.text}>
               <h2>{specialPurposeDrive.name}</h2>
               <p>{specialPurposeDrive.desctiptionParagraph}</p>
+              <ul>
+                {
+                  specialPurposeDrive.desctiptionUl.map((ele: string) => {
+                    return(
+                      <li key={ele}>{ele}</li>
+                    )
+                  })
+                }
+              </ul>
               {
                 (specialPurposeDrive.userManualFile  || specialPurposeDrive.brochureFile) &&
                 <div className={styles.downloadBtns}>
@@ -41,15 +50,6 @@ const SpecialPurposeDrive = ({ params }: Props) => {
                   </div>
                 </div>
               }
-              <ul>
-                {
-                  specialPurposeDrive.desctiptionUl.map((ele: string) => {
-                    return(
-                      <li key={ele}>{ele}</li>
-                    )
-                  })
-                }
-              </ul>
             </div>
           </div>
       </div>
