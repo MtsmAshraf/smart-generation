@@ -229,6 +229,9 @@ const Header = ({
                     : null 
                 }
                 </div>
+                <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/downloads` ? styles.active : ""} href={`/downloads`}>
+                    {t("Downloads")}
+                </Link>
                 <Link onClick={() => {setNavShown(false)}} className={pathname === `/${l}/about` ? styles.active : ""} href={`/about`}>
                     {t("About Us")}
                 </Link>

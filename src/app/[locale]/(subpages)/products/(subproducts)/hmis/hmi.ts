@@ -27,7 +27,7 @@ export type Hmi = {
 
 const hmis : Hmi[] = [
     {
-        id: "1",
+        id: "vt-dp-2000-series-hmi",
         name: "VT DP-2000 series HMI",
         description: "VT DP-2000 series HMI",
         href: "/vts",

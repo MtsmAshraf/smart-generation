@@ -96,12 +96,12 @@ const servoDrives : ServoDrive[] = [
     },
     {
         id: "2",
-        name: "VS512 series servo driver",
-        description: "VS512 series servo driver",
+        name: "VS512 Series servo drive",
+        description: "VS512 Series servo drive",
         href: "/vts30",
         src: image2,
-        alt: "VS512 series servo driver Image",
-        desctiptionParagraph: "High performance servo driver The VS512 series is equipped with a new type of adjustment free function, breaking the common sense that servo drives cannot run smoothly without adjustment, and achieving instant use. The new advanced automatic tuning function can shorten installation time and fully utilize mechanical performance.",
+        alt: "VS512 Series servo drive Image",
+        desctiptionParagraph: "High performance servo drive The VS512 series is equipped with a new type of adjustment free function, breaking the common sense that servo drives cannot run smoothly without adjustment, and achieving instant use. The new advanced automatic tuning function can shorten installation time and fully utilize mechanical performance.",
         desctiptionUl: [
             "Excellent drive response characteristics",
             "Enhanced vibration suppression function",

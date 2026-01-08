@@ -29,6 +29,9 @@ export default function SubPagesLayout({
       }else if(pathname === `/${locale}/about`){
         let text = locale !== "en" ? "عن الشركة" : "About Us"; 
         setHeadingText(text)
+      }else if(pathname === `/${locale}/downloads`){
+        let text = locale !== "en" ? "التنزيلات" : "Downloads"; 
+        setHeadingText(text)
       }else if(pathname === `/${locale}/contact`){
         let text = locale !== "en" ? "اتصل بنا" : "Contact Us"; 
         setHeadingText(text)
