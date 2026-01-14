@@ -1,8 +1,9 @@
 .downloads{
     direction: ltr !important;
+}
+.downloads ul{
     padding-bottom: 20px;
 }
-
 .downloads ul.filesList li{
     background-color: #eee;
     margin-bottom: 10px;

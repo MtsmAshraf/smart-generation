@@ -9,6 +9,19 @@ type Props = {
     }
 }
 
+export const generateMetadata = async ({
+    params,
+  }: Readonly<{
+    params:  Promise<{inverterId: string}>
+  }>) : Promise<Metadata> => {
+    const { inverterId } = await params;
+    const inverter = inverters.find((inverter) => inverter.id === inverterId)
+    return{
+          title: `${inverter?.description}` ,
+          description: inverter?.description,
+          keywords: (inverter?.keywords.join(",") + `,${inverter?.description}`+ `,${inverter?.name}`).split(",")
+      }
+  }
 const page = ({ params }: Props) => {
   
   const hmi: Hmi | any = hmis.find((ele) => ele.id === params.hmiId)

@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import downloadFiles, { DownloadFile } from './downloads'
 import styles from "./downloads.module.css"
+import Contact from '@/components/contact/contact'
 
 type Props = {
     params: {
@@ -116,6 +117,7 @@ const DownloadsPage = ({ params }: Props) => {
                 }
             </ul>
         </div>
+        <Contact l={locale}></Contact>
     </section>
   )
 }

@@ -3,11 +3,25 @@ import styles from "./servo-drive-id.module.css"
 import servoDrives, { Feature, ServoDrive } from "../servo-drives"
 import Image, { StaticImageData } from 'next/image'
 import Loader from '@/components/loader/loader'
+import { Metadata } from 'next'
 type Props = {
     params: {
         servoDriveId: string
     }
 }
+export const generateMetadata = async ({
+    params,
+  }: Readonly<{
+    params:  Promise<{servoDriveId: string}>
+  }>) : Promise<Metadata> => {
+    const { servoDriveId } = await params;
+    const servoDrive = servoDrives.find((servoDrive) => servoDrive.id === servoDriveId)
+    return{
+            title: `${servoDrive?.description}` ,
+            description: servoDrive?.description,
+            keywords: (servoDrive?.keywords.join(",") + `,${servoDrive?.description}`+ `,${servoDrive?.name}`).split(",")
+        }
+    }
 
 const page = ({ params }: Props) => {
   

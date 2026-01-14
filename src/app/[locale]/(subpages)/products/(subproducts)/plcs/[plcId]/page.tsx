@@ -3,12 +3,26 @@ import styles from "./plc-id.module.css"
 import plcs, { Feature, Plc } from "../plcs"
 import Image, { StaticImageData } from 'next/image'
 import Loader from '@/components/loader/loader'
+import { Metadata } from 'next'
 type Props = {
     params: {
         plcId: string
     }
 }
 
+export const generateMetadata = async ({
+    params,
+  }: Readonly<{
+    params:  Promise<{plcId: string}>
+  }>) : Promise<Metadata> => {
+    const { plcId } = await params;
+    const plc = plcs.find((plc) => plc.id === plcId)
+    return{
+          title: `${plc?.description}` ,
+          description: plc?.description,
+          keywords: (plc?.keywords.join(",") + `,${plc?.description}`+ `,${plc?.name}`).split(",")
+      }
+  }
 const page = ({ params }: Props) => {
   
   const plc: Plc | any = plcs.find((ele) => ele.id === params.plcId)

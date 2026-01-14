@@ -1,14 +1,30 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from "./inverter-id.module.css"
 import inverters, { Feature, Inverter } from "../inverters"
 import Image, { StaticImageData } from 'next/image'
 import Loader from '@/components/loader/loader'
+import { Metadata } from 'next'
 type Props = {
     params: {
         inverterId: string
     }
 }
 
+
+export const generateMetadata = async ({
+    params,
+  }: Readonly<{
+    params:  Promise<{inverterId: string}>
+  }>) : Promise<Metadata> => {
+    const { inverterId } = await params;
+    const inverter = inverters.find((inverter) => inverter.id === inverterId)
+    return{
+          title: `${inverter?.description}` ,
+          description: inverter?.description,
+          keywords: (inverter?.keywords.join(",") + `,${inverter?.description}`+ `,${inverter?.name}`).split(",")
+      }
+  }
+  
 const page = ({ params }: Props) => {
   
   const inverter: Inverter | any = inverters.find((ele) => ele.id === params.inverterId)
