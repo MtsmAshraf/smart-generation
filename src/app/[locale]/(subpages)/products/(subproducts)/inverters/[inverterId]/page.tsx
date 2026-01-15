@@ -21,7 +21,7 @@ export const generateMetadata = async ({
     return{
           title: `${inverter?.description}` ,
           description: inverter?.description,
-          keywords: (inverter?.keywords.join(",") + `,${inverter?.description}`+ `,${inverter?.name}`).split(",")
+          keywords: (inverter?.keywords?.join(",") + `,${inverter?.description}`+ `,${inverter?.name}`).split(",")
       }
   }
   
@@ -41,7 +41,7 @@ const page = ({ params }: Props) => {
               <h2>{inverter.description}</h2>
               <p>{inverter.desctiptionParagraph}</p>
               {
-                (inverter.userManualFile  || inverter.brochureFile) &&
+                (inverter.userManualFile  || inverter.brochureFile || inverter.softwareFile) &&
                 <div className={styles.downloadBtns}>
                   <h2>Download</h2>
                   <div className={styles.btns}>
@@ -52,6 +52,10 @@ const page = ({ params }: Props) => {
                     {
                       inverter.userManualFile &&
                       <a href={inverter.userManualFile} download>Download User Manual</a>
+                    }
+                    {
+                      inverter.softwareFile &&
+                      <a href={inverter.softwareFile} download>Download Software</a>
                     }
                   </div>
                 </div>

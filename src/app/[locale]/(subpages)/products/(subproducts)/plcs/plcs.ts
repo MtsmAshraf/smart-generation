@@ -49,6 +49,7 @@ export type Plc = {
     features: Feature[],
     catImgs: StaticImageData[],
     brochureFile?: string,
+    softwareFile?: string,
     userManualFile?: string
 }
 
@@ -96,6 +97,7 @@ const plcs : Plc[] = [
         ],
         catImgs: [cat1i1, cat2i1, cat3i1],
         userManualFile: "/files/VC10V Series PLC Quick Start User Manual.pdf",
+        softwareFile: "/files/VC Studio(V2.41).rar",
         brochureFile: "/files/Brochure V&T PLC&HMI&Multi-channel Intelligent Thermostat1121.pdf"
     },
     {
@@ -135,6 +137,7 @@ const plcs : Plc[] = [
         ],
         catImgs: [cat1i2, cat2i2, cat3i2],
         userManualFile: "/files/VC10V Series PLC Quick Start User Manual.pdf",
+        softwareFile: "/files/VC Studio(V2.41).rar",
         brochureFile: "/files/Brochure V&T PLC&HMI&Multi-channel Intelligent Thermostat1121.pdf"
     }
 ]

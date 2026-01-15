@@ -41,6 +41,7 @@ export type Inverter = {
     features: Feature[],
     catImgs: StaticImageData[],
     brochureFile?: string,
+    softwareFile?: string,
     userManualFile?: string
 }
 
@@ -229,6 +230,7 @@ const inverters : Inverter[] = [
         ],
         catImgs: [cat1i3, cat2i3, cat3i3, cat4i3],
         userManualFile: "/files/V9-user-manual.pdf",
+        softwareFile: "/files/VTS_V9_Monitor20230531_EN_setup.rar",
         brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
     }
 ]

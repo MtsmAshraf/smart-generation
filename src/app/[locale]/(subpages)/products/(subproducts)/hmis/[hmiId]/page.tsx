@@ -3,6 +3,7 @@ import styles from "./hmi-id.module.css"
 import Image, { StaticImageData } from 'next/image'
 import hmis, { Feature, Hmi } from '../hmi'
 import Loader from '@/components/loader/loader'
+import { Metadata } from 'next'
 type Props = {
     params: {
         hmiId: string
@@ -12,15 +13,15 @@ type Props = {
 export const generateMetadata = async ({
     params,
   }: Readonly<{
-    params:  Promise<{inverterId: string}>
+    params:  Promise<{hmiId: string}>
   }>) : Promise<Metadata> => {
-    const { inverterId } = await params;
-    const inverter = inverters.find((inverter) => inverter.id === inverterId)
+    const { hmiId } = await params;
+    const hmi = hmis.find((hmi) => hmi.id === hmiId)
     return{
-          title: `${inverter?.description}` ,
-          description: inverter?.description,
-          keywords: (inverter?.keywords.join(",") + `,${inverter?.description}`+ `,${inverter?.name}`).split(",")
-      }
+            title: `${hmi?.description}` ,
+            description: hmi?.description,
+            keywords: (hmi?.keywords?.join(",") + `,${hmi?.description}`+ `,${hmi?.name}`).split(",")
+        }
   }
 const page = ({ params }: Props) => {
   
@@ -36,9 +37,8 @@ const page = ({ params }: Props) => {
             </div>
             <div className={styles.text}>
                 <h2>{hmi.description}</h2>
-                <p>{hmi.desctiptionParagraph}</p>
                 {
-                    (hmi.userManualFile  || hmi.brochureFile) &&
+                    (hmi.userManualFile  || hmi.brochureFile || hmi.softwareFile) &&
                     <div className={styles.downloadBtns}>
                     <h2>Download</h2>
                     <div className={styles.btns}>
@@ -49,6 +49,10 @@ const page = ({ params }: Props) => {
                         {
                         hmi.userManualFile &&
                         <a href={hmi.userManualFile} download>Download User Manual</a>
+                        }
+                        {
+                        hmi.softwareFile &&
+                        <a href={hmi.softwareFile} download>Download Software</a>
                         }
                     </div>
                     </div>

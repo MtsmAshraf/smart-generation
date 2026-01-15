@@ -19,7 +19,7 @@ export const generateMetadata = async ({
     return{
             title: `${servoDrive?.description}` ,
             description: servoDrive?.description,
-            keywords: (servoDrive?.keywords.join(",") + `,${servoDrive?.description}`+ `,${servoDrive?.name}`).split(",")
+            keywords: (servoDrive?.keywords?.join(",") + `,${servoDrive?.description}`+ `,${servoDrive?.name}`).split(",")
         }
     }
 
@@ -39,7 +39,7 @@ const page = ({ params }: Props) => {
                 <h2>{servoDrive.description}</h2>
                 <p>{servoDrive.desctiptionParagraph}</p>
                 {
-                    (servoDrive.userManualFile  || servoDrive.brochureFile) &&
+                    (servoDrive.userManualFile  || servoDrive.brochureFile || servoDrive.softwareFile) &&
                     <div className={styles.downloadBtns}>
                     <h2>Download</h2>
                     <div className={styles.btns}>
@@ -50,6 +50,10 @@ const page = ({ params }: Props) => {
                         {
                         servoDrive.userManualFile &&
                         <a href={servoDrive.userManualFile} download>Download User Manual</a>
+                        }
+                        {
+                        servoDrive.softwareFile &&
+                        <a href={servoDrive.softwareFile} download>Download Software</a>
                         }
                     </div>
                     </div>

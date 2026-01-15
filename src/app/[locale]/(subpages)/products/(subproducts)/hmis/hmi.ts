@@ -23,6 +23,7 @@ export type Hmi = {
     features: Feature[],
     catImgs: StaticImageData[],
     brochureFile?: string,
+    softwareFile?: string,
     userManualFile?: string
 }
 

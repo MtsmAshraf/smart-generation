@@ -20,7 +20,7 @@ export const generateMetadata = async ({
     return{
           title: `${plc?.description}` ,
           description: plc?.description,
-          keywords: (plc?.keywords.join(",") + `,${plc?.description}`+ `,${plc?.name}`).split(",")
+          keywords: (plc?.keywords?.join(",") + `,${plc?.description}`+ `,${plc?.name}`).split(",")
       }
   }
 const page = ({ params }: Props) => {
@@ -39,7 +39,7 @@ const page = ({ params }: Props) => {
                 <h2>{plc.description}</h2>
                 <p>{plc.desctiptionParagraph}</p>
                 {
-                    (plc.userManualFile  || plc.brochureFile) &&
+                    (plc.userManualFile  || plc.brochureFile || plc.softwareFile) &&
                     <div className={styles.downloadBtns}>
                     <h2>Download</h2>
                     <div className={styles.btns}>
@@ -50,6 +50,10 @@ const page = ({ params }: Props) => {
                         {
                         plc.userManualFile &&
                         <a href={plc.userManualFile} download>Download User Manual</a>
+                        }
+                        {
+                        plc.softwareFile &&
+                        <a href={plc.softwareFile} download>Download Software</a>
                         }
                     </div>
                     </div>

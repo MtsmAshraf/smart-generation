@@ -35,6 +35,7 @@ const downloadFiles : DownloadFile[] = [
         name: "V9 Series High Performance Universal Speed AC Drive",
         userManualFile: "/files/V9-user-manual.pdf",
         brochureFile: "/files/Brochure V&T V9 Product Catalog High performance Inverter 220V 380V 690V.pdf",
+        softwareFile: "/files/VTS_V9_Monitor20230531_EN_setup.rar",
         productType: "Inverter"
     },
     
@@ -43,6 +44,7 @@ const downloadFiles : DownloadFile[] = [
         name: "VC10V Simple Motion Small PLC",
         userManualFile: "/files/VC10V Series PLC Quick Start User Manual.pdf",
         brochureFile: "/files/Brochure V&T PLC&HMI&Multi-channel Intelligent Thermostat1121.pdf",
+        softwareFile: "/files/VC Studio(V2.41).rar",
         productType: "PLC"
     },
     {
@@ -50,6 +52,7 @@ const downloadFiles : DownloadFile[] = [
         name: "VC20 Series High Performance General Purpose PLC",
         userManualFile: "/files/VC10V Series PLC Quick Start User Manual.pdf",
         brochureFile: "/files/Brochure V&T PLC&HMI&Multi-channel Intelligent Thermostat1121.pdf",
+        softwareFile: "/files/VC Studio(V2.41).rar",
         productType: "PLC"
     },
     {
