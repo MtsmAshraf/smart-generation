@@ -3,6 +3,7 @@ import React from 'react'
 import styles from "./layout.module.css"
 import { Link } from '@/i18n/routing';
 import { usePathname } from 'next/navigation';
+import Contact from '@/components/contact/contact';
   
 export default function SubProductsLayout({
     children,
@@ -41,8 +42,9 @@ export default function SubProductsLayout({
             </Link>
         </li>
         
-      </ul>
-      {children}
+        </ul>
+        {children}
+        <Contact l={locale}></Contact>
     </div>
   )
 }

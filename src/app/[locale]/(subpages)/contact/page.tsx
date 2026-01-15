@@ -14,9 +14,6 @@ const ContactUs = ({
   return (
     <section>
         <Loader></Loader>
-          <div className="container">
-            <ContactsInfo l={locale}></ContactsInfo>
-        </div>
         <Contact l={locale}></Contact>
     </section>
   )

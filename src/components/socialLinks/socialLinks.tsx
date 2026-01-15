@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./social-links.module.css"
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 const SocialLinks = () => {

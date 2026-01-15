@@ -1,5 +1,5 @@
 .contact{
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 100px;
     background-color: #eee;
     border-top: 2px solid var(--sec-color);
@@ -19,10 +19,10 @@
     align-items: center;
     justify-content: center;
 }
-.contact > div:not(:last-child) > *{
-    width: 50%;
+/* .contact > div:not(:last-child) > *{ */
+    /* width: 50%; */
     /* background-color: red; */
-}
+/* } */
 .contact > div form{
     background-color: var(--sec-color);
     color: #fff;
@@ -107,6 +107,10 @@
 .contact .map{
     border: 3px solid var(--main-color);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .contact .map iframe{
     width: 100%;
