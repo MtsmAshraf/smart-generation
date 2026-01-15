@@ -4,11 +4,9 @@
     padding-bottom: 50px;
     /* background-color: #eee; */
     background-image: linear-gradient(to bottom,#eee, #fff, #eee);
-    font-family: "Afacad Flux", sans-serif;
 }
 .vt.ar{
     direction: rtl;
-    font-family: "El Messiri", sans-serif;
 }
 .vt > div{
     display: flex;

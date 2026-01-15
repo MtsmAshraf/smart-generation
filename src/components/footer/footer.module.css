@@ -4,7 +4,6 @@
 }
 .footer.en{
     direction: ltr;
-    font-family: "Afacad Flux", sans-serif;
 }
 .footer > div:first-child{
     padding-top: 40px;

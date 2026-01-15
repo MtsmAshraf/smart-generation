@@ -1,7 +1,5 @@
 .subProductsLayout *{
     direction: ltr !important;
-    /* font-family: "Roboto", sans-serif; */
-    font-family: "Afacad Flux", sans-serif !important;
 }
 .subProductsLayout > div > div h3{
     font-size: 30px;
@@ -139,7 +137,6 @@
     color: #fff;
     padding: 5px 20px;
     border-radius: 20px;
-    font-family: "Afacad Flux", sans-serif;
     transition: var(--main-transition);
 }
 .subProductsLayout .subLayoutNav li a.active,

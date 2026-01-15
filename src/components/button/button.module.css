@@ -26,10 +26,8 @@
 .button:focus, .button:focus-visible, .button:active{
     border: 1px solid var(--main-color);
     outline: none;
-    /* font-family: "El Messiri", sans-serif; */
     cursor: pointer;
 }
 .button.en{
-  font-family: "Afacad Flux", sans-serif !important;
   direction: ltr;
 }

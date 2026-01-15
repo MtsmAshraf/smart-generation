@@ -13,7 +13,6 @@
     background-color: #fff;
 }
 .partners.en{
-    font-family: "Afacad Flux", sans-serif;
 }
 .partners > :first-child{ /* MainHeading */
     margin-right: auto;
@@ -65,7 +64,6 @@
     left: -10px;
     bottom: 0;
     color: #fff;
-    font-family: "Tajawal", sans-serif;
     direction: rtl;
     text-align: center;
     padding: 20px;
@@ -73,7 +71,6 @@
     z-index: 3;
 }
 .partners.en .swiper p{
-    font-family: "Poppins", sans-serif;
     direction: ltr;
 }
 .partners .swiper button{

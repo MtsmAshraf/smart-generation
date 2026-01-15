@@ -1,6 +1,5 @@
 
 .productsList *{
-    /* font-family: "Roboto", sans-serif; */
     direction: ltr !important;
 }    
 .productsList ul li{

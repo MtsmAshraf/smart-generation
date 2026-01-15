@@ -10,7 +10,6 @@
 }
 .header.en{
     direction: ltr;
-    font-family: "Afacad Flux", sans-serif;
 }
 .header.scrolled{
     background-color: #fff;
@@ -97,7 +96,6 @@
     left: 50%;
     transform: translateX(-50%);
     display: none;
-    font-family: "Afacad Flux", sans-serif !important;
     /* width: 100%; */
 }
 .header nav > div:hover .moreLinks{
@@ -127,7 +125,6 @@
     
 }
 .header.en nav .moreLinks{
-    font-family: "Afacad Flux", sans-serif !important;
 }
 
 .header nav .moreLinks ul{

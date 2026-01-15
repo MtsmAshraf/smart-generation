@@ -58,7 +58,7 @@ const Header = ({
   const t = useTranslations('Header');
     let classNameList = [styles.header, scrolled ? styles.scrolled : "", l === "en" ? styles.en : ""].join(" ")
   return (
-    <header className={classNameList}>
+    <header id={l === "en" ? "en" : "ar"} className={classNameList}>
         <div className= "container">
             <button onClick={() => {setNavShown(!navShown);}} className={styles.toggleNav}>
                 <FontAwesomeIcon style={{ display: navShown ? "none" : "inline"  }} icon={faBars}></FontAwesomeIcon>

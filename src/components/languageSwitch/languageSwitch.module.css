@@ -4,11 +4,9 @@
     border: 1px solid var(--main-color);
     border-radius: 4px;
     width: 40px;
-    font-family: "Afacad Flux", sans-serif;
     direction: ltr;
     font-size: 16px;
 }
 .languageSwitch.en{
-  font-family: "El Messiri", sans-serif;
   direction: ltr;
 }

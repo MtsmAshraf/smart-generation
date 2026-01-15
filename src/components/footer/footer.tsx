@@ -21,6 +21,7 @@ const Footer = ({
             <Link href={`/services`}>{t("Sections.PagesLinks.1")}</Link>
             {/* <Link href={`/projects`}>{t("Sections.PagesLinks.2")}</Link> */}
             <Link href={`/products`}>{t("Sections.PagesLinks.3")}</Link>
+            <Link href={`/downloads`}>{t("Sections.PagesLinks.3")}</Link>
             <Link href={`/about`}>{t("Sections.PagesLinks.4")}</Link>
             <Link href={`/contact`}>{t("Sections.PagesLinks.5")}</Link>
           </div>
@@ -84,7 +85,7 @@ const Footer = ({
         </div>
       </div>
       <div className={styles.copyright}>
-        by &copy; <a href="https://moatasim-ashraf.netlify.app/" target='_blank'>Moatasim</a> 2024
+        by &copy; <a href="https://moatasimashraf.com/" target='_blank'>Moatasim</a> 2024
       </div>
     </footer>
   )
