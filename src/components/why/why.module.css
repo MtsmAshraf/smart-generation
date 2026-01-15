@@ -3,6 +3,7 @@
     padding-bottom: 50px;
 }
 .why.en{
+    direction: rtl;
 }
 .why h2{
     text-align: center;
