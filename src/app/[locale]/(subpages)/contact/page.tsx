@@ -12,10 +12,10 @@ const ContactUs = ({
 }) => {
   
   return (
-    <section>
-        <Loader></Loader>
+    <>
         <Contact l={locale}></Contact>
-    </section>
+        <Loader></Loader>
+    </>
   )
 }
 

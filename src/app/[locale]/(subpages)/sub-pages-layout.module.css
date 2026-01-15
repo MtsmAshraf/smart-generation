@@ -25,6 +25,6 @@
     color: var(--main-color);
     font-size: 80px;
 }
-.main{
+.main > *:first-child{
     padding-top: 30px;
 }
