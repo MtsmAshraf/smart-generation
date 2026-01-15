@@ -18,7 +18,6 @@ const downloadFiles : DownloadFile[] = [
     {
         id: "vts-400-series-universal-variable-speed-ac-drive",
         name: "VTS 400 Series Universal Variable Speed AC Drive",
-        userManualFile: "/files/User Manual VTS -EN.pdf",
         brochureFile: "/files/Brochure VTS series book style Inverter Catalog.pdf",
         softwareFile: "/files/Brochure VTS series book style Inverter Catalog.pdf",
         productType: "Inverter"
