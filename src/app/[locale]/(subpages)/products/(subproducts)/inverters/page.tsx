@@ -5,8 +5,13 @@ import Loader from '@/components/loader/loader'
 import { Link } from '@/i18n/routing'
 import vfdAccessoriesImg from "../../../../../../../public/assets/imgs/Products/inverters/vfd-accessories/EX-CA13/imgi_19_bd4149e3f3d7bef2ebf2c0adc70ed944_thumb-removebg-preview.png"
 import specialPurposeImg from "../../../../../../../public/assets/imgs/Products/inverters/V9/V9.png"
+import { Metadata } from 'next'
 
 
+export const metadata: Metadata = {
+    title: "Inverters",
+    description: "Smart Generation EG Inverters, AC Drives, VDF Accessories and company location, contact information and work hours"
+}
 const Inverters = ({
   params: {locale}
 } : {

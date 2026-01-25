@@ -3,6 +3,14 @@ import React from 'react'
 import servoDrives from './servo-drives'
 import Loader from '@/components/loader/loader'
 import { Link } from '@/i18n/routing'
+import { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+    title: "Servo Drives",
+    description: "Smart Generation EG Servo Drives and company location, contact information and work hours"
+}
+
 const ServoDrives = ({
     params: {locale}
 } : {

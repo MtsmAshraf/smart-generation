@@ -3,6 +3,14 @@ import hmis from "./hmi"
 import Image from 'next/image'
 import Loader from '@/components/loader/loader'
 import { Link } from '@/i18n/routing'
+import { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+    title: "HMIs",
+    description: "Smart Generation EG HMIs and company location, contact information and work hours"
+}
+
 const Hmi = ({
     params: {locale}
 } : {

@@ -5,6 +5,12 @@ import Image from 'next/image'
 import Loader from '@/components/loader/loader'
 import Contact from '@/components/contact/contact'
 import { Link } from '@/i18n/routing'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "Products",
+    description: "Smart Generation EG Products, Inverters, AC Drives, PLC, Servo Drives, HMIs, VFD Accessories and company location, contact information and work hours"
+}
 const Products = ({
   params: {locale}
 } : {

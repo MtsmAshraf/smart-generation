@@ -3,6 +3,14 @@ import React from 'react'
 import plcs from "./plcs"
 import Loader from '@/components/loader/loader'
 import { Link } from '@/i18n/routing'
+import { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+    title: "PLCs",
+    description: "Smart Generation EG PLCs and company location, contact information and work hours"
+}
+
 const Plcs = ({
     params: {locale}
 } : {
