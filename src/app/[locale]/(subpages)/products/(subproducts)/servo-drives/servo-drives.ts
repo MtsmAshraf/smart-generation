@@ -50,7 +50,7 @@ export type ServoDrive = {
 
 const servoDrives : ServoDrive[] = [
     {
-        id: "1",
+        id: "vs510-series-servo-drive",
         name: "VS510 Series servo drive",
         description: "VS510 Series servo drive",
         keywords: [
@@ -111,7 +111,7 @@ const servoDrives : ServoDrive[] = [
         brochureFile: "/files/VS510&VS512.pdf"
     },
     {
-        id: "2",
+        id: "vs512-series-servo-drive",
         name: "VS512 Series servo drive",
         description: "VS512 Series servo drive",
         keywords: [],

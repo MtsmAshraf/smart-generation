@@ -55,7 +55,7 @@ export type Plc = {
 
 const plcs : Plc[] = [
     {
-        id: "1",
+        id: "vc10v-simple-motion-small-plc",
         name: "VC10V Simple Motion Small PLC",
         description: "VC10V Simple and sporty small PLC",
         keywords: [
@@ -101,7 +101,7 @@ const plcs : Plc[] = [
         brochureFile: "/files/Brochure V&T PLC&HMI&Multi-channel Intelligent Thermostat1121.pdf"
     },
     {
-        id: "2",
+        id: "vc20v-series-high-performance-general-purpose-plc",
         name: "VC20 Series High Performance General Purpose PLC",
         description: "VC20 Series high-performance general-purpose PLC",
         href: "/vts30",

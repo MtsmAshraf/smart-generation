@@ -31,7 +31,7 @@ export type VfdAccessoryType = {
 
 const vfdAccessories : VfdAccessoryType[] = [
     {
-        id: "1",
+        id: "ex-ca13-profinet-communication-adapter-card",
         name: "EX-CA13 Profinet Communication Adapter Card",
         src: image1,
         alt: "EX-CA13 Profinet Communication Adapter Card",
@@ -61,7 +61,7 @@ const vfdAccessories : VfdAccessoryType[] = [
         
     },
     {
-        id: "2",
+        id: "ex-ca06-profibus-dp-communication-adapter-card",
         name: "EX-CA06 Profibus-DP Communication Adapter Card",
         src: image2,
         alt: "EX-CA06 Profibus-DP Communication Adapter Card",
@@ -75,7 +75,7 @@ const vfdAccessories : VfdAccessoryType[] = [
         
     },
     {
-        id: "3",
+        id: "ex-ca04-canopen-communication-adapter-card",
         name: "EX-CA04 CANopen Communication Adapter Card",
         src: image3,
         alt: "EX-CA04 CANopen Communication Adapter Card",
@@ -109,7 +109,7 @@ const vfdAccessories : VfdAccessoryType[] = [
         
     },
     {
-        id: "4",
+        id: "v9-dp01-led-operation-panel",
         name: "V9-DP01 LED Operation Panel",
         src: image4,
         alt: "V9-DP01 LED Operation Panel",
@@ -129,7 +129,7 @@ const vfdAccessories : VfdAccessoryType[] = [
         
     },
     {
-        id: "5",
+        id: "v9-dp02-lcd-operation-panel",
         name: "V9-DP02 LCD Operation Panel",
         src: image5,
         alt: "V9-DP02 LCD Operation Panel",
@@ -149,7 +149,7 @@ const vfdAccessories : VfdAccessoryType[] = [
         
     },
     {
-        id: "6",
+        id: "ex-pg01-feedback-card",
         name: "EX-PG01 Feedback Card",
         src: image6,
         alt: "EX-PG01 Feedback Card",
@@ -167,7 +167,7 @@ const vfdAccessories : VfdAccessoryType[] = [
         
     },
     {
-        id: "7",
+        id: "ex-pg02-feedback-card",
         name: "EX-PG02 Feedback Card",
         src: image7,
         alt: "EX-PG02 Feedback Card",
@@ -184,7 +184,7 @@ const vfdAccessories : VfdAccessoryType[] = [
         
     },
     {
-        id: "8",
+        id: "ex-pg03-feedback-card",
         name: "EX-PG03 Feedback Card",
         src: image8,
         alt: "EX-PG03 Feedback Card",
@@ -198,7 +198,7 @@ const vfdAccessories : VfdAccessoryType[] = [
         
     },
     {
-        id: "9",
+        id: "ex-pg04-feedback-card",
         name: "EX-PG04 Feedback Card",
         src: image9,
         alt: "EX-PG04 Feedback Card",
