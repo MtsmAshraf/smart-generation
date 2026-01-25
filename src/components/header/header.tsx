@@ -28,7 +28,7 @@ const Header = ({
     useEffect(() => {
         setIsClient(true)
         window.onscroll = () => {
-            if(window.scrollY >= 200){
+            if(window.scrollY >= 50){
                 setScrolled(true)
             }else{
                 setScrolled(false)
@@ -36,7 +36,7 @@ const Header = ({
         }
     },[scrolled])
     useEffect(() => {
-        if(window.scrollY >= 200){
+        if(window.scrollY >= 50){
             setScrolled(true)
         }else{
             setScrolled(false)

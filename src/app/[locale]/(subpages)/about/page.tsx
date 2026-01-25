@@ -5,12 +5,21 @@ import StatsCard from '@/components/statsCard/statsCard'
 // import Testimonials from '@/components/testimonials/testimonials'
 import Vision from '@/components/vision/vision'
 import Why from '@/components/why/why'
+import { Metadata } from 'next'
 import React from 'react'
+
+
+
+export const metadata: Metadata = {
+    title: "About Us",
+    description: "About Smart Generation EG, company statistics, vistion & mission, fields of word ,location, contact information, work hours and social media links"
+}
 
 const About = ({
   params: {locale}
 } : {
   params: {locale: string}
+
 }) => {
   return (
     <section>
