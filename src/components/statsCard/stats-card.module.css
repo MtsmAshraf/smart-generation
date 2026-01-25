@@ -4,9 +4,12 @@
     z-index: 2;
     position: relative;
     margin-bottom: 100px;
+    .statsCard.en{
+        direction: ltr;
+    }
 }
-.statsCard.en{
-  direction: ltr;
+.statsCard .statsHeading{
+    margin-bottom: 10px;
 }
 .statsCard > div{
     display: flex;

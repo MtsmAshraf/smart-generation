@@ -3,6 +3,7 @@ import styles from "./why.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAward, faClock, faFaceSmileBeam, faMoneyBills, faRankingStar } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
+import MainHeading from '../mainHeading/mainHeading'
 const Why = ({
     lo
 } : {
@@ -11,9 +12,11 @@ const Why = ({
     const t = useTranslations("HomePage.why")
   return (
     <div className={lo === "en" ? styles.why + " " + styles.en : styles.why}>
-        <h2>
-            {t("h2")}
-        </h2>
+        <MainHeading>
+            <h1>
+                {t("h2")}
+            </h1>
+        </MainHeading>
         <div className="container">
             <div className={styles.card}>
                 <div className={styles.heading}>

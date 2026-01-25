@@ -76,7 +76,7 @@ const vfdAccessories : VfdAccessoryType[] = [
     },
     {
         id: "3",
-        name: " NEEDS FEATURES DETAILS EX-CA04 CANopen Communication Adapter Card",
+        name: "EX-CA04 CANopen Communication Adapter Card",
         src: image3,
         alt: "EX-CA04 CANopen Communication Adapter Card",
         description: "",

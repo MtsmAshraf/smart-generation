@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from "./stats-card.module.css"
-import MainHeading from '../mainHeading/mainHeading'
 import Button from '../button/button'
 import { useTranslations } from 'next-intl'
-const   StatsCard = ({
+const StatsCard = ({
     l
 } : {
     l: string
@@ -14,14 +13,14 @@ const   StatsCard = ({
     <div className={l === "en" ? styles.statsCard + " " + styles.en : styles.statsCard}>
         <div className="container">
             <div className={styles.text}>
-                <MainHeading>
+                <div className={styles.statsHeading}>
                     <span>
                         {t('statsCard.text.subTitle')}
                     </span>
                     <h2>
                         {t('statsCard.text.title')}
                     </h2>
-                </MainHeading>
+                </div>
                 <p>
                         {t('statsCard.text.statsP')}
                 </p>

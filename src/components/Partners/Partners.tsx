@@ -12,17 +12,22 @@ import 'swiper/css/pagination';
 
 import sliderLogos, { SliderLogo } from './sliderProducts';
 import MainHeading from '../mainHeading/mainHeading';
+import { useTranslations } from 'next-intl';
 const Partners = ({
     lo
 }: {
     lo: string,
 }) => {
-    // const t = useTranslations("HomePage.Brands")
+    const t = useTranslations("HomePage")
   return (
     <section id='partners' className={lo === "en" ? styles.partners + " " + styles.en : styles.partners}>
-        <h1>
-            Partners
-        </h1>
+        <MainHeading>
+            <h1>
+                {
+                    t("Partners")
+                }
+            </h1>
+        </MainHeading>
         <div className={styles.swiper}>
             <Swiper
                 loop

@@ -16,7 +16,7 @@ const ContactsInfo = ({
   return (
     <section className={l === "ar" ? styles.contactInfo + " " + styles.ar : styles.contactInfo}>
         <MainHeading>
-            <h1 style={{ textAlign: "center" }}>
+            <h1>
                 {
                     t("Heading")
                 }

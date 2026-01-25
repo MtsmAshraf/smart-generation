@@ -19,9 +19,9 @@
     margin-left: auto;
 }
 .partners h1{
-    font-size: 60px;
+    /* font-size: 60px;
     color: var(--sec-color);
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 .partners p{
     color: #fff;

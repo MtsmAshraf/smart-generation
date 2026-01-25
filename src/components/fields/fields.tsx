@@ -3,6 +3,7 @@ import styles from "./fields.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBuildingColumns, faCity, faEarthAfrica, faGraduationCap, faHospital, faHotel, faHouseUser, faIndustry, faOilWell, faPlaneDeparture, faShop, faTrowelBricks } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
+import MainHeading from '../mainHeading/mainHeading'
 const Fields = ({
     lo
 } : {
@@ -11,7 +12,11 @@ const Fields = ({
     const t = useTranslations("HomePage.fields")
   return (
     <div className={lo === "en" ? styles.fields + " " + styles.en : styles.fields}>
-        <h2>{t("H2")}</h2>
+        <MainHeading>
+            <h1>
+                {t("H2")}
+            </h1>
+        </MainHeading>
         <div className="container">
             <div className={styles.field}>
                 <div className={styles.icon}>

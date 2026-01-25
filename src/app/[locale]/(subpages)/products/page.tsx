@@ -17,9 +17,9 @@ const Products = ({
         <section className={styles.productsList}>
           <ul>
             {
-              allProducts.map((product) => {
+              allProducts.map((product, index: number) => {
                 return(
-                  <li key={product.id}>
+                  <li key={product.id} className={index % 2 !== 0 ? styles.inverted : "" }>
                     <Link href={`/products/${product.href}`}>
                       <Image src={product.src} alt={product.alt} loading='lazy'></Image>
                     </Link>

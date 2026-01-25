@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "./contact.module.css"
 import { useTranslations } from 'next-intl'
 import SocialLinks from '../socialLinks/socialLinks'
-import MainHeading from '../mainHeading/mainHeading'
 import ContactsInfo from '../contactsInfo/contactsInfo'
 const Contact = ({
     l
@@ -13,9 +12,9 @@ const Contact = ({
   return (
     <div className={l === "ar" ? styles.contact + " " + styles.ar : styles.contact}>
         <ContactsInfo l={l}></ContactsInfo>
-        <h1>
+        <h2>
             {t("Heading")}
-        </h1>
+        </h2>
         <div className="container">
             {/* <div className={styles.faq}>
                 <h2>
