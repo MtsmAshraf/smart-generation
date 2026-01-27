@@ -55,8 +55,8 @@ const VfdAccessory = ({ params }: Props) => {
       </div>
       
       {vfdAccessory.specs?.map((section: SpecSection, i: number) => (
-        <div className="container">
-          <div key={i} className={styles.specSection}>
+        <div key={i} className="container">
+          <div className={styles.specSection}>
             {section.title && (
               <h3 className={styles.specTitle}>{section.title}</h3>
             )}
