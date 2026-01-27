@@ -14,6 +14,15 @@ export type Feature = {
         heading: string | null,
         paragraph: string
 }
+export type SpecItem = {
+  label: string
+  value: string
+}
+
+export type SpecSection = {
+  title?: string
+  items: SpecItem[]
+}
 
 export type VfdAccessoryType = {
     id: string,
@@ -25,6 +34,7 @@ export type VfdAccessoryType = {
     desctiptionUl: string[] | null,
     features: Feature[],
     catImgs: StaticImageData[],
+    specs?: SpecSection[],
     brochureFile?: string,
     userManualFile?: string
 }
@@ -57,8 +67,24 @@ const vfdAccessories : VfdAccessoryType[] = [
             }
             ],
         catImgs: [],
-        
-        
+        specs: [
+        {
+            title: "General Specifications",
+            items: [
+            { label: "Communication Protocol", value: "PROFINET" },
+            { label: "Baud Rate", value: "10/100 Mbps" },
+            { label: "Ports", value: "Dual Ethernet" },
+            { label: "Power Supply", value: "5V" }
+            ]
+        },
+        {
+            title: "Functions",
+            items: [
+            { label: "Encoder Support", value: "5V Incremental Encoder" },
+            { label: "LED Indicators", value: "Yes" }
+            ]
+        }
+        ]
     },
     {
         id: "ex-ca06-profibus-dp-communication-adapter-card",
@@ -163,8 +189,21 @@ const vfdAccessories : VfdAccessoryType[] = [
         features: [
             ],
         catImgs: [],
-        
-        
+        specs: [
+            {
+                title: "Electrical",
+                items: [
+                { label: "Power Supply", value: "12V ±5%, 200mA" },
+                { label: "Pulse Input", value: "80K" }
+                ]
+            },
+            {
+                title: "Inputs",
+                items: [
+                { label: "Encoder Inputs", value: "PA+, PA-, PB+, PB-, PZ+, PZ-" }
+                ]
+            }
+        ]
     },
     {
         id: "ex-pg02-feedback-card",

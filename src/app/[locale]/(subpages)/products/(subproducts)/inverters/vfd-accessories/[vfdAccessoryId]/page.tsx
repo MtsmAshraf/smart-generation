@@ -1,5 +1,5 @@
 import React from 'react'
-import vfdAccessories,{ Feature, VfdAccessoryType }  from '../vfdAccessories'
+import vfdAccessories,{ Feature, SpecSection, VfdAccessoryType }  from '../vfdAccessories'
 import Loader from '@/components/loader/loader'
 import styles from "./vfd-accessories.module.css"
 import Image, { StaticImageData } from 'next/image'
@@ -53,9 +53,29 @@ const VfdAccessory = ({ params }: Props) => {
             </div>
           </div>
       </div>
+      
+      {vfdAccessory.specs?.map((section: SpecSection, i: number) => (
+        <div className="container">
+          <div key={i} className={styles.specSection}>
+            {section.title && (
+              <h3 className={styles.specTitle}>{section.title}</h3>
+            )}
+
+            <table className={styles.specTable}>
+              <tbody>
+                {section.items.map((item, idx) => (
+                  <tr key={idx} className={styles.specRow}>
+                    <td className={styles.specLabel}>{item.label}</td>
+                    <td className={styles.specValue}>{item.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ))}
       {
         vfdAccessory.features.length > 0 &&
-        
       <div className={styles.features}>
           <div className="container">
             <h2>PRODUCT FEATURES AND ADVANTAGES</h2>
