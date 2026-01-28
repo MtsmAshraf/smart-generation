@@ -98,15 +98,15 @@ const Downloads = ({
                                 <div className={styles.btns}>
                                     {
                                     file.brochureFile &&
-                                    <a href={file.brochureFile} download>Download Brochure</a>
+                                    <a href={file.brochureFile} aria-description={`Download ${file.name} Brochure`} title={`Download ${file.name} Brochure`} download>Download Brochure</a>
                                     }
                                     {
                                     file.userManualFile &&
-                                    <a href={file.userManualFile} download>Download User Manual</a>
+                                    <a href={file.userManualFile} aria-description={`Download ${file.name} User Manual`} title={`Download ${file.name} User Manual`} download>Download User Manual</a>
                                     }
                                     {
                                     file.softwareFile &&
-                                    <a href={file.softwareFile} download>Download Software</a>
+                                    <a href={file.softwareFile} aria-description={`Download ${file.name} Software`} title={`Download ${file.name} Software`} download>Download Software</a>
                                     }
                                 </div>
                             </li>

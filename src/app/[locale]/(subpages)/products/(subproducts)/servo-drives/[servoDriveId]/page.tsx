@@ -45,15 +45,15 @@ const page = ({ params }: Props) => {
                     <div className={styles.btns}>
                         {
                         servoDrive.brochureFile &&
-                        <a href={servoDrive.brochureFile} download>Download Brochure</a>
+                        <a href={servoDrive.brochureFile} aria-description={`Download ${servoDrive.description} Brochure`} title={`Download ${servoDrive.description} Brochure`} download>Download Brochure</a>
                         }
                         {
                         servoDrive.userManualFile &&
-                        <a href={servoDrive.userManualFile} download>Download User Manual</a>
+                        <a href={servoDrive.userManualFile} aria-description={`Download ${servoDrive.description} User Manual`} title={`Download ${servoDrive.description} User Manual`} download>Download User Manual</a>
                         }
                         {
                         servoDrive.softwareFile &&
-                        <a href={servoDrive.softwareFile} download>Download Software</a>
+                        <a href={servoDrive.softwareFile} aria-description={`Download ${servoDrive.description} Software`} title={`Download ${servoDrive.description} Software`} download>Download Software</a>
                         }
                     </div>
                     </div>

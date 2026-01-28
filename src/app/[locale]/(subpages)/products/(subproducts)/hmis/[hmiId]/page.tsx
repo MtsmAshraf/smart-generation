@@ -44,15 +44,15 @@ const page = ({ params }: Props) => {
                     <div className={styles.btns}>
                         {
                         hmi.brochureFile &&
-                        <a href={hmi.brochureFile} download>Download Brochure</a>
+                        <a href={hmi.brochureFile} aria-description={`Download ${hmi.description} Brochure`} title={`Download ${hmi.description} Brochure`} download>Download Brochure</a>
                         }
                         {
                         hmi.userManualFile &&
-                        <a href={hmi.userManualFile} download>Download User Manual</a>
+                        <a href={hmi.userManualFile} aria-description={`Download ${hmi.description} User Manual`} title={`Download ${hmi.description} User Manual`} download>Download User Manual</a>
                         }
                         {
                         hmi.softwareFile &&
-                        <a href={hmi.softwareFile} download>Download Software</a>
+                        <a href={hmi.softwareFile} aria-description={`Download ${hmi.description} Software`} title={`Download ${hmi.description} Software`} download>Download Software</a>
                         }
                     </div>
                     </div>
