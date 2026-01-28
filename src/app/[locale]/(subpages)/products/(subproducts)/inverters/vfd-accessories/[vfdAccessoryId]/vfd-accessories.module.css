@@ -198,3 +198,37 @@
   padding: 10px 12px;
   color: #555;
 }
+.vfdAccessoryId div:has(>.matrixTable) {
+  overflow-x: scroll;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.vfdAccessoryId div:has(>.matrixTable)::-webkit-scrollbar {
+    height: 0px;
+}
+@media (max-width: 992px) {
+    .vfdAccessoryId div:has(>.matrixTable)::-webkit-scrollbar {
+        height: 8px;
+    }
+}
+.vfdAccessoryId .matrixTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vfdAccessoryId .matrixHeader {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-weight: 600;
+  background-color: #f5f5f5;
+}
+
+.vfdAccessoryId .matrixCell {
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: middle;
+  width: fit-content;
+  min-width: 200px;
+  text-align: center;
+}

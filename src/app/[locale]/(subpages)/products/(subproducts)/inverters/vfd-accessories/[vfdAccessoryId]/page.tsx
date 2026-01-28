@@ -1,5 +1,5 @@
 import React from 'react'
-import vfdAccessories,{ Feature, SpecSection, VfdAccessoryType }  from '../vfdAccessories'
+import vfdAccessories,{ Feature, SpecMatrixTable, SpecSection, TableRow, VfdAccessoryType }  from '../vfdAccessories'
 import Loader from '@/components/loader/loader'
 import styles from "./vfd-accessories.module.css"
 import Image, { StaticImageData } from 'next/image'
@@ -60,7 +60,6 @@ const VfdAccessory = ({ params }: Props) => {
             {section.title && (
               <h3 className={styles.specTitle}>{section.title}</h3>
             )}
-
             <table className={styles.specTable}>
               <tbody>
                 {section.items.map((item, idx) => (
@@ -99,6 +98,48 @@ const VfdAccessory = ({ params }: Props) => {
           </div>
       </div>
       }
+      
+      {vfdAccessory.specTables && (
+        vfdAccessory.specTables.map((table: SpecMatrixTable, index: number) => {
+          return(
+            <div key={index}>
+              <hr />
+              <div className="container">
+                <h3>{table.heading}</h3>
+                <table className={styles.matrixTable}>
+                  <thead>
+                    <tr>
+                      {table.headers.map((header: string, i: number) => (
+                        <th key={i} className={styles.matrixHeader}>
+                          {header}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    {table.rows.map((row: TableRow, rIdx: number) => (
+                      <tr key={rIdx}>
+                        {row.cells.map((cell, cIdx) => (
+                          <td
+                            key={cIdx}
+                            rowSpan={cell.rowSpan}
+                            colSpan={cell.colSpan}
+                            className={styles.matrixCell}
+                          >
+                            {cell.content}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )
+        })
+      )}
+
       {
         vfdAccessory.catImgs.length > 0 &&
         <div className={styles.specs}>
