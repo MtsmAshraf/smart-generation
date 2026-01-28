@@ -16,6 +16,8 @@ import servoDrives, { ServoDrive } from '@/app/[locale]/(subpages)/products/(sub
 import LanguageSwitch from '../languageSwitch/languageSwitch'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
+import VfdAccessories from '@/app/[locale]/(subpages)/products/(subproducts)/inverters/vfd-accessories/page'
+import vfdAccessories, { VfdAccessoryType } from '@/app/[locale]/(subpages)/products/(subproducts)/inverters/vfd-accessories/vfdAccessories'
 const Header = ({
     l
   }: {
@@ -81,7 +83,7 @@ const Header = ({
                     {t("Projects")}
                 </Link> */}
                 <div>
-                <Link className={pathname.split("/")[2] === "products" ? styles.active : ""} href={`/products`}>
+                <Link className={pathname.split("/")[2] === "products" ? styles.active : ""} href={``}>
                     <span>
                     {t("Products")}
                     </span>
@@ -114,6 +116,37 @@ const Header = ({
                                                     <li key={inverter.id}>
                                                         <Link onClick={() => {setNavShown(false)}} href={`/products/inverters/${inverter.id}`} replace>
                                                             {inverter.description}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                        <li>
+                                            <Link onClick={() => {setNavShown(false)}} href={`/products/inverters/special-purpose`} replace>
+                                                <b>Special Purposed AC Drive</b>
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>
+                                        VFD Accessories
+                                    </span>
+                                    <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
+                                    <ul>
+                                        <li>
+                                            <Link href={`/products/inverters/vfd-accessories`}>
+                                                VFD Accessories
+                                            </Link>
+                                        </li>
+                                        {
+                                            vfdAccessories.map((vfdAccessory: VfdAccessoryType) => {
+                                                return(
+                                                    <li key={vfdAccessory.id}>
+                                                        <Link href={`/products/inverters/vfd-accessories/${vfdAccessory.id}`}>
+                                                            {vfdAccessory.name}
                                                         </Link>
                                                     </li>
                                                 )
